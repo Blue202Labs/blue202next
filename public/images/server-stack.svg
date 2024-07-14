@@ -1,0 +1,62 @@
+<svg width="151" height="151" viewBox="0 0 151 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="11" y="46" width="131" height="24" rx="2" stroke="black" stroke-width="2"/>
+<rect x="11" y="11" width="131" height="24" rx="2" stroke="black" stroke-width="2"/>
+<rect x="19" y="35" width="113" height="11" stroke="black" stroke-width="2"/>
+<rect x="19" y="70" width="113" height="11" stroke="black" stroke-width="2"/>
+<rect x="11" y="81" width="131" height="24" rx="2" stroke="black" stroke-width="2"/>
+<path d="M36.5 29.021V16.9794" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M45 29.0415V16.9999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M53 29.0415V16.9999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M61 29.0415V16.9999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M69 29.0415V16.9999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M77 29.0415V16.9999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M125 99.0415V86.9999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M107 90H116.021" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M107 96H116.021" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M91 90H100.021" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M91 96H100.021" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M75 90H84.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M20 90H66" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M20 96H66" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M75 96H84.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M87 55H96.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M98 27H107.021" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M87 61H96.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M71 55H80.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M71 61H80.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M55 55H64.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M19 55H48" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M19 61H48" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M104 55H132" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M98 19L131 19" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M112 27L131 27" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M104 61H132" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M55 61H64.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M133 99.0415V86.9999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<rect x="19" y="105" width="113" height="11" stroke="black" stroke-width="2"/>
+<rect x="11" y="116" width="131" height="24" rx="2" stroke="black" stroke-width="2"/>
+<path d="M77 125H86.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M77 131H86.0208" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M133 134.042V122" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M85 29.0415V16.9999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<mask id="path-41-inside-1_65_109" fill="white">
+<rect x="18" y="21" width="7" height="8" rx="1"/>
+</mask>
+<rect x="18" y="21" width="7" height="8" rx="1" stroke="black" stroke-width="4" mask="url(#path-41-inside-1_65_109)"/>
+<mask id="path-42-inside-2_65_109" fill="white">
+<rect x="93" y="124" width="7" height="8" rx="1"/>
+</mask>
+<rect x="93" y="124" width="7" height="8" rx="1" stroke="black" stroke-width="4" mask="url(#path-42-inside-2_65_109)"/>
+<mask id="path-43-inside-3_65_109" fill="white">
+<rect x="105" y="124" width="7" height="8" rx="1"/>
+</mask>
+<rect x="105" y="124" width="7" height="8" rx="1" stroke="black" stroke-width="4" mask="url(#path-43-inside-3_65_109)"/>
+<mask id="path-44-inside-4_65_109" fill="white">
+<rect x="118" y="124" width="7" height="8" rx="1"/>
+</mask>
+<rect x="118" y="124" width="7" height="8" rx="1" stroke="black" stroke-width="4" mask="url(#path-44-inside-4_65_109)"/>
+<mask id="path-45-inside-5_65_109" fill="white">
+<rect x="18" y="122" width="53" height="12" rx="1"/>
+</mask>
+<rect x="18" y="122" width="53" height="12" rx="1" stroke="black" stroke-width="4" mask="url(#path-45-inside-5_65_109)"/>
+</svg>

@@ -85,7 +85,7 @@ const UPSStorePage = () => {
             <p>
               A system that generates automated daily reports which are sent to
               the relevant management team, offering a comprehensive overview of
-              a branch's daily activities.
+              a branch&apos;s daily activities.
             </p>
           </div>
         </section>

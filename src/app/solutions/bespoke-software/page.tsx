@@ -79,7 +79,7 @@ const BespokeSoftware = () => {
                 >
                   Harness the limitless power of the web to{" "}
                   <span className="text-[#ffd22d]">supercharge</span> your
-                  company's systems.
+                  company&apos;s systems.
                 </p>
                 <div className="flex flex-col gap-8 md:text-lg text-slate-700 p-8 pt-0 pb-20 md:p-8 md:pt-20">
                   <h4 className="font-semibold pt-10 md:pt-0">
@@ -91,8 +91,8 @@ const BespokeSoftware = () => {
                     offers a different interface- the browser. Web solutions
                     offer many advantages, including lower development and
                     maintanance costs as they are cross-platform by nature,
-                    don't require any user setup, do not use local hardware and
-                    are much faster to develop.
+                    don&apos;t require any user setup, do not use local hardware
+                    and are much faster to develop.
                   </p>
                 </div>
               </div>

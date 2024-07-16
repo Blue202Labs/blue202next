@@ -76,7 +76,7 @@ const CRM = () => {
                         <span className="font-semibold">
                           Tailored to your needs:
                         </span>{" "}
-                        Incorporate features essential to your industry's
+                        Incorporate features essential to your industry&apos;s
                         specifications.
                       </p>
                     </div>
@@ -148,7 +148,7 @@ const CRM = () => {
             <div className="flex flex-col lg:grid lg:grid-flow-row lg:grid-cols-2 justify-center gap-8 py-10 pt-16">
               <Approach index={1} heading="Consultation">
                 We start with a detailed consultation to understand your
-                buisiness's requirements and goals.
+                buisiness&apos;s requirements and goals.
               </Approach>
               <Approach index={2} heading="Proposal">
                 Our engineers will formulate a technical proposal detailing the

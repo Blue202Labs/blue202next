@@ -24,9 +24,9 @@ const DigitalMarketing = () => {
                 Website Review & Upgrade
               </h4>
               <p className="md:w-1/2 text-slate-600 font-body-sans text-xl">
-                We'll review your current online presence and propose changes
-                and reccomendations which we are prepared to implement at your
-                request.
+                We&apos;ll review your current online presence and propose
+                changes and reccomendations which we are prepared to implement
+                at your request.
               </p>
             </div>
             <div className="flex flex-col md:flex-row justify-between gap-8">
@@ -60,13 +60,13 @@ const DigitalMarketing = () => {
                 <p>
                   Our Digital Marketing Growth Package is designed to accelerate
                   your online presence, drive targeted traffic, and boost your
-                  business's growth through tailored strategies and cutting-edge
-                  techniques. We will provide a detailed analysis and audit of
-                  your current presence, market research and evaluation into
-                  your most relevant customers, and tailor an approach to
-                  redevelop your digital brand to best target these individuals.
-                  We offer all services as a comprehensive package or
-                  individually, based on your needs.
+                  business&apos;s growth through tailored strategies and
+                  cutting-edge techniques. We will provide a detailed analysis
+                  and audit of your current presence, market research and
+                  evaluation into your most relevant customers, and tailor an
+                  approach to redevelop your digital brand to best target these
+                  individuals. We offer all services as a comprehensive package
+                  or individually, based on your needs.
                 </p>
               </div>
             </div>

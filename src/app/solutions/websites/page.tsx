@@ -66,8 +66,8 @@ const Websites = () => {
                 scalability of your web applications.
               </Principle>
               <Principle img={seo} heading="SEO Optimisation">
-                Let's get your company to the top of the search results! We know
-                all the tricks to give your website the boost it needs.
+                Let&apos;s get your company to the top of the search results! We
+                know all the tricks to give your website the boost it needs.
               </Principle>
             </div>
           </section>

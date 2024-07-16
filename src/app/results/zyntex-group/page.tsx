@@ -21,12 +21,12 @@ const ZyntexPage = () => {
         </p>
         <p>
           Our tailored approach to Business Development involved an in-depth
-          analysis of The Zyntex Group's current operations, market positioning,
-          and growth objectives. Through one-on-one sessions with their team, we
-          identified strategic areas for expansion, optimizing internal
-          processes, and potential strategic partnerships. The outcome was a
-          bespoke Business Development plan that served as a roadmap for Zyntex
-          Group's sustained growth and success.
+          analysis of The Zyntex Group&apos;s current operations, market
+          positioning, and growth objectives. Through one-on-one sessions with
+          their team, we identified strategic areas for expansion, optimizing
+          internal processes, and potential strategic partnerships. The outcome
+          was a bespoke Business Development plan that served as a roadmap for
+          Zyntex Group&apos;s sustained growth and success.
         </p>
         <p>
           Through a detailed assessment of their target audience, market trends,

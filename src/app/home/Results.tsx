@@ -12,7 +12,7 @@ export const ResultsSummary = () => {
           Let us lead your digital transformation.
         </h2>
         <h3 className="w-fit mx-auto text-2xl text-slate-600 font-light">
-          Our work with Sizzler's Steakhouse Egypt:
+          Our work with Sizzler&apos;s Steakhouse Egypt:
         </h3>
         <div className="flex flex-row divide-x-[1px] max-w-4xl mx-auto py-10 justify-center">
           <div className="p-10 w-80 flex flex-col">
@@ -42,7 +42,7 @@ export const ResultsSummary = () => {
           className="place-self-end text-2xl flex flex-row gap-2 group pr-3 hover:pr-0 hover:underline text-slate-600 font-body-sans"
           href=""
         >
-          <div className="group-hover:pr-3">Read more about Sizzler's</div>
+          <div className="group-hover:pr-3">Read more about Sizzler&apos;s</div>
           <Image src={rightArrow} alt="Right arrow icon" />
         </Link>
       </div>

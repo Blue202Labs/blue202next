@@ -28,7 +28,7 @@ const SanDiegoWholesalersPage = () => {
             >
               CRM
             </a>
-            ) software, designed to meet the company's unique requirements.
+            ) software, designed to meet the company&apos;s unique requirements.
           </p>
           <section>
             <div className="flex flex-col justify-between max-w-4xl mx-auto h-full pt-20 pb-24 px-10 gap-14 md:gap-20">
@@ -81,7 +81,7 @@ const SanDiegoWholesalersPage = () => {
                     <span className="font-semibold">
                       Tailored to your needs:
                     </span>{" "}
-                    Incorporate features essential to your industry's
+                    Incorporate features essential to your industry&apos;s
                     specifications.
                   </p>
                 </div>

@@ -25,9 +25,9 @@ export const WebApproach = () => {
       <Heading>Our Approach:</Heading>
       <div className="flex flex-col md:grid md:grid-flow-row md:grid-cols-2 justify-center gap-8 py-10">
         <Approach heading="Consultation" index={1}>
-          We start with a detailed consultation to understand your buisiness's
-          requirements and goals. We love to hear about all your visions and
-          ideas.
+          We start with a detailed consultation to understand your
+          buisiness&apos;s requirements and goals. We love to hear about all
+          your visions and ideas.
         </Approach>
         <Approach heading="Design" index={2}>
           Our designers will create a design tailored to your goals and desired
@@ -53,9 +53,9 @@ export const SoftwareApproach = () => {
       <Heading>Our Approach:</Heading>
       <div className="flex flex-col md:grid md:grid-flow-row md:grid-cols-2 justify-center gap-8 py-10">
         <Approach heading="Consultation" index={1}>
-          We start with a detailed consultation to understand your buisiness's
-          requirements and goals. We love to hear about all your visions and
-          ideas.
+          We start with a detailed consultation to understand your
+          buisiness&apos;s requirements and goals. We love to hear about all
+          your visions and ideas.
         </Approach>
         <Approach heading="Architecture Design" index={2}>
           Our engineers will formulate a technical proposal that encompasses the

@@ -16,7 +16,7 @@ const ResultsPage = () => {
           Our Work
         </h1>
         <p className="px-8 lg:px-0 lg:max-w-2xl text-lg lg:text-2xl font-light">
-          We'll let it speak for itself.
+          We&apos;ll let it speak for itself.
         </p>
         <a
           href="/contact"

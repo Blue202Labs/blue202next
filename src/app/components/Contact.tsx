@@ -101,7 +101,7 @@ export const Contact = () => {
   };
 
   const handlePopupClosed = () => {
-    if (FormState.Sent) {
+    if (formState === FormState.Sent) {
       setFormData({
         yourName: "",
         email: "",

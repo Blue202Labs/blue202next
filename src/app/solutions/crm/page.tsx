@@ -16,8 +16,8 @@ import {
 } from "../components/TechStack";
 import checkMark from "/public/icons/checkMark.svg";
 import { SoftwarePrinciples } from "../components/Principles";
-import { ReviewCard } from "@/app/components/ReviewCard";
 import Image from "next/image";
+import { ReviewCard } from "../../components/ReviewCard";
 
 const CRM = () => {
   return (

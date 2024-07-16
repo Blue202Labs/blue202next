@@ -8,7 +8,7 @@ import {
   google,
 } from "../components/TechStack";
 import checkMark from "/public/icons/checkMark.svg";
-import { Heading } from "@/app/components/Heading";
+import { Heading } from "../../components/Heading";
 import Image from "next/image";
 
 const Hosting = () => {

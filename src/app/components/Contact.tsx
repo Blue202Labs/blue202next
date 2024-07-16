@@ -101,15 +101,17 @@ export const Contact = () => {
   };
 
   const handlePopupClosed = () => {
+    if (FormState.Sent) {
+      setFormData({
+        yourName: "",
+        email: "",
+        phone: "",
+        companyName: "",
+        inquiryType: InquiryType.Default,
+        message: "",
+      });
+    }
     setFormState(FormState.Unsent);
-    setFormData({
-      yourName: "",
-      email: "",
-      phone: "",
-      companyName: "",
-      inquiryType: InquiryType.Default,
-      message: "",
-    });
   };
 
   const showPopUp =

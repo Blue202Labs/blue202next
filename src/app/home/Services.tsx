@@ -30,6 +30,7 @@ export const Services = () => {
     <ServiceTab key="service-tab-1">
       {isMobile && (
         <Image
+          loading="eager"
           className="mx-auto"
           width={imageWidth}
           src={website}
@@ -40,6 +41,7 @@ export const Services = () => {
       <div className="md:pl-8 md:flex md:flex-row gap-10 place-items-start">
         {!isMobile && (
           <Image
+            loading="eager"
             width={imageWidth}
             src={website}
             alt="Black and white outline of a desktop webpage"
@@ -57,13 +59,14 @@ export const Services = () => {
         )}
         <div className="flex flex-row justify-center md:justify-between">
           <div className="flex flex-row w-fit text-left :items-center md:flex-row text-sm md:text-base md:px-6 py-3 rounded-xl md:border place-items-end gap-0">
-            <Image className="w-12" src={ups} alt="UPS logo" />
+            <Image loading="eager" className="w-12" src={ups} alt="UPS logo" />
             {!isMobile && (
               <div className="pl-3 md:pl-0">UPS Store Employee Portal</div>
             )}
           </div>
           <div className="flex flex-row w-fit text-left items-center md:flex-row text-sm md:text-base px-6 py-3 rounded-xl md:border place-items-end gap-2">
             <Image
+              loading="eager"
               className="h-4"
               width={100}
               src={aspen}
@@ -77,6 +80,7 @@ export const Services = () => {
     <ServiceTab key="service-tab-2">
       {isMobile && (
         <Image
+          loading="eager"
           className="mx-auto"
           width={imageWidth}
           src={webSeo}
@@ -87,6 +91,7 @@ export const Services = () => {
       <div className="md:pl-8 flex flex-col md:flex-row gap-10 place-items-start">
         {!isMobile && (
           <Image
+            loading="eager"
             width={imageWidth}
             src={webSeo}
             alt="Black and white outline of a desktop webpage with a megaphone in the foreground."
@@ -115,6 +120,7 @@ export const Services = () => {
     <ServiceTab key="service-tab-3">
       {isMobile && (
         <Image
+          loading="eager"
           className="mx-auto"
           width={imageWidth}
           src={hosting}
@@ -127,6 +133,7 @@ export const Services = () => {
       <div className="md:pl-8 flex flex-col md:flex-row gap-10 place-items-start">
         {!isMobile && (
           <Image
+            loading="eager"
             width={imageWidth}
             src={hosting}
             alt="Black and white outline of a server stack"
@@ -147,6 +154,7 @@ export const Services = () => {
     <ServiceTab key="service-tab-4">
       {isMobile && (
         <Image
+          loading="eager"
           className="mx-auto"
           width={imageWidth}
           src={mobile}
@@ -157,6 +165,7 @@ export const Services = () => {
       <div className="md:pl-8 flex flex-col md:flex-row gap-10 place-items-start">
         {!isMobile && (
           <Image
+            loading="eager"
             width={imageWidth}
             src={mobile}
             alt="Black and white of a phone"

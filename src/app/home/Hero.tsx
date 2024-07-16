@@ -9,6 +9,7 @@ export const Hero = () => {
   return (
     <div className="relative h-screen xl:h-[60rem] text-white flex flex-col justify-center border-b-2-slate-600">
       <Image
+        priority
         className="absolute z-20 h-full object-cover object-center"
         src={blueWave}
         unoptimized={true}

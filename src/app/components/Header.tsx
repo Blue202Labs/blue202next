@@ -6,6 +6,8 @@ import { AnimatedGradientBorder } from "./AnimatedBorder";
 import { SolutionsNav, SolutionsNavMobile } from "./SolutionsNav";
 import useCheckisMobile from "../../hooks/useCheckMobileScreen";
 import Image from "next/image";
+import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export const Header = () => {
   const [toggleSolutions, setToggleSolutions] = useState(false);
@@ -34,7 +36,7 @@ export const Header = () => {
     <>
       <header className="fixed z-50 h-14 w-full border-b border-blue-600 bg-white text-base text-blue-700 md:h-20">
         <div className="mx-auto flex h-full w-full max-w-7xl flex-row place-items-center justify-between px-8 2xl:px-0">
-          <a
+          <Link
             href="/"
             className="mx-auto h-fit w-28 place-self-center md:mx-0 xl:w-fit"
           >
@@ -44,7 +46,7 @@ export const Header = () => {
               className="ml-4 h-fit self-center md:ml-0"
               alt="Blue202 wordmark"
             ></Image>
-          </a>
+          </Link>
           {isMobile ? (
             <NavMobile handleMenuClicked={handleMenuClicked} />
           ) : (
@@ -97,8 +99,8 @@ export const Header = () => {
 
 const NavDesktop: React.FC<{
   toggleSolutions: boolean;
-  handleSolutionsEnter: React.MouseEventHandler<HTMLButtonElement>;
-  handleSolutionsLeave: React.MouseEventHandler<HTMLButtonElement>;
+  handleSolutionsEnter: React.MouseEventHandler<HTMLAnchorElement>;
+  handleSolutionsLeave: React.MouseEventHandler<HTMLAnchorElement>;
 }> = ({ toggleSolutions, handleSolutionsEnter, handleSolutionsLeave }) => {
   const finished = false;
 
@@ -111,16 +113,20 @@ const NavDesktop: React.FC<{
         colour1="#000596"
         colour2="#f82bff"
       >
-        <a
+        <Link
           href="/contact"
           className="rounded-full border border-blue-600 p-2 px-7 hover:border-blue-900 hover:text-blue-400"
         >
           Get a Quote
-        </a>
+        </Link>
       </AnimatedGradientBorder>
-      <button
+      <Link
+        href="/solutions"
         onMouseEnter={handleSolutionsEnter}
         onMouseLeave={handleSolutionsLeave}
+        onClick={() => {
+          redirect("/solutions");
+        }}
         className={`group pl-14 flex h-full flex-row items-center gap-2 hover:text-blue-400 ${
           toggleSolutions && "text-blue-400"
         }`}
@@ -142,13 +148,18 @@ const NavDesktop: React.FC<{
             />
           </svg>
         </div>
-      </button>
+      </Link>
+      <Link
+        href="/results"
+        className="group flex flex-row items-center gap-2 hover:text-blue-400 ml-14"
+      >
+        <div>Results</div>
+      </Link>
       {finished && (
         <>
-          <button className="group flex flex-row items-center gap-2 hover:text-blue-400">
-            <div>Results</div>
-          </button>
-          <button className="hover:text-blue-400">Our Approach</button>
+          <Link href="/our-approach" className="hover:text-blue-400">
+            Our Approach
+          </Link>
         </>
       )}
     </nav>
@@ -231,11 +242,20 @@ const NavMobileDropDown: React.FC<{
             : "max-h-0 opacity-0 invisible"
         }
       />
+      <div className="flex w-full flex-col gap-4 items-end pr-20">
+        <Link href="/results" className="h-10 active:text-blue-800">
+          Results
+        </Link>
+      </div>
       {finished && (
         <>
           <div className="flex w-full flex-col gap-4 items-end pr-20">
-            <button className="h-10 active:text-blue-800">Results</button>
-            <button className="h-10 active:text-blue-800">Our Approach</button>
+            <Link href="/results" className="h-10 active:text-blue-800">
+              Results
+            </Link>
+            <Link href="/our-approach" className="h-10 active:text-blue-800">
+              Our Approach
+            </Link>
           </div>
         </>
       )}

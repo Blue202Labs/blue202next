@@ -20,18 +20,18 @@ export const SolutionsNav: React.FC<{
           }
         >
           <Solution header={"Websites"}>
-            <Anchor route="/websites">Custom sites</Anchor>
-            <Anchor route="/wordpress">Wordpress sites</Anchor>
+            <Anchor route="websites">Custom sites</Anchor>
+            <Anchor route="wordpress">Wordpress sites</Anchor>
           </Solution>
           <Solution header={"Web Apps"}>
-            <Anchor route="/bespoke-software">Bespoke Software</Anchor>
-            <Anchor route="/crm">CRM</Anchor>
-            <Anchor route="/api">API Development</Anchor>
-            <Anchor route="/hosting">Hosting</Anchor>
+            <Anchor route="bespoke-software">Bespoke Software</Anchor>
+            <Anchor route="crm">CRM</Anchor>
+            <Anchor route="api">API Development</Anchor>
+            <Anchor route="hosting">Hosting</Anchor>
           </Solution>
           <Solution header={"UI/UX & Marketing"}>
-            <Anchor route="/web-design">Web Design</Anchor>
-            <Anchor route="/digital-marketing">
+            <Anchor route="web-design">Web Design</Anchor>
+            <Anchor route="digital-marketing">
               Digital Marketing Strategy
             </Anchor>
           </Solution>
@@ -60,18 +60,18 @@ export const SolutionsNavMobile: React.FC<{
       }
     >
       <Solution header={"Websites"}>
-        <Anchor route="/websites">Custom sites</Anchor>
-        <Anchor route="/wordpress">Wordpress sites</Anchor>
+        <Anchor route="websites">Custom sites</Anchor>
+        <Anchor route="wordpress">Wordpress sites</Anchor>
       </Solution>
       <Solution header={"Web Apps"}>
-        <Anchor route="/bespoke-software">Bespoke Software</Anchor>
-        <Anchor route="/crm">CRM</Anchor>
-        <Anchor route="/api">API Development</Anchor>
-        <Anchor route="/hosting">Hosting</Anchor>
+        <Anchor route="bespoke-software">Bespoke Software</Anchor>
+        <Anchor route="crm">CRM</Anchor>
+        <Anchor route="api">API Development</Anchor>
+        <Anchor route="hosting">Hosting</Anchor>
       </Solution>
       <Solution header={"UI/UX & Marketing"}>
-        <Anchor route="/web-design">Web Design</Anchor>
-        <Anchor route="/digital-marketing">Digital Marketing Strategy</Anchor>
+        <Anchor route="web-design">Web Design</Anchor>
+        <Anchor route="digital-marketing">Digital Marketing Strategy</Anchor>
       </Solution>
     </nav>
   );

@@ -3,13 +3,17 @@
 import rightArrow from "/public/icons/right-arrow.svg";
 import { GradientButton } from "../components/GradientButton";
 import blueWave from "/public/images/blue202bg.png";
+import blueWaveMobile from "/public/images/blue202backmobile.png";
 
 import { ReactTyped } from "react-typed";
 import Image from "next/image";
+import useCheckMobileScreen from "@/hooks/useCheckMobileScreen";
 
 export const Hero: React.FC<{
   setLoaded: React.Dispatch<React.SetStateAction<boolean>>;
 }> = ({ setLoaded }) => {
+  const isMobile = useCheckMobileScreen();
+
   return (
     <div className="relative h-screen xl:h-[60rem] text-white flex flex-col justify-center border-b-2-slate-600">
       <Image
@@ -18,7 +22,7 @@ export const Hero: React.FC<{
         }}
         priority
         className="absolute z-20 h-full object-cover object-center"
-        src={blueWave}
+        src={isMobile ? blueWaveMobile : blueWave}
         unoptimized={true}
         alt="Abstract blue wave graphic."
       />

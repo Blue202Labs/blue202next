@@ -43,7 +43,8 @@ export const SolutionsNav: React.FC<{
 
 export const SolutionsNavMobile: React.FC<{
   className: string;
-}> = ({ className }) => {
+  setToggleMenu: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ className, setToggleMenu }) => {
   return (
     <nav
       onTransitionEnd={(e: BaseSyntheticEvent) => {
@@ -60,18 +61,34 @@ export const SolutionsNavMobile: React.FC<{
       }
     >
       <Solution header={"Websites"}>
-        <Anchor route="websites">Custom sites</Anchor>
-        <Anchor route="wordpress">Wordpress sites</Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="websites">
+          Custom sites
+        </Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="wordpress">
+          Wordpress sites
+        </Anchor>
       </Solution>
       <Solution header={"Web Apps"}>
-        <Anchor route="bespoke-software">Bespoke Software</Anchor>
-        <Anchor route="crm">CRM</Anchor>
-        <Anchor route="api">API Development</Anchor>
-        <Anchor route="hosting">Hosting</Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="bespoke-software">
+          Bespoke Software
+        </Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="crm">
+          CRM
+        </Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="api">
+          API Development
+        </Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="hosting">
+          Hosting
+        </Anchor>
       </Solution>
       <Solution header={"UI/UX & Marketing"}>
-        <Anchor route="web-design">Web Design</Anchor>
-        <Anchor route="digital-marketing">Digital Marketing Strategy</Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="web-design">
+          Web Design
+        </Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="digital-marketing">
+          Digital Marketing Strategy
+        </Anchor>
       </Solution>
     </nav>
   );
@@ -79,10 +96,17 @@ export const SolutionsNavMobile: React.FC<{
 
 const Anchor: React.FC<{
   route: string;
+  setToggleMenu?: React.Dispatch<React.SetStateAction<boolean>>;
   children: ReactNode;
-}> = ({ children, route }) => {
+}> = ({ children, setToggleMenu, route }) => {
   return (
-    <Link href={`/solutions/${route}`} className="group hover:text-slate-500">
+    <Link
+      onClick={() => {
+        if (setToggleMenu) setToggleMenu(false);
+      }}
+      href={`/solutions/${route}`}
+      className="group hover:text-slate-500"
+    >
       {children}
       {!useCheckMobileScreen() && (
         <div className="ml-2 inline-block h-4 w-[1.2rem] bg-contain bg-no-repeat align-middle group-hover:bg-right-arrow"></div>

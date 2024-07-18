@@ -1,6 +1,6 @@
 "use client";
 
-import { BaseSyntheticEvent, useState } from "react";
+import { BaseSyntheticEvent, use, useEffect, useState } from "react";
 import wordmark from "/public/icons/wordmark-colour.svg";
 import { AnimatedGradientBorder } from "./AnimatedBorder";
 import { SolutionsNav, SolutionsNavMobile } from "./SolutionsNav";
@@ -12,6 +12,8 @@ import Link from "next/link";
 export const Header = () => {
   const [toggleSolutions, setToggleSolutions] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const isMobile = useCheckisMobile();
 
   const handleSolutionsEnter = (_: BaseSyntheticEvent) => {
     setToggleSolutions(true);
@@ -29,8 +31,6 @@ export const Header = () => {
     setToggleSolutions(false);
     setToggleMenu((prev) => !prev);
   };
-
-  const isMobile = useCheckisMobile();
 
   return (
     <>
@@ -205,13 +205,13 @@ const NavMobileDropDown: React.FC<{
       }
     >
       <div className="flex w-full flex-col gap-4 items-end pr-20">
-        <a
+        <Link
           onClick={() => setToggleMenu(false)}
           href="/contact"
           className="h-10 text-blue-800 active:text-blue-800"
         >
           Get a Quote
-        </a>
+        </Link>
       </div>
       <div className="flex flex-col gap-4 items-end pr-20">
         <button
@@ -236,14 +236,19 @@ const NavMobileDropDown: React.FC<{
         </button>
       </div>
       <SolutionsNavMobile
+        setToggleMenu={setToggleMenu}
         className={
           toggleSolutions
             ? "max-h-screen opacity-100 visible"
             : "max-h-0 opacity-0 invisible"
         }
       />
-      <div className="flex w-full flex-col gap-4 items-end pr-20">
-        <Link href="/results" className="h-10 active:text-blue-800">
+      <div className="flex w-full flex-col pt-2 items-end pr-20">
+        <Link
+          onClick={() => setToggleMenu(false)}
+          href="/results"
+          className="h-10 active:text-blue-800"
+        >
           Results
         </Link>
       </div>

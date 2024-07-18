@@ -13,7 +13,7 @@ const SizzlerPage = () => {
         tags={ResultsTags.sizzler}
       />
       <div className="flex flex-col gap-20 pt-20 pb-64 max-w-5xl mx-auto text-slate-600">
-        <div className="flex flex-row divide-x-[1px] max-w-4xl mx-auto py-10 justify-center">
+        <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x-[1px] max-w-4xl mx-auto py-10 justify-center">
           <div className="p-10 w-80 flex flex-col">
             <div className="text-3xl font-semibold text-slate-800">60k</div>
             <div className="font-body-sans text-xl font-ulght">
@@ -37,7 +37,7 @@ const SizzlerPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 text-lg max-w-3xl mx-auto">
+        <div className="flex flex-col gap-8 text-lg max-w-3xl mx-auto px-4">
           <p className="text-xl font-semibold text-slate-800">
             We partnered with Sizzler Steakhouse in the Middle East to build a
             successful eCommerce, food-ordering website.
@@ -78,7 +78,7 @@ const SizzlerPage = () => {
             marketing along with an effective website positioned Sizzler
             Steakhouse as a leader in the regional F&B market.
           </p>
-          <div className="w-full flex flex-col items-end hover:underline text-base">
+          <div className="w-full flex flex-col items-end hover:underline text-base text-right">
             <Link
               className="flex flex-row gap-2 w-fit"
               href="/solutions/bespoke-software"
@@ -87,7 +87,7 @@ const SizzlerPage = () => {
               <Image src={rightArrow} alt="Right arrow icon" />
             </Link>
           </div>
-          <div className="w-full flex flex-col items-end hover:underline text-base">
+          <div className="w-full flex flex-col items-end hover:underline text-base text-right">
             <Link
               className="flex flex-row gap-2 w-fit"
               href="/solutions/digital-marketing"
@@ -96,7 +96,7 @@ const SizzlerPage = () => {
               <Image src={rightArrow} alt="Right arrow icon" />
             </Link>
           </div>
-          <div className="w-full flex flex-col items-end hover:underline text-base">
+          <div className="w-full flex flex-col items-end hover:underline text-base text-right">
             <Link
               className="flex flex-row gap-2 w-fit"
               href="/solutions/websites"

@@ -4,7 +4,7 @@ import { BaseSyntheticEvent, useState } from "react";
 import wordmark from "/public/icons/wordmark-colour.svg";
 import { AnimatedGradientBorder } from "./AnimatedBorder";
 import { SolutionsNav, SolutionsNavMobile } from "./SolutionsNav";
-import useCheckisMobile from "../../hooks/useCheckMobileScreen";
+import useCheckisMobile from "../../../hooks/useCheckMobileScreen";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import Link from "next/link";

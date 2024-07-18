@@ -4,7 +4,7 @@ import { ResultsTags } from "../data";
 import checkMark from "/public/icons/checkMark.svg";
 import rightArrow from "/public/icons/right-arrow.svg";
 import Link from "next/link";
-import { CallToAction } from "@/app/home/CallToAction";
+import { CallToAction } from "@/app/(app)/home/CallToAction";
 
 const SanDiegoWholesalersPage = () => {
   return (

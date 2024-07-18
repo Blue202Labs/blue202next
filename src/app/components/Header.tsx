@@ -67,6 +67,7 @@ export const Header = () => {
         >
           {!isMobile && (
             <SolutionsNav
+              setToggleSolutions={setToggleSolutions}
               className={`${
                 toggleSolutions && !isMobile
                   ? "opacity-100 max-h-96"

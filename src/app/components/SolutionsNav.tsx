@@ -4,7 +4,8 @@ import Link from "next/link";
 
 export const SolutionsNav: React.FC<{
   className: string;
-}> = ({ className }) => {
+  setToggleSolutions: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ className, setToggleSolutions }) => {
   return (
     <div className="flex flex-col items-center pt-10">
       <nav
@@ -20,18 +21,35 @@ export const SolutionsNav: React.FC<{
           }
         >
           <Solution header={"Websites"}>
-            <Anchor route="websites">Custom sites</Anchor>
-            <Anchor route="wordpress">Wordpress sites</Anchor>
+            <Anchor setToggleMenu={setToggleSolutions} route="websites">
+              Custom sites
+            </Anchor>
+            <Anchor setToggleMenu={setToggleSolutions} route="wordpress">
+              Wordpress sites
+            </Anchor>
           </Solution>
           <Solution header={"Web Apps"}>
-            <Anchor route="bespoke-software">Bespoke Software</Anchor>
-            <Anchor route="crm">CRM</Anchor>
-            <Anchor route="api">API Development</Anchor>
-            <Anchor route="hosting">Hosting</Anchor>
+            <Anchor setToggleMenu={setToggleSolutions} route="bespoke-software">
+              Bespoke Software
+            </Anchor>
+            <Anchor setToggleMenu={setToggleSolutions} route="crm">
+              CRM
+            </Anchor>
+            <Anchor setToggleMenu={setToggleSolutions} route="api">
+              API Development
+            </Anchor>
+            <Anchor setToggleMenu={setToggleSolutions} route="hosting">
+              Hosting
+            </Anchor>
           </Solution>
           <Solution header={"UI/UX & Marketing"}>
-            <Anchor route="web-design">Web Design</Anchor>
-            <Anchor route="digital-marketing">
+            <Anchor setToggleMenu={setToggleSolutions} route="web-design">
+              Web Design
+            </Anchor>
+            <Anchor
+              setToggleMenu={setToggleSolutions}
+              route="digital-marketing"
+            >
               Digital Marketing Strategy
             </Anchor>
           </Solution>

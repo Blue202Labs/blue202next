@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Heading } from "./Heading";
 import planning from "/public/images/optimise-london.svg";
-import useCheckMobileScreen from "../../../hooks/useCheckMobileScreen";
+import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
 import Image from "next/image";
 import { ReviewCard } from "./ReviewCard";
 

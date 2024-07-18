@@ -8,7 +8,7 @@ import {
 } from "react";
 import { BeatLoader } from "react-spinners";
 import { PopUp } from "../home/PopUp";
-import { ContactFormType, InquiryType } from "../../../utils/contactForm.type";
+import { ContactFormType, InquiryType } from "../../utils/contactForm.type";
 
 enum FormState {
   Unsent,

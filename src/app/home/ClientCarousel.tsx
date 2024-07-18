@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import { clientArray } from "../../../../public/clients";
+import { clientArray } from "../../../public/clients";
 import Image from "next/image";
-import useCheckMobileScreen from "../../../hooks/useCheckMobileScreen";
+import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
 
 export const ClientCarousel = () => {
   const duplicatedClients = [...clientArray, ...clientArray, ...clientArray];

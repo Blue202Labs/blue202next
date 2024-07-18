@@ -1,5 +1,5 @@
 import { BaseSyntheticEvent, ReactNode } from "react";
-import useCheckMobileScreen from "../../../hooks/useCheckMobileScreen";
+import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
 import Link from "next/link";
 
 export const SolutionsNav: React.FC<{

@@ -1,14 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import { PageHero } from "../solutions/components/PageHero";
-import Link from "next/link";
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import { ResultsPost } from "./Post";
 import { ResultsTags } from "./data";
 
 const ResultsPage = () => {
-  const [toLoad, setToLoad] = useState(4);
   return (
     <main className="bg-black">
       <div className="px-4 w-full h-[30rem] text-slate-800 flex flex-col justify-center items-center text-center gap-4 pt-10 bg-slate-50">

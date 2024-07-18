@@ -3,7 +3,7 @@ import deal from "/public/images/deal-london.svg";
 import ideaBranstorm from "/public/images/idea-brainstorm-london.svg";
 import prototyping from "/public/images/prototyping-london.svg";
 import webDevelopment from "/public/images/web-development-london-resized.svg";
-import useCheckMobileScreen from "../../../hooks/useCheckMobileScreen";
+import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
 import Image from "next/image";
 
 export const Summary = () => {

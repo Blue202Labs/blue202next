@@ -15,7 +15,7 @@ import mobile from "/public/images/mobile-app.svg";
 import ups from "/public/clients/UPS-logo.png";
 import aspen from "/public/clients/AspenLogoDark.svg";
 import { Heading } from "../components/Heading";
-import useCheckMobileScreen from "../../../hooks/useCheckMobileScreen";
+import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
 import Image from "next/image";
 
 const services = ["Web apps", "Websites", "Hosting", "Marketing"];

@@ -10,22 +10,21 @@ import { About } from "./home/About";
 import { Contact } from "./components/Contact";
 import { Summary } from "./home/Summary";
 import { ResultsSummary } from "./home/Results";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Loading from "./loading";
 
 function Home() {
   const [loaded, setLoaded] = useState(false);
-  useEffect(() => {
-    if (loaded) {
-      const home = document.querySelector("#home") as HTMLElement;
-      home.classList.remove("max-h-screen");
-      const loader = document.querySelector("#loader") as HTMLElement;
-      loader.classList.add("fade-out");
-    }
-  }, [loaded]);
 
   return (
-    <main id="home" className={"h-full w-full overflow-x-hidden"}>
+    <main
+      id="home"
+      className={
+        "h-full w-full overflow-x-hidden " + loaded ? "" : "max-h-screen"
+      }
+    >
       <Header />
+      <Loading className={loaded ? "fade-out" : ""} />
       <Hero setLoaded={setLoaded} />
       <ClientCarousel />
       <Summary />

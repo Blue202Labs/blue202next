@@ -1,14 +1,22 @@
+"use client";
+
 import rightArrow from "/public/icons/right-arrow.svg";
 import { GradientButton } from "../components/GradientButton";
 import blueWave from "/public/images/blue202bg.png";
 
 import { ReactTyped } from "react-typed";
 import Image from "next/image";
+import { useEffect } from "react";
 
-export const Hero = () => {
+export const Hero: React.FC<{
+  setLoaded: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ setLoaded }) => {
   return (
     <div className="relative h-screen xl:h-[60rem] text-white flex flex-col justify-center border-b-2-slate-600">
       <Image
+        onLoad={() => {
+          setLoaded(true);
+        }}
         priority
         className="absolute z-20 h-full object-cover object-center"
         src={blueWave}

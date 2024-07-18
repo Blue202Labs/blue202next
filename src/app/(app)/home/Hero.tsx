@@ -6,7 +6,6 @@ import blueWave from "/public/images/blue202bg.png";
 
 import { ReactTyped } from "react-typed";
 import Image from "next/image";
-import { useEffect } from "react";
 
 export const Hero: React.FC<{
   setLoaded: React.Dispatch<React.SetStateAction<boolean>>;

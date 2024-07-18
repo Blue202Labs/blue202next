@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 3030 --hostname 172.81.118.188",
+    "start": "next start -p 3030 --hostname 34.230.56.21",
     "lint": "next lint"
   },
   "dependencies": {

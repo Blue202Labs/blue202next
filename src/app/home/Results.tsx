@@ -40,7 +40,7 @@ export const ResultsSummary = () => {
         </div>
         <Link
           className="place-self-end text-lg md:text-2xl flex flex-row gap-2 group pr-3 hover:pr-0 hover:underline text-slate-600 font-body-sans"
-          href="/solutions/sizzler-egypt"
+          href="/results/sizzler-egypt"
         >
           <div className="group-hover:pr-3">Read more about Sizzler&apos;s</div>
           <Image src={rightArrow} alt="Right arrow icon" />

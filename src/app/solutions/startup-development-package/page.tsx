@@ -25,7 +25,9 @@ const StartupDevelopment = () => {
       </section>
       <div className="max-w-5xl mx-auto flex flex-col gap-32 px-4 py-20 pb-48 text-slate-700">
         <section className="pt-36 flex flex-col justify-center text-center gap-8">
-          <h2 className="text-4xl">Got an idea? Let's build it together.</h2>
+          <h2 className="text-4xl">
+            Got an idea? Let&apos;s build it together.
+          </h2>
           <h3 className="text-2xl font-light max-w-3xl mx-auto">
             Our startup development package offers everything you need to get
             your idea off the ground.

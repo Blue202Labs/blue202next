@@ -67,9 +67,9 @@ const MvpDevelopment = () => {
               <div className="flex flex-row gap-4 items-start">
                 <Image width={24} src={checkMark} alt="Check mark icon"></Image>
                 <p>
-                  <span className="font-semibold">Speedy delivery:</span> We'll
-                  get it done fast so you can get your idea off the page and
-                  onto your fingertips ASAP.
+                  <span className="font-semibold">Speedy delivery:</span>{" "}
+                  We&apos;ll get it done fast so you can get your idea off the
+                  page and onto your fingertips ASAP.
                 </p>
               </div>
               <div className="flex flex-row gap-4 items-start">
@@ -91,8 +91,8 @@ const MvpDevelopment = () => {
               <div className="flex flex-row gap-4 items-start">
                 <Image width={24} src={checkMark} alt="Check mark icon"></Image>
                 <p>
-                  <span className="font-semibold">Great value:</span> Let's keep
-                  the spending to the VCs 😉
+                  <span className="font-semibold">Great value:</span> Let&apos;s
+                  keep the spending to the VCs 😉
                 </p>
               </div>
             </div>

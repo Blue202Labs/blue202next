@@ -77,11 +77,11 @@ const StartupDevelopment = () => {
           <p className="max-w-3xl mx-auto text-lg md:font-light py-10 px-6">
             We are thrilled to offer an end-to-end service for all entrepreneurs
             who want to get their idea out into the world. We know the struggle
-            of finding a technical cofounder, and that's exactly why we decided
-            to curated this package. With the Blue202 Startup Development
-            Package, you recieve everything you need to launch your buisiness
-            idea, from ideation to prototyping and deployment, and even support
-            in developing your buisiness plan and investor pitches.
+            of finding a technical cofounder, and that&apos;s exactly why we
+            decided to curated this package. With the Blue202 Startup
+            Development Package, you recieve everything you need to launch your
+            buisiness idea, from ideation to prototyping and deployment, and
+            even support in developing your buisiness plan and investor pitches.
           </p>
         </section>
         <section>
@@ -91,9 +91,9 @@ const StartupDevelopment = () => {
               <div className="flex flex-row gap-4 items-start">
                 <Image width={24} src={checkMark} alt="Check mark icon"></Image>
                 <p>
-                  <span className="font-semibold">Speedy delivery:</span> We'll
-                  get it done fast so you can get your idea off the page and
-                  onto your fingertips ASAP.
+                  <span className="font-semibold">Speedy delivery:</span>{" "}
+                  We&apos;ll get it done fast so you can get your idea off the
+                  page and onto your fingertips ASAP.
                 </p>
               </div>
               <div className="flex flex-row gap-4 items-start">
@@ -115,8 +115,8 @@ const StartupDevelopment = () => {
               <div className="flex flex-row gap-4 items-start">
                 <Image width={24} src={checkMark} alt="Check mark icon"></Image>
                 <p>
-                  <span className="font-semibold">Great value:</span> Let's keep
-                  the spending to the VCs 😉
+                  <span className="font-semibold">Great value:</span> Let&apos;s
+                  keep the spending to the VCs 😉
                 </p>
               </div>
             </div>
@@ -136,8 +136,8 @@ const StartupDevelopment = () => {
             </Approach>
             <Approach heading="MVP Design and Development" index={3}>
               Before starting development, we will give you the opportunity to
-              review the plan and request any changes. Once you give the 'OK',
-              our developers will bring the design to life.
+              review the plan and request any changes. Once you give the
+              &apos;OK&apos;, our developers will bring the design to life.
             </Approach>
             <Approach heading="Pitch Support" index={3}>
               We will design a strategic pitch deck, aligned with your brand

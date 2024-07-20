@@ -10,13 +10,13 @@ export const MockUp = () => {
         className="z-10 absolute h-[50rem] object-cover"
         src={fintechMockup}
       />
-      <div className="absolute z-20 w-full h-full bg-gradient-to-tr from-black opacity-15 to-[60%]"></div>
-      <div className="z-30 relative top-20 flex flex-col h-full justify-end p-40 gap-16">
-        <h1 className="text-6xl bg-white rounded-2xl px-12 py-10 drop-shadow-md font-body-sans text-slate-800">
+      <div className="absolute z-20 w-full h-full bg-gradient-to-tr from-white md:from-black md:opacity-15 md:to-[60%]"></div>
+      <div className="z-30 relative top-20 flex flex-col h-full justify-end py-20 pr-4 md:p-40 gap-16">
+        <h1 className="text-6xl font-bold md:bg-white rounded-3xl px-12 py-10 drop-shadow-md font-body-sans text-slate-800">
           Build the next unicorn with Blue202. 🚀
         </h1>
         <Link
-          className="place-self-end bg-blue-accent hover:bg-blue-700 rounded-full text-white font-semibold text-2xl px-10 py-8"
+          className="place-self-end bg-blue-accent hover:bg-blue-700 rounded-full text-white font-semibold text-lg md:text-2xl px-8 md:px-10 py-4 md:py-8"
           href="/solutions/startup-development-package"
         >
           See our Startup Package

@@ -10,15 +10,15 @@ import fintechMockup from "/public/images/fintech-mockup.png";
 const StartupDevelopment = () => {
   return (
     <>
-      <section className="relative h-[40rem] pt-20">
+      <section className="relative h-screen md:h-[50rem] pt-10 md:pt-20">
         <Image
           alt="Device app mockups"
-          className="z-10 absolute h-[40rem] object-cover"
+          className="z-10 absolute h-screen md:h-[50rem] object-cover"
           src={fintechMockup}
         />
-        <div className="absolute z-20 w-full h-full bg-gradient-to-tr from-black opacity-15 to-[60%]"></div>
-        <div className="z-30 relative top-20 flex flex-col h-full justify-center p-40">
-          <h1 className="text-6xl bg-white rounded-2xl px-12 py-10 drop-shadow-md font-body-sans text-slate-800">
+        <div className="absolute z-20 w-full h-full bg-gradient-to-tr from-white md:from-black md:opacity-15 to-[60%]"></div>
+        <div className="z-30 relative top-20 flex flex-col h-full justify-end md:justify-center p-8 pb-36 md:p-40">
+          <h1 className="text-6xl min-w-96 font-bold md:text-6xl md:bg-white rounded-3xl md:px-12 py-10 drop-shadow-md font-body-sans text-slate-800">
             Build the next unicorn with Blue202. 🚀
           </h1>
         </div>
@@ -45,7 +45,7 @@ const StartupDevelopment = () => {
             >
               The all-in-one package for your entrepreneurial dreams.
             </p>
-            <p className="lg:text-lg text-slate-700 pt-20 pr-10 font-light">
+            <p className="lg:text-lg text-slate-700 p-10 md:pt-20 pr-10 font-light">
               We are thrilled to offer an end-to-end service for all
               entrepreneurs who are eager to get their idea out into the world.
               We know the struggle of finding a technical cofounder, and

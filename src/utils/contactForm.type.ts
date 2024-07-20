@@ -18,4 +18,11 @@ export const ContactForm = Type.Object({
   message: Type.String(),
 });
 
+export enum FormState {
+  Unsent,
+  Loading,
+  Sent,
+  Failed,
+}
+
 export type ContactFormType = Static<typeof ContactForm>;

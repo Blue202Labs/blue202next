@@ -8,31 +8,28 @@ import {
 } from "react";
 import { BeatLoader } from "react-spinners";
 import { PopUp } from "../home/PopUp";
-import { ContactFormType, InquiryType } from "../../utils/contactForm.type";
-import { SendContactForm } from "../actions";
+import { FormState, InquiryType } from "../../utils/contactForm.type";
+import { sendContactForm } from "../actions";
+import { useFormState, useFormStatus } from "react-dom";
 
-export enum FormState {
-  Unsent,
-  Loading,
-  Sent,
-  Failed,
-}
+const initialFormData = {
+  yourName: "",
+  email: "",
+  phone: "",
+  companyName: "",
+  inquiryType: InquiryType.Default,
+  message: "",
+};
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    yourName: "",
-    email: "",
-    phone: "",
-    companyName: "",
-    inquiryType: InquiryType.Default,
-    message: "",
-  });
-  const [formState, setFormState] = useState(FormState.Unsent);
   const [validated, setValidated] = useState(true);
+  const [formState, submitAction] = useFormState(
+    sendContactForm,
+    FormState.Unsent
+  );
 
   const handleChange = (e: BaseSyntheticEvent) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
     validateProperty(name, value);
   };
 
@@ -57,7 +54,7 @@ export const Contact = () => {
       return true;
     }
   };
-
+  /*
   const handleSubmit = (e: BaseSyntheticEvent) => {
     e.preventDefault();
 
@@ -72,38 +69,9 @@ export const Contact = () => {
     if (!validated) {
       return;
     }
+  };*/
 
-    setFormState(FormState.Loading);
-
-    const contactBody: ContactFormType = {
-      name: formData.yourName,
-      companyName: formData.companyName,
-      email: formData.email,
-      phone: formData.phone,
-      inquiryType: InquiryType[formData.inquiryType],
-      message: formData.message,
-    };
-
-    SendContactForm(contactBody).then((status) => {
-      setFormState(status);
-    });
-  };
-
-  const handlePopupClosed = () => {
-    if (formState === FormState.Sent) {
-      setFormData({
-        yourName: "",
-        email: "",
-        phone: "",
-        companyName: "",
-        inquiryType: InquiryType.Default,
-        message: "",
-      });
-    }
-    setFormState(FormState.Unsent);
-  };
-
-  const showPopUp =
+  let showPopUp =
     formState === FormState.Sent || formState === FormState.Failed;
 
   return (
@@ -112,8 +80,11 @@ export const Contact = () => {
         <PopUp
           show={showPopUp}
           id="popup-contact"
+          closeCallback={() => {
+            showPopUp = false;
+          }}
           heading={
-            formState === FormState.Sent
+            formState === FormState.Sent && showPopUp
               ? "Inquiry Sent"
               : "Something went wrong!"
           }
@@ -122,12 +93,11 @@ export const Contact = () => {
               ? "Thank you for contacting us! We aim to reply promptly."
               : "Apologies, try emailing us at info@blue202labs.com if this issue persists."
           }
-          closeCallback={handlePopupClosed}
         />
       )}
       <form
         id="contact"
-        onSubmit={handleSubmit}
+        action={submitAction}
         className="flex flex-col max-w-2xl mx-auto gap-2 md:gap-8 px-4 md:px-0 mb-32 scroll-m-20 overflow-hidden transition duration-200"
       >
         <div className="flex flex-col md:flex-row gap-2 md:gap-8">
@@ -141,7 +111,6 @@ export const Contact = () => {
               type="text"
               id="yourName"
               name="yourName"
-              value={formData.yourName}
               onChange={handleChange}
               className="w-full px-3 py-2 outline-none text-2xl text-slate-600 font-light text-start"
             />
@@ -156,28 +125,17 @@ export const Contact = () => {
               type="text"
               id="companyName"
               name="companyName"
-              value={formData.companyName}
               onChange={handleChange}
               className="w-full px-3 py-2 outline-none text-2xl text-slate-600 font-light text-start"
             />
           </div>
         </div>
 
-        <InputElement
-          type="email"
-          id="email"
-          value={formData.email}
-          onChange={handleChange}
-        >
+        <InputElement type="email" id="email" onChange={handleChange}>
           Email
         </InputElement>
 
-        <InputElement
-          type="tel"
-          id="phone"
-          value={formData.phone}
-          onChange={handleChange}
-        >
+        <InputElement type="tel" id="phone" onChange={handleChange}>
           Phone
         </InputElement>
 
@@ -188,7 +146,6 @@ export const Contact = () => {
           <select
             id="inquiryType"
             name="inquiryType"
-            value={formData.inquiryType}
             onChange={handleChange}
             className="w-full bg-white text-xl md:text-2xl font-light text-slate-600 md:pl-20"
             required
@@ -209,7 +166,6 @@ export const Contact = () => {
           <textarea
             id="message"
             name="message"
-            value={formData.message}
             onChange={handleChange}
             className="w-full px-3 py-2 border-slate-500 border-2 outline-none focus:border-blue-accent text-lg md:text-2xl font-light text-slate-600"
             rows={6}
@@ -222,43 +178,50 @@ export const Contact = () => {
           </p>
         )}
         <div className="mb-4 place-self-end">
-          <button
-            type="submit"
-            className="text-2xl md:text-3xl flex flex-row items-center h-18 gap-2 group hover:text-blue-accent"
-          >
-            <div>Submit</div>
-            {formState === FormState.Loading && <BeatLoader size={10} />}
-            {!(formState === FormState.Loading) && (
-              <svg
-                className="w-6 md:w-full"
-                width={35}
-                height="20"
-                viewBox="0 0 24 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  className="fill-black group-hover:fill-blue-accent"
-                  d="M22.7399 8.70711C23.1304 8.31658 23.1304 7.68342 22.7399 7.29289L16.3759 0.928932C15.9854 0.538408 15.3522 0.538408 14.9617 0.928932C14.5712 1.31946 14.5712 1.95262 14.9617 2.34315L20.6186 8L14.9617 13.6569C14.5712 14.0474 14.5712 14.6805 14.9617 15.0711C15.3522 15.4616 15.9854 15.4616 16.3759 15.0711L22.7399 8.70711ZM0 9H22.0328V7H0V9Z"
-                />
-              </svg>
-            )}
-          </button>
+          <SubmitButton />
         </div>
       </form>
     </>
   );
 };
 
+const SubmitButton = () => {
+  const { pending } = useFormStatus();
+
+  return (
+    <button
+      type="submit"
+      className="text-2xl md:text-3xl flex flex-row items-center h-18 gap-2 group hover:text-blue-accent"
+    >
+      <div>Submit</div>
+      {pending && <BeatLoader size={10} />}
+      {!pending && (
+        <svg
+          className="w-6 md:w-full"
+          width={35}
+          height="20"
+          viewBox="0 0 24 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            className="fill-black group-hover:fill-blue-accent"
+            d="M22.7399 8.70711C23.1304 8.31658 23.1304 7.68342 22.7399 7.29289L16.3759 0.928932C15.9854 0.538408 15.3522 0.538408 14.9617 0.928932C14.5712 1.31946 14.5712 1.95262 14.9617 2.34315L20.6186 8L14.9617 13.6569C14.5712 14.0474 14.5712 14.6805 14.9617 15.0711C15.3522 15.4616 15.9854 15.4616 16.3759 15.0711L22.7399 8.70711ZM0 9H22.0328V7H0V9Z"
+          />
+        </svg>
+      )}
+    </button>
+  );
+};
+
 const InputElement: React.FC<{
   type: string;
   id: string;
-  value: string;
   className?: string;
   labelClassName?: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
   children: ReactNode;
-}> = ({ type, id, value, className, labelClassName, onChange, children }) => {
+}> = ({ type, id, className, labelClassName, onChange, children }) => {
   return (
     <div
       className={
@@ -273,7 +236,6 @@ const InputElement: React.FC<{
         type={type}
         id={id}
         name={id}
-        value={value}
         onChange={onChange}
         className="w-full px-3 py-1 outline-none text-xl 3xl:text-2xl text-end text-slate-600 font-light"
         required

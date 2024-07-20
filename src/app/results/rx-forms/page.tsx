@@ -1,10 +1,8 @@
 import Image from "next/image";
 import { ResultsHeader } from "../Header";
 import { ResultsTags } from "../data";
-import checkMark from "/public/icons/checkMark.svg";
 import rightArrow from "/public/icons/right-arrow.svg";
 import Link from "next/link";
-import { CallToAction } from "@/app/home/CallToAction";
 
 const SanDiegoWholesalersPage = () => {
   return (

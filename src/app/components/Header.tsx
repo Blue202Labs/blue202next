@@ -70,7 +70,7 @@ export const Header = () => {
               setToggleSolutions={setToggleSolutions}
               className={`${
                 toggleSolutions && !isMobile
-                  ? "opacity-100 max-h-96"
+                  ? "opacity-100 max-h-[30rem]"
                   : "opacity-0 max-h-0"
               }`}
             />

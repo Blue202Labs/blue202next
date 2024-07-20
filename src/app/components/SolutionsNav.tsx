@@ -10,24 +10,16 @@ export const SolutionsNav: React.FC<{
     <div className="flex flex-col items-center pt-10">
       <nav
         className={
-          "drop-down transition fixed h-96 rounded-3xl max-w-5xl border-2 border-blue-600 bg-white text-slate-700 duration-300 ease-in-out " +
+          "drop-down transition fixed h-[30rem] rounded-3xl max-w-5xl border-2 border-blue-600 bg-white text-slate-700 duration-300 ease-in-out " +
           className
         }
       >
         <div
           className={
-            "transition mx-auto flex h-full w-fit flex-col gap-10 p-10 px-16 pb-16 delay-75 md:flex-row " +
+            "transition mx-auto h-full w-fit grid grid-cols-3 gap-x-24 p-10 px-20 pb-16 delay-75 " +
             className
           }
         >
-          <Solution header={"Websites"}>
-            <Anchor setToggleMenu={setToggleSolutions} route="websites">
-              Custom sites
-            </Anchor>
-            <Anchor setToggleMenu={setToggleSolutions} route="wordpress">
-              Wordpress sites
-            </Anchor>
-          </Solution>
           <Solution header={"Web Apps"}>
             <Anchor setToggleMenu={setToggleSolutions} route="bespoke-software">
               Bespoke Software
@@ -40,6 +32,25 @@ export const SolutionsNav: React.FC<{
             </Anchor>
             <Anchor setToggleMenu={setToggleSolutions} route="hosting">
               Hosting
+            </Anchor>
+          </Solution>
+          <Solution header="For Startups">
+            <Anchor
+              setToggleMenu={setToggleSolutions}
+              route="startup-development-package"
+            >
+              Startup Development Package
+            </Anchor>
+            <Anchor setToggleMenu={setToggleSolutions} route="mvp-development">
+              MVP Development
+            </Anchor>
+          </Solution>
+          <Solution header={"Websites"}>
+            <Anchor setToggleMenu={setToggleSolutions} route="websites">
+              Custom sites
+            </Anchor>
+            <Anchor setToggleMenu={setToggleSolutions} route="wordpress">
+              Wordpress sites
             </Anchor>
           </Solution>
           <Solution header={"UI/UX & Marketing"}>
@@ -78,14 +89,6 @@ export const SolutionsNavMobile: React.FC<{
         className
       }
     >
-      <Solution header={"Websites"}>
-        <Anchor setToggleMenu={setToggleMenu} route="websites">
-          Custom sites
-        </Anchor>
-        <Anchor setToggleMenu={setToggleMenu} route="wordpress">
-          Wordpress sites
-        </Anchor>
-      </Solution>
       <Solution header={"Web Apps"}>
         <Anchor setToggleMenu={setToggleMenu} route="bespoke-software">
           Bespoke Software
@@ -98,6 +101,25 @@ export const SolutionsNavMobile: React.FC<{
         </Anchor>
         <Anchor setToggleMenu={setToggleMenu} route="hosting">
           Hosting
+        </Anchor>
+      </Solution>
+      <Solution header="For Startups">
+        <Anchor
+          setToggleMenu={setToggleMenu}
+          route="startup-development-package"
+        >
+          Startup Development Package
+        </Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="mvp-development">
+          MVP Development
+        </Anchor>
+      </Solution>
+      <Solution header={"Websites"}>
+        <Anchor setToggleMenu={setToggleMenu} route="websites">
+          Custom sites
+        </Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="wordpress">
+          Wordpress sites
         </Anchor>
       </Solution>
       <Solution header={"UI/UX & Marketing"}>
@@ -135,10 +157,16 @@ const Anchor: React.FC<{
 
 const Solution: React.FC<{
   header: string;
-  children: ReactNode[];
-}> = ({ header, children }) => {
+  className?: string;
+  children: ReactNode[] | ReactNode;
+}> = ({ header, className, children }) => {
   return (
-    <div className="flex w-full flex-row md:flex-col md:items-start py-2 md:h-full md:w-60 md:gap-0 md:py-4 items-center justify-between ">
+    <div
+      className={
+        "flex w-full flex-row md:flex-col md:items-start py-2 md:h-full md:w-60 md:gap-0 md:py-4 items-center justify-between " +
+        className
+      }
+    >
       <h3 className="w-full font-mono font-medium text-blue-800 md:text-lg">
         {!useCheckMobileScreen() && <span>&gt;&gt;</span>} {header}
       </h3>

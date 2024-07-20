@@ -9,8 +9,9 @@ import {
 import { BeatLoader } from "react-spinners";
 import { PopUp } from "../home/PopUp";
 import { ContactFormType, InquiryType } from "../../utils/contactForm.type";
+import { SendContactForm } from "../actions";
 
-enum FormState {
+export enum FormState {
   Unsent,
   Loading,
   Sent,
@@ -83,21 +84,9 @@ export const Contact = () => {
       message: formData.message,
     };
 
-    fetch(process.env.NEXT_PUBLIC_CONTACT_ADDRESS!, {
-      method: "post",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(contactBody),
-    })
-      .then((response) => {
-        if (response.ok) {
-          setFormState(FormState.Sent);
-        } else {
-          setFormState(FormState.Failed);
-        }
-      })
-      .catch(() => setFormState(FormState.Failed));
+    SendContactForm(contactBody).then((status) => {
+      setFormState(status);
+    });
   };
 
   const handlePopupClosed = () => {

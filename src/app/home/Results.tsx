@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const ResultsSummary = () => {
   return (
-    <section className="pt-40 max-w-7xl mx-auto">
+    <section className="pt-72 max-w-7xl mx-auto">
       <div className="py-20 flex flex-col max-w-5xl mx-auto px-8 md:pl-0">
         <h2 className="w-fit mx-auto text-3xl font-semibold">
           Let us lead your digital transformation.

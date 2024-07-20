@@ -12,6 +12,7 @@ import { Summary } from "./home/Summary";
 import { ResultsSummary } from "./home/Results";
 import { useState } from "react";
 import Loading from "./loading";
+import { MockUp } from "./home/MockUp";
 
 function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -29,6 +30,7 @@ function Home() {
       <ClientCarousel />
       <Summary />
       <About />
+      <MockUp />
       <ResultsSummary />
       <Services />
       <Reviews />

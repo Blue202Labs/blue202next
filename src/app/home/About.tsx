@@ -33,7 +33,7 @@ export const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="h-[95rem] md:h-[70rem] xl:h-[50rem] py-24 overflow-hidden bg-blue-swirl bg-cover"
+      className="h-[95rem] md:h-[70rem] xl:h-[50rem] pt-10 pb-40 overflow-hidden bg-cover"
     >
       <div className="xl:max-w-7xl mx-auto">
         <Heading>About us:</Heading>
@@ -58,7 +58,7 @@ const Service: React.FC<{
   description: string;
 }> = ({ heading, image, description }) => {
   return (
-    <div className="bg-white rounded-2xl p-8 md:p-14 xl:p-10 pb-12 flex flex-col md:flex-row xl:flex-col items-start gap-6 w-full xl:w-1/3 drop-shadow-sm border-2 border-gray-50">
+    <div className="bg-[#fcfcfe] rounded-2xl p-8 md:p-14 xl:p-10 pb-12 flex flex-col md:flex-row xl:flex-col items-start gap-6 w-full xl:w-1/3 drop-shadow-sm border">
       <Image width={70} src={image} alt="Blue tech icon"></Image>
       <div className="flex flex-col gap-2 xl:gap-6 max-w-2xl">
         <h3 className="font-medium text-xl md:text-2xl font-body-sans xl:h-24">

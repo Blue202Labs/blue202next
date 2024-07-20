@@ -4,6 +4,7 @@ import Image from "next/image";
 import blueWave from "/public/images/blue202bg.png";
 import blueWaveMobile from "/public/images/blue202backmobile.png";
 import useCheckMobileScreen from "@/hooks/useCheckMobileScreen";
+import Link from "next/link";
 
 export const PageHero: React.FC<{
   heading: string;
@@ -27,12 +28,12 @@ export const PageHero: React.FC<{
         <p className="z-30 px-8 lg:px-0 lg:max-w-2xl text-lg lg:text-2xl font-light">
           {description}
         </p>
-        <a
+        <Link
           href="/contact"
           className="z-30 bg-cyan-400 text-slate-700 mt-8 py-3 px-8 rounded-full drop-shadow-lg hover:bg-cyan-500 font-semibold font-body-sans"
         >
           Contact Us
-        </a>
+        </Link>
       </div>
     </>
   );

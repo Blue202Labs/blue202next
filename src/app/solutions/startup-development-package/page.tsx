@@ -60,6 +60,62 @@ const StartupDevelopment = () => {
             </p>
           </div>
         </section>
+        <section className="flex flex-col md:flex-row md:h-[40rem] gap-8 py-20">
+          <div className="border w-full rounded-2xl drop-shadow-sm bg-white flex flex-col py-10 px-6">
+            <h2 className="font-medium text-2xl pb-2 place-self-center">
+              Product Development
+            </h2>
+            <div className="w-full border-b"></div>
+            <p className="py-6">
+              Our experienced Startup Development Team will evolve your
+              buisiness plan to refine your idea and product.
+            </p>
+            <ul className="list-disc pl-10">
+              <li>Recieve valuable insights from industry experts</li>
+              <li>Get a detailed market analysis and strategy</li>
+              <li>Define your financial projections and needs</li>
+            </ul>
+          </div>
+          <div className="border w-full rounded-2xl drop-shadow-sm bg-white flex flex-col py-10 px-6">
+            <h2 className="font-medium text-2xl pb-2 place-self-center">
+              MVP Development
+            </h2>
+            <div className="w-full border-b"></div>
+            <p className="py-6">
+              Our MVP development services are designed to transform your
+              concepts into functional products quickly and efficiently,
+              allowing you to test and iterate rapidly in the market.
+            </p>
+            <Link
+              className="flex flex-row gap-2 w-fit font-semibold hover:gap-4"
+              href="/solutions/bespoke-software"
+            >
+              <div>Read more</div>
+              <Image width={16} src={rightArrow} alt="Right arrow icon" />
+            </Link>
+          </div>
+          <div className="border w-full rounded-2xl drop-shadow-sm bg-white flex flex-col py-10 px-6">
+            <h2 className="font-medium text-2xl pb-2 place-self-center">
+              Product Presentation
+            </h2>
+            <div className="w-full border-b"></div>
+            <p className="py-6">
+              This part of the package includes your own custom website to
+              showcase your product as well as a pitch deck to use for your
+              investor pitches, depending on your investment strategies.
+            </p>
+            <div>
+              Depending on your needs, you can also add-on{" "}
+              <Link
+                href="/solutions/digital-marketing"
+                className="font-semibold hover:text-slate-500"
+              >
+                digital marketing services
+              </Link>
+              , such as content creation and marketing strategy development.
+            </div>
+          </div>
+        </section>
         <section>
           <Heading>We provide:</Heading>
           <div className="flex flex-col gap-8 lg:text-xl text-slate-700 pt-10 max-w-3xl mx-auto">

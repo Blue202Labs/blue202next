@@ -15,10 +15,11 @@ const SizzlerPage = () => {
       <div className="flex flex-col gap-20 pt-20 pb-64 max-w-5xl mx-auto text-slate-600">
         <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x-[1px] max-w-4xl mx-auto py-10 justify-center">
           <div className="p-10 w-80 flex flex-col">
-            <div className="text-3xl font-semibold text-slate-800">60k</div>
-            <div className="font-body-sans text-xl font-ulght">
-              Monthly Unique Visitors
+            <div className="text-3xl font-semibold text-slate-800">38,000+</div>
+            <div className="font-body-sans text-xl font-light">
+              Orders delivered
             </div>
+            <div className="font-thin text-sm">On the system we developed.</div>
           </div>
           <div className="p-10 w-72 flex flex-col">
             <div className="text-3xl font-semibold text-slate-800">Top 10</div>

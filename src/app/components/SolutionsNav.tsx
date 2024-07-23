@@ -53,6 +53,20 @@ export const SolutionsNav: React.FC<{
               Wordpress sites
             </Anchor>
           </Solution>
+          <Solution header="Mobile Development">
+            <Anchor
+              setToggleMenu={setToggleSolutions}
+              route="mobile-app-development"
+            >
+              Mobile App Development
+            </Anchor>
+            <Anchor
+              setToggleMenu={setToggleSolutions}
+              route="rapid-prototyping"
+            >
+              Rapid Prototyping
+            </Anchor>
+          </Solution>
           <Solution header={"UI/UX & Marketing"}>
             <Anchor setToggleMenu={setToggleSolutions} route="web-design">
               Web Design
@@ -122,6 +136,14 @@ export const SolutionsNavMobile: React.FC<{
           Wordpress sites
         </Anchor>
       </Solution>
+      <Solution header="Mobile Development">
+        <Anchor setToggleMenu={setToggleMenu} route="mobile-app-development">
+          Mobile App Development
+        </Anchor>
+        <Anchor setToggleMenu={setToggleMenu} route="rapid-prototyping">
+          Rapid Prototyping
+        </Anchor>
+      </Solution>
       <Solution header={"UI/UX & Marketing"}>
         <Anchor setToggleMenu={setToggleMenu} route="web-design">
           Web Design
@@ -145,7 +167,7 @@ const Anchor: React.FC<{
         if (setToggleMenu) setToggleMenu(false);
       }}
       href={`/solutions/${route}`}
-      className="group hover:text-slate-500"
+      className="group hover:text-slate-500 md:w-56"
     >
       {children}
       {!useCheckMobileScreen() && (

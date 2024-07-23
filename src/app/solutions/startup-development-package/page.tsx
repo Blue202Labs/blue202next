@@ -1,4 +1,3 @@
-import { PageHero } from "../components/PageHero";
 import rightArrow from "/public/icons/right-arrow.svg";
 import checkMark from "/public/icons/checkMark.svg";
 import { Heading } from "../../components/Heading";
@@ -18,7 +17,7 @@ const StartupDevelopment = () => {
         />
         <div className="absolute z-20 w-full h-full bg-gradient-to-tr from-white md:from-black md:opacity-15 to-[60%]"></div>
         <div className="z-30 relative top-20 flex flex-col h-full justify-end md:justify-center p-8 pb-36 md:p-40">
-          <h1 className="text-6xl min-w-96 font-bold md:text-6xl md:bg-white rounded-3xl md:px-12 py-10 drop-shadow-md font-body-sans text-slate-800">
+          <h1 className="text-6xl md:min-w-96 font-bold w-fit mx-auto md:text-6xl md:bg-white rounded-3xl md:px-12 py-10 drop-shadow-md font-body-sans text-slate-800">
             Build the next unicorn with Blue202. 🚀
           </h1>
         </div>
@@ -43,7 +42,7 @@ const StartupDevelopment = () => {
           <div className="flex-col lg:flex-row flex lg:gap-10 justify-between h-full">
             <p
               className="font-body-sans font-semibold text-2xl lg:text-3xl text-white
-              h-full bg-cover bg-right rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl bg-blue-abstract p-8 lg:p-10 lg:pt-20 min-h-20 min-w-96"
+              h-full bg-cover bg-right rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl bg-blue-abstract p-8 lg:p-10 lg:pt-20 min-h-20 md:min-w-96"
             >
               The all-in-one package for your entrepreneurial dreams.
             </p>

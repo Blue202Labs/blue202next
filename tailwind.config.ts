@@ -17,6 +17,7 @@ const config: Config = {
         "right-arrow": "url('/icons/right-arrow-grey.svg')",
         "people-computer": "url('/images/people-computer.jpg')",
         "ups-truck": "url('/images/ups-truck.jpg')",
+        "mockup-3d": "url('/images/mobile-mockup.png')",
         "people-table": "url('/images/people-table.jpg')",
         steak: "url('/images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg')",
         logistics: "url('/images/logistics.jpg')",

@@ -19,10 +19,10 @@ import { SoftwarePrinciples } from "../components/Principles";
 const BespokeSoftware = () => {
   const serviceNames = [
     "API",
+    "Dynamic Platforms",
     "Databases",
     "CRM",
     "CMS",
-    "Dynamic Platforms",
     "Processing Software",
   ];
 
@@ -75,7 +75,7 @@ const BespokeSoftware = () => {
               <div className="flex-col md:flex-row flex md:gap-10 justify-between h-full">
                 <p
                   className="font-body-sans font-semibold text-2xl md:text-3xl text-white
-              h-full bg-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl bg-blue-abstract bg-center p-8 md:p-10 md:pt-20 min-h-40 min-w-96"
+              h-full bg-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl bg-blue-abstract bg-center p-8 md:p-10 md:pt-20 min-h-40 md:min-w-96"
                 >
                   Harness the limitless power of the web to{" "}
                   <span className="text-[#ffd22d]">supercharge</span> your

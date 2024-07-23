@@ -202,7 +202,7 @@ const NavMobileDropDown: React.FC<{
   return (
     <nav
       className={
-        "transition duration-500 flex h-screen w-full flex-col gap-4 bg-white pt-10 items-end text-lg text-slate-700 " +
+        "transition duration-500 flex h-screen overflow-y-scroll pb-40 w-full flex-col gap-4 bg-white pt-10 items-end text-lg text-slate-700 " +
         className
       }
     >

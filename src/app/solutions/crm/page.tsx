@@ -45,7 +45,7 @@ const CRM = () => {
         <div className="flex flex-col p-4 lg:p-10 max-w-5xl mx-auto gap-32 h-full">
           <section className="flex flex-col gap-10">
             <Heading>Custom CRM:</Heading>
-            <p className="px-4 py-4 text-lg max-w-3xl mx-auto">
+            <p className="px-4 py-4 md:text-lg max-w-3xl mx-auto">
               For industries with complex sales model, pre-made CRM solutions
               may not be adequate. Custom CRM solutions are tailored systems
               designed to meet the specific needs and processes of a business,
@@ -60,7 +60,7 @@ const CRM = () => {
               <div className="flex-col lg:flex-row flex lg:gap-10 justify-between h-full">
                 <p
                   className="font-body-sans font-semibold text-2xl lg:text-3xl text-white
-              h-full bg-cover bg-right rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl bg-blue-abstract p-8 lg:p-10 lg:pt-20 min-h-20 min-w-96"
+              h-full bg-cover bg-right rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl bg-blue-abstract p-8 lg:p-10 lg:pt-20 min-h-20 md:min-w-96"
                 >
                   Why choose a custom CRM?
                 </p>

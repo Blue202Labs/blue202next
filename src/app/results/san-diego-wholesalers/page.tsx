@@ -65,7 +65,7 @@ const SanDiegoWholesalersPage = () => {
           <div className="flex-col lg:flex-row flex lg:gap-10 justify-between h-full">
             <p
               className="font-body-sans font-semibold text-2xl lg:text-3xl text-white
-              h-full bg-cover bg-right rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl bg-blue-abstract p-8 lg:p-10 lg:pt-20 min-h-20 min-w-96"
+              h-full bg-cover bg-right rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl bg-blue-abstract p-8 lg:p-10 lg:pt-20 min-h-20 md:min-w-96"
             >
               Why choose a custom CRM?
             </p>

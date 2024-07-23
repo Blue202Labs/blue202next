@@ -202,11 +202,11 @@ const NavMobileDropDown: React.FC<{
   return (
     <nav
       className={
-        "transition duration-500 flex h-screen overflow-y-scroll pb-40 w-full flex-col gap-4 bg-white pt-10 items-end text-lg text-slate-700 " +
+        "transition duration-500 flex h-screen overflow-y-scroll pb-40 w-full flex-col gap-4 bg-white pt-10 items-center text-lg text-slate-700 " +
         className
       }
     >
-      <div className="flex w-full flex-col gap-4 items-end pr-20">
+      <div className="flex w-full flex-col gap-4 items-center">
         <Link
           onClick={() => setToggleMenu(false)}
           href="/contact"
@@ -215,7 +215,7 @@ const NavMobileDropDown: React.FC<{
           Get a Quote
         </Link>
       </div>
-      <div className="flex flex-col gap-4 items-end pr-20">
+      <div className="flex flex-col gap-4 items-center">
         <button
           onClick={() => setToggleSolutions((prev: boolean) => !prev)}
           className="group flex flex-row items-center gap-2 h-10 active:text-blue-800"
@@ -245,7 +245,7 @@ const NavMobileDropDown: React.FC<{
             : "max-h-0 opacity-0 invisible"
         }
       />
-      <div className="flex w-full flex-col pt-2 items-end pr-20">
+      <div className="flex w-full flex-col pt-2 items-center">
         <Link
           onClick={() => setToggleMenu(false)}
           href="/results"

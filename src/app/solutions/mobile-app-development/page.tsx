@@ -33,7 +33,7 @@ const MobileAppDevelopment = () => {
               loading="eager"
               priority
               unoptimized={true}
-              className="sticky top-20 w-[300px] md:w-[500px]"
+              className="sticky -webkit-sticky top-20 w-[300px] md:w-[500px]"
               width={500}
               src={mockup3d}
               alt="Mockup of a Fintech App"

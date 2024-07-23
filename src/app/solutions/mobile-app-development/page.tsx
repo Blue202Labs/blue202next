@@ -1,9 +1,6 @@
-import rightArrow from "/public/icons/right-arrow.svg";
-import checkMark from "/public/icons/checkMark.svg";
-import { Heading } from "../../components/Heading";
 import Image from "next/image";
 import Link from "next/link";
-import { Approach, SoftwareApproach } from "../components/OurApproach";
+import { SoftwareApproach } from "../components/OurApproach";
 import mockup3d from "/public/images/mockup-3d.png";
 import { android, flutter, ios, react } from "../components/TechStack";
 import { SoftwarePrinciples } from "../components/Principles";

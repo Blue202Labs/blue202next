@@ -9,8 +9,8 @@ const MobileAppDevelopment = () => {
   return (
     <>
       <section className="pt-10 md:pt-20 px-4 md:px-0">
-        <div className="relative md:flex md:flex-row max-w-7xl mx-auto">
-          <div className="flex flex-col h-full gap-[60vh] text-5xl md:text-6xl text-slate-800 font-bold pb-[80vh] bg-mockup-3d bg-contain bg-no-repeat bg-fixed md:bg-none pt-[60vh] md:pt-96 px-12">
+        <div className="relative flex flex-col md:flex-row max-w-7xl mx-auto">
+          <div className="order-2 md:order-1 flex flex-col h-full gap-[60vh] text-5xl md:text-6xl text-slate-800 font-bold pb-[80vh] pt-[60vh] md:pt-96 px-12">
             <h1 className="z-30 drop-shadow-md text-5xl font-bold md:text-6xl w-fit mx-auto font-body-sans">
               Innovation at Your Fingertips 🌟
             </h1>
@@ -28,12 +28,12 @@ const MobileAppDevelopment = () => {
             <h2 className="z-30 drop-shadow-md">Always responsive.</h2>
             <h2 className="z-30 drop-shadow-md">Always beautiful.</h2>
           </div>
-          <div className="hidden md:block">
+          <div className="order-1 md:order-2 fixed md:relative opacity-80 w-full flex flex-col items-center pr-8">
             <Image
               loading="eager"
               priority
               unoptimized={true}
-              className="z-10 sticky -webkit-sticky top-20 w-[300px] md:w-[500px]"
+              className="z-10 md:sticky md:-webkit-sticky w-[200px] top-20 md:w-[500px] pt-8 md:pt-0 h-[55vh] md:h-fit"
               width={500}
               src={mockup3d}
               alt="Mockup of a Fintech App"
@@ -42,7 +42,7 @@ const MobileAppDevelopment = () => {
           <div className="z-20 absolute bottom-0 h-[200vh] bg-gradient-to-t from-white from-30% w-full"></div>
         </div>
       </section>
-      <div className="max-w-5xl mx-auto flex flex-col gap-40 px-4 py-20 pb-48 text-slate-700">
+      <div className="relative max-w-5xl mx-auto flex flex-col gap-40 px-4 py-20 pb-48 text-slate-700 bg-white z-40">
         <section className="pt-36 flex flex-col justify-center text-center gap-8 pb-40">
           <h2 className="text-4xl md:text-5xl font-bold">
             Got an idea? Let&apos;s build it together.

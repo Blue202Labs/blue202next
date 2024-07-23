@@ -35,6 +35,7 @@ export const Header = () => {
   return (
     <>
       <header className="fixed z-50 h-14 w-full border-b border-blue-600 bg-white text-base text-blue-700 md:h-20">
+        <h1 className="hidden">Blue202Labs</h1>
         <div className="mx-auto flex h-full w-full max-w-7xl flex-row place-items-center justify-between px-8 2xl:px-0">
           <Link
             href="/"
@@ -44,7 +45,7 @@ export const Header = () => {
               src={wordmark}
               width={150}
               className="ml-4 h-fit self-center md:ml-0"
-              alt="Blue202 wordmark"
+              alt="Blue202Labs"
             ></Image>
           </Link>
           {isMobile ? (

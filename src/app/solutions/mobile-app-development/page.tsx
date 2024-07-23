@@ -33,13 +33,13 @@ const MobileAppDevelopment = () => {
               loading="eager"
               priority
               unoptimized={true}
-              className="sticky -webkit-sticky top-20 w-[300px] md:w-[500px]"
+              className="z-10 sticky -webkit-sticky top-20 w-[300px] md:w-[500px]"
               width={500}
               src={mockup3d}
               alt="Mockup of a Fintech App"
             />
           </div>
-          <div className="absolute bottom-0 h-[200vh] bg-gradient-to-t from-white from-30% w-full"></div>
+          <div className="z-20 absolute bottom-0 h-[200vh] bg-gradient-to-t from-white from-30% w-full"></div>
         </div>
       </section>
       <div className="max-w-5xl mx-auto flex flex-col gap-40 px-4 py-20 pb-48 text-slate-700">

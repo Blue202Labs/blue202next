@@ -8,7 +8,7 @@ import mockup3d from "/public/images/mockup-3d.png";
 import { android, flutter, ios, react } from "../components/TechStack";
 import { SoftwarePrinciples } from "../components/Principles";
 
-const StartupDevelopment = () => {
+const MobileAppDevelopment = () => {
   return (
     <>
       <section className="pt-10 md:pt-20 px-4 md:px-0">
@@ -91,4 +91,4 @@ const StartupDevelopment = () => {
   );
 };
 
-export default StartupDevelopment;
+export default MobileAppDevelopment;

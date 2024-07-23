@@ -11,7 +11,7 @@ import checkMark from "/public/icons/checkMark.svg";
 import { Heading } from "../../components/Heading";
 import Image from "next/image";
 
-const MvpDevelopment = () => {
+const RapidPrototyping = () => {
   return (
     <>
       <PageHero
@@ -76,4 +76,4 @@ const MvpDevelopment = () => {
   );
 };
 
-export default MvpDevelopment;
+export default RapidPrototyping;

@@ -19,6 +19,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.blue202labs.com"),
   title: "Blue202 Labs",
   description:
     "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",

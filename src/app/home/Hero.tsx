@@ -26,7 +26,7 @@ export const Hero: React.FC<{
         unoptimized={true}
         alt="Abstract blue wave graphic."
       />
-      <div className="relative z-30 flex flex-col justify-end min-w-80 md:min-w-[90vw] h-fit w-1/2 max-w-7xl mx-auto gap-8 2xl:pt-36 p-4 xl:px-0">
+      <div className="relative z-30 flex flex-col justify-end min-w-[90vh] md:min-w-96 h-fit w-1/2 max-w-7xl mx-auto gap-8 2xl:pt-36 p-4 xl:px-0">
         <div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold opacity-90 md:h-36 h-24 xl:h-fit text-nowrap">
             Need a{" "}

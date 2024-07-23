@@ -18,9 +18,15 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Blue202",
+  title: "Blue202 Labs",
   description:
     "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  openGraph: {
+    title:
+      "Blue202 Labs - Transforming Buisinesses with Cutting-Edge Digital Solutions",
+    description:
+      "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  },
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {

@@ -5,7 +5,7 @@ import { Source_Sans_3, Roboto_Mono } from "next/font/google";
 import { ReactNode } from "react";
 import { Header } from "./components/Header";
 import "./globals.css";
-import opengraphImage from "../../public/images/opengraph-image.jpg";
+import opengraphImage from "/public/images/opengraph-image.jpg";
 import { Footer } from "./components/Footer";
 
 const sourceSans = Source_Sans_3({
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Blue202 Labs - Transforming Buisinesses with Cutting-Edge Digital Solutions",
     description:
       "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
-    images: [{ url: opengraphImage.src }],
+    images: opengraphImage.src,
   },
 };
 

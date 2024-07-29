@@ -46,7 +46,7 @@ const SizzlerPage = () => {
           <p className="pb-20">
             We created a user-friendly website, high-seo ranking website that
             reflected the Sizzler brand and developed an online ordering system
-            to maximise the buisiness&apos;s reach.
+            to maximise the business&apos;s reach.
           </p>
           <div className="border rounded-lg p-10 pb-16">
             <h2 className="font-semibold text-xl pb-8 underline">The task:</h2>
@@ -75,7 +75,7 @@ const SizzlerPage = () => {
             and boosted brand visibility within the Middle Eastern F&B industry,
             attracting 500 users just in the first hour. The eCommerce platform
             increased online ordering significantly, whilst providing a
-            centralised hub for all of Sizzler&apos;s buisiness. Strategic
+            centralised hub for all of Sizzler&apos;s business. Strategic
             marketing along with an effective website positioned Sizzler
             Steakhouse as a leader in the regional F&B market.
           </p>

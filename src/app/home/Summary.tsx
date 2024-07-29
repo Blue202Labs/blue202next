@@ -11,7 +11,7 @@ export const Summary = () => {
     <section className="max-w-7xl mx-auto h-full md:h-[30rem] my-24 md:my-40">
       <div className="mx-auto text-center px-10 md:px-0">
         <h3 className="font-body-sans font-semibold text-3xl md:text-4xl text-slate-700">
-          Web solutions for every buisiness need.
+          Web solutions for every business need.
         </h3>
         <div className="flex flex-col md:flex-row md:py-20 divide-y-2 md:divide-y-0 md:divide-x-2">
           <AboutCard image={deal} heading="Competitive Rates">

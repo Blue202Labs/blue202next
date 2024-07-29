@@ -11,7 +11,7 @@ const serviceData = [
     heading: "Transforming businesses with cutting-edge digital solutions.",
     image: digiLink,
     description:
-      "Here at Blue202, we help companies capitalize on web technologies to automate, manage and uplift their buisiness.",
+      "Here at Blue202, we help companies capitalize on web technologies to automate, manage and uplift their business.",
   },
   {
     heading: "Professional team of expert developers.",

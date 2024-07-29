@@ -53,9 +53,9 @@ const StartupDevelopment = () => {
               that&apos;s exactly why we decided to curated this package.
               <br></br>
               <br></br>With the Blue202 Startup Development Package, you recieve{" "}
-              <b>everything you need</b> to launch your buisiness idea, from
+              <b>everything you need</b> to launch your business idea, from
               ideation to prototyping and deployment, and even support in
-              developing your buisiness plan and investor pitches.
+              developing your business plan and investor pitches.
             </p>
           </div>
         </section>
@@ -66,8 +66,8 @@ const StartupDevelopment = () => {
             </h2>
             <div className="w-full border-b"></div>
             <p className="py-6">
-              Our experienced Startup Development Team will evolve your
-              buisiness plan to refine your idea and product.
+              Our experienced Startup Development Team will evolve your business
+              plan to refine your idea and product.
             </p>
             <ul className="list-disc pl-10">
               <li>Recieve valuable insights from industry experts</li>
@@ -158,11 +158,11 @@ const StartupDevelopment = () => {
           <div className="flex flex-col md:grid md:grid-flow-row md:grid-cols-2 justify-center gap-8 py-10">
             <Approach heading="Consultation" index={1}>
               We start with a detailed consultation to understand your
-              buisiness&apos;s requirements and goals. We love to hear about all
+              business&apos;s requirements and goals. We love to hear about all
               your visions and ideas.
             </Approach>
-            <Approach heading="Buisiness Development" index={2}>
-              We will provide expert insights along with a detailed buisiness
+            <Approach heading="business Development" index={2}>
+              We will provide expert insights along with a detailed business
               plan to help you improve your idea and strategy.
             </Approach>
             <Approach heading="MVP Design and Development" index={3}>

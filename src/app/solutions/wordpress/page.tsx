@@ -7,7 +7,7 @@ const Wordpress = () => {
     <>
       <PageHero
         heading="Seamless Content Management with WordPress."
-        description="Do you need to be able to adapt your content to growing buisiness needs? A Wordpress site might be the best choice for you."
+        description="Do you need to be able to adapt your content to growing business needs? A Wordpress site might be the best choice for you."
       />
       <div className="max-w-5xl mx-auto my-20 flex flex-col gap-14 px-4 text-slate-800">
         <article>
@@ -57,7 +57,7 @@ const Wordpress = () => {
               </h3>
               <p>
                 We will design and build a Wordpress site aligned with your
-                buisiness needs.
+                business needs.
               </p>
             </div>
             <div className="pt-8 px-4 md:pl-10 flex flex-col gap-4 w-full">

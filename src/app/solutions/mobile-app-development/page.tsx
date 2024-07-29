@@ -64,7 +64,7 @@ const MobileAppDevelopment = () => {
               className="font-body-sans font-semibold text-2xl lg:text-3xl text-white
               h-full bg-cover bg-right rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl bg-blue-abstract p-8 lg:p-10 lg:pt-20 min-h-20 md:min-w-96"
             >
-              Because apps are here to propel your buisiness.
+              Because apps are here to propel your business.
             </p>
             <p className="lg:text-lg text-slate-700 p-10 md:pt-20 pr-10 font-light">
               <span className="font-semibold">

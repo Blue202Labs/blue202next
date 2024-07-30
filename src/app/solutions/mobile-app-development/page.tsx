@@ -1,9 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { SoftwareApproach } from "../components/OurApproach";
 import mockup3d from "/public/images/mockup-3d.png";
 import { android, flutter, ios, react } from "../components/TechStack";
 import { SoftwarePrinciples } from "../components/Principles";
+import { Parallax } from "react-scroll-parallax";
 
 const MobileAppDevelopment = () => {
   return (
@@ -33,7 +36,7 @@ const MobileAppDevelopment = () => {
               loading="eager"
               priority
               unoptimized={true}
-              className="z-10 md:sticky md:-webkit-sticky w-[200px] top-20 md:w-[500px] pt-8 md:pt-0 h-[55vh] md:h-fit"
+              className="z-10 md:sticky md:-webkit-sticky w-[200px] top-20 md:w-[500px] pt-8 md:pt-0 md:h-fit"
               width={500}
               src={mockup3d}
               alt="Mockup of a Fintech App"

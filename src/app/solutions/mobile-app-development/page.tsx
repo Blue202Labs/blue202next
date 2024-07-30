@@ -6,7 +6,6 @@ import { SoftwareApproach } from "../components/OurApproach";
 import mockup3d from "/public/images/mockup-3d.png";
 import { android, flutter, ios, react } from "../components/TechStack";
 import { SoftwarePrinciples } from "../components/Principles";
-import { Parallax } from "react-scroll-parallax";
 
 const MobileAppDevelopment = () => {
   return (

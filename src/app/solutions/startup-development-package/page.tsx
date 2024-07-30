@@ -161,7 +161,7 @@ const StartupDevelopment = () => {
               business&apos;s requirements and goals. We love to hear about all
               your visions and ideas.
             </Approach>
-            <Approach heading="business Development" index={2}>
+            <Approach heading="Business Development" index={2}>
               We will provide expert insights along with a detailed business
               plan to help you improve your idea and strategy.
             </Approach>

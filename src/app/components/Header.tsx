@@ -39,6 +39,7 @@ export const Header = () => {
         <div className="mx-auto flex h-full w-full max-w-7xl flex-row place-items-center justify-between px-8 2xl:px-0">
           <Link
             href="/"
+            onClick={() => setToggleMenu(false)}
             className="mx-auto h-fit w-28 place-self-center md:mx-0 xl:w-fit"
           >
             <Image

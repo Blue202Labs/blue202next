@@ -21,7 +21,7 @@ export const Hero: React.FC<{
           setLoaded(true);
         }}
         priority
-        className="absolute z-20 h-full object-cover object-center"
+        className="absolute z-20 h-full object-cover object-center w-full"
         src={isMobile ? blueWaveMobile : blueWave}
         unoptimized={true}
         alt="Abstract blue wave graphic."

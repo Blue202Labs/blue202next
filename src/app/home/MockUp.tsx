@@ -7,7 +7,7 @@ export const MockUp = () => {
     <section className="relative h-[50rem] pt-20">
       <Image
         alt="Device app mockups"
-        className="z-10 absolute h-[50rem] object-cover"
+        className="z-10 absolute h-[50rem] object-cover w-full"
         src={fintechMockup}
       />
       <div className="absolute z-20 w-full h-full bg-gradient-to-tr from-white md:from-black md:opacity-15 md:to-[60%]"></div>

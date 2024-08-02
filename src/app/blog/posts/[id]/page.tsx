@@ -2,7 +2,6 @@ import { PostData, PostsData } from "@/utils/cms.type";
 import parse from "html-react-parser";
 
 import styles from "./styles.module.css";
-import Image from "next/image";
 
 export async function generateStaticParams() {
   const posts: PostsData = await fetch("http://localhost:3000/api/posts", {
@@ -44,7 +43,7 @@ const PostPage = async ({
         <div className="font-bold tracking-wide uppercase text-blue-accent">
           {postData.category}
         </div>
-        <Image
+        <img
           className="h-[20rem] object-cover"
           src={postData.hero.featuredImage.url}
           height={postData.hero.featuredImage.height}

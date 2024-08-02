@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export const SmallFeature = ({ post }: { post: PostData }) => {
   return (
-    <Link className="rounded-xl bg-white drop-shadow-sm border" href="">
+    <Link
+      className="rounded-xl bg-white drop-shadow-sm border"
+      href={`/blog/posts/${post.id}`}
+    >
       <Image
         className="rounded-t-xl h-36 object-cover"
         width={post.hero.featuredImage.width}

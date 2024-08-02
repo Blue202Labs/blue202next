@@ -5,7 +5,7 @@ import Link from "next/link";
 export const BigFeature = ({ post }: { post: PostData }) => {
   return (
     <Link
-      href=""
+      href={`/blog/${post.id}`}
       className="h-[45rem] drop-shadow-sm bg-white border rounded-2xl w-1/2 flex flex-col"
     >
       <Image

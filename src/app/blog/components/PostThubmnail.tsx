@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export const PostThumbnail = ({ post }: { post: PostData }) => {
   return (
-    <Link className="flex flex-row h-64 py-8 gap-10" href="">
+    <Link
+      className="flex flex-row h-64 py-8 gap-10"
+      href={`/blog/posts/${post.id}`}
+    >
       <Image
         className="rounded-xl object-cover w-1/3"
         width={post.hero.featuredImage.width}

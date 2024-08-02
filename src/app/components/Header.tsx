@@ -158,13 +158,12 @@ const NavDesktop: React.FC<{
       >
         <div>Results</div>
       </Link>
-      {finished && (
-        <>
-          <Link href="/our-approach" className="hover:text-blue-400">
-            Our Approach
-          </Link>
-        </>
-      )}
+      <Link
+        href="/blog"
+        className="group flex flex-row items-center gap-2 hover:text-blue-400 ml-14"
+      >
+        <div>Blog</div>
+      </Link>
     </nav>
   );
 };
@@ -246,7 +245,7 @@ const NavMobileDropDown: React.FC<{
             : "max-h-0 opacity-0 invisible"
         }
       />
-      <div className="flex w-full flex-col pt-2 items-center">
+      <div className="flex w-full flex-col pt-2 items-center gap-5">
         <Link
           onClick={() => setToggleMenu(false)}
           href="/results"
@@ -254,19 +253,14 @@ const NavMobileDropDown: React.FC<{
         >
           Results
         </Link>
+        <Link
+          onClick={() => setToggleMenu(false)}
+          href="/blog"
+          className="h-10 active:text-blue-800"
+        >
+          Blog
+        </Link>
       </div>
-      {finished && (
-        <>
-          <div className="flex w-full flex-col gap-4 items-end pr-20">
-            <Link href="/results" className="h-10 active:text-blue-800">
-              Results
-            </Link>
-            <Link href="/our-approach" className="h-10 active:text-blue-800">
-              Our Approach
-            </Link>
-          </div>
-        </>
-      )}
     </nav>
   );
 };

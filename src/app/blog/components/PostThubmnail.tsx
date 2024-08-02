@@ -1,5 +1,4 @@
 import { PostData } from "@/utils/cms.type";
-import Image from "next/image";
 import Link from "next/link";
 
 export const PostThumbnail = ({ post }: { post: PostData }) => {
@@ -8,7 +7,7 @@ export const PostThumbnail = ({ post }: { post: PostData }) => {
       className="flex flex-row h-64 py-8 gap-10"
       href={`/blog/posts/${post.id}`}
     >
-      <Image
+      <img
         className="rounded-xl object-cover w-1/3"
         width={post.hero.featuredImage.width}
         height={post.hero.featuredImage.height}

@@ -8,7 +8,7 @@ export const PostThumbnail = ({ post }: { post: PostData }) => {
       href={`/blog/posts/${post.id}`}
     >
       <img
-        className="rounded-xl object-cover w-1/3"
+        className="rounded-xl object-cover w-[200px]"
         width={post.hero.featuredImage.width}
         height={post.hero.featuredImage.height}
         src={post.hero.featuredImage.fullUrl}

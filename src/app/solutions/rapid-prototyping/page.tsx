@@ -10,6 +10,18 @@ import {
 import checkMark from "/public/icons/checkMark.svg";
 import { Heading } from "../../components/Heading";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Rapid Prototyping Development Services",
+  description:
+    "End-to-end software prototyping services. Prototype and get your MVP in as quick as a month.",
+  openGraph: {
+    title: "Rapid Prototyping Development Services",
+    description:
+      "End-to-end software prototyping services. Prototype and get your MVP in as quick as a month.",
+  },
+};
 
 const RapidPrototyping = () => {
   return (

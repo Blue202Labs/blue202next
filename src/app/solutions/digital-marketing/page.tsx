@@ -1,5 +1,17 @@
 import { Heading } from "../../components/Heading";
 import { PageHero } from "../components/PageHero";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Digital Marketing Services",
+  description:
+    "Boost your online presence today! Receive a customized action plan designed to effectively reach and engage your target audience",
+  openGraph: {
+    title: "Digital Marketing Services",
+    description:
+      "Boost your online presence today! Receive a customized action plan designed to effectively reach and engage your target audience",
+  },
+};
 
 const DigitalMarketing = () => {
   return (
@@ -16,7 +28,7 @@ const DigitalMarketing = () => {
               <h4 className="font-bold text-2xl md:w-2/5">SEO Audit</h4>
               <p className="md:w-1/2 text-slate-600 font-body-sans text-xl">
                 Get advanced insights and analytics into your web SEO, traffic
-                and customer behaviours.
+                and customer behaviors.
               </p>
             </div>
             <div className="flex flex-col md:flex-row justify-between gap-8">
@@ -25,7 +37,7 @@ const DigitalMarketing = () => {
               </h4>
               <p className="md:w-1/2 text-slate-600 font-body-sans text-xl">
                 We&apos;ll review your current online presence and propose
-                changes and reccomendations which we are prepared to implement
+                changes and recommendations which we are prepared to implement
                 at your request.
               </p>
             </div>
@@ -41,7 +53,7 @@ const DigitalMarketing = () => {
                 Social Media Campaign
               </h4>
               <p className="md:w-1/2 text-slate-600 font-body-sans text-xl">
-                Recieve a social media post campaign and roadmap, designed and
+                Receive a social media post campaign and roadmap, designed and
                 prepared by our talented team.
               </p>
             </div>

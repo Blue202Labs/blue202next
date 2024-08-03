@@ -59,7 +59,7 @@ export const SoftwareApproach = () => {
         </Approach>
         <Approach heading="Architecture Design" index={2}>
           Our engineers will formulate a technical proposal that encompasses the
-          technologies we reccomend, the proposed software architecture, the
+          technologies we recommend, the proposed software architecture, the
           development plan and timeline.
         </Approach>
         <Approach heading="Review" index={3}>

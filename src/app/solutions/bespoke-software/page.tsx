@@ -15,6 +15,18 @@ import {
   typeScript,
 } from "../components/TechStack";
 import { SoftwarePrinciples } from "../components/Principles";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Software Development Services",
+  description:
+    "Trust our skilled and experienced developer team to develop the web software you need. Trusted by UPS, AspenDental, RxForms and more.",
+  openGraph: {
+    title: "Software Development Services",
+    description:
+      "Trust our skilled and experienced developer team to develop the web software you need. Trusted by UPS, AspenDental, RxForms and more.",
+  },
+};
 
 const BespokeSoftware = () => {
   const serviceNames = [
@@ -62,11 +74,11 @@ const BespokeSoftware = () => {
             <section>
               <Heading>Bespoke Software:</Heading>
               <p className="px-4 py-4 text-lg max-w-3xl mx-auto pt-16">
-                We offer a bespoke service to fufil your enterprise software
+                We offer a bespoke service to fulfil your enterprise software
                 needs. This service encapsulates any web-facing application that
                 requires a server backend, API integrations, database management
                 etc. We provide an end-to-end service from ideation/technology
-                reccomendations, through to the software architecture design,
+                recommendations, through to the software architecture design,
                 development and deployment.
               </p>
             </section>
@@ -90,7 +102,7 @@ const BespokeSoftware = () => {
                     can be done on desktop can be created using the web, it just
                     offers a different interface- the browser. Web solutions
                     offer many advantages, including lower development and
-                    maintanance costs as they are cross-platform by nature,
+                    maintenance costs as they are cross-platform by nature,
                     don&apos;t require any user setup, do not use local hardware
                     and are much faster to develop.
                   </p>

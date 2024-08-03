@@ -10,13 +10,25 @@ import {
 import checkMark from "/public/icons/checkMark.svg";
 import { Heading } from "../../components/Heading";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Web Hosting Services",
+  description:
+    "Let us take charge of your cloud infrastructure and host your solutions with ease. Get your web apps live today!",
+  openGraph: {
+    title: "Web Hosting Services",
+    description:
+      "Let us take charge of your cloud infrastructure and host your solutions with ease. Get your web apps live today!",
+  },
+};
 
 const Hosting = () => {
   return (
     <>
       <PageHero
         heading="Let Blue202 take care of everything."
-        description="Optimise your hosting solutions and cloud infrastructure."
+        description="Optimize your hosting solutions and cloud infrastructure."
       />
       <div className="max-w-5xl mx-auto flex flex-col gap-20 px-4 pb-20">
         <TechStack tech={[aws, azure, google, firebase, github]} />
@@ -35,7 +47,7 @@ const Hosting = () => {
                 infrastructure development on all major platforms. We can set
                 you up with automated code CI/CD pipelines and testing
                 frameworks so that your software is insured for the future. We
-                also offer 24/7 support and maintanance.
+                also offer 24/7 support and maintenance.
               </p>
             </div>
           </div>
@@ -54,7 +66,7 @@ const Hosting = () => {
               <div className="flex flex-row gap-4 items-start">
                 <Image width={24} src={checkMark} alt="Check mark icon"></Image>
                 <p>
-                  <span className="font-semibold">Maintanance:</span> We will
+                  <span className="font-semibold">Maintenance:</span> We will
                   maintain and update the software to mitigate security risks
                   and keep you at the forefront of technology.
                 </p>
@@ -73,7 +85,7 @@ const Hosting = () => {
                 <Image width={24} src={checkMark} alt="Check mark icon"></Image>
                 <p>
                   <span className="font-semibold">
-                    Security and Authorisation:
+                    Security and Authorization:
                   </span>{" "}
                   Implement your own security preferences that keep access
                   permissions aligned with your security policies.

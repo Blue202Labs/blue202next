@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
   openGraph: {
     title:
-      "Blue202 Labs - Transforming Buisinesses with Cutting-Edge Digital Solutions",
+      "Blue202 Labs - Transforming Businesses with Cutting-Edge Digital Solutions",
     description:
       "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
     images: opengraphImage.src,

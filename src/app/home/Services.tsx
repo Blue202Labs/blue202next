@@ -106,7 +106,7 @@ export const Services = () => {
               href="https://dl.acm.org/doi/10.1145/365024.365037"
               className="font-bold text-blue-800"
             >
-              75% of credibility judgements for a company.
+              75% of credibility judgments for a company.
             </a>
           </p>
           <br></br>
@@ -128,7 +128,7 @@ export const Services = () => {
         ></Image>
       )}
       <ServiceHeading>
-        Don&apos;t stress about hosting and maintanance.
+        Don&apos;t stress about hosting and maintenance.
       </ServiceHeading>
       <div className="md:pl-8 flex flex-col md:flex-row gap-10 place-items-start">
         {!isMobile && (

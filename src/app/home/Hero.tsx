@@ -28,7 +28,7 @@ export const Hero: React.FC<{
       />
       <div className="relative z-30 flex flex-col justify-end min-w-80 md:min-w-96 h-fit w-1/2 max-w-7xl mx-auto gap-8 2xl:pt-36 p-4 xl:px-0">
         <div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold opacity-90 md:h-36 h-24 xl:h-fit text-nowrap">
+          <div className="text-4xl md:text-5xl lg:text-6xl font-semibold opacity-90 md:h-36 h-24 xl:h-fit text-nowrap">
             Need a{" "}
             <span className="lg:invisible">
               <br></br>
@@ -46,10 +46,10 @@ export const Hero: React.FC<{
                 loop
               />
             }
-          </h2>
-          <h2 className="text-3xl md:text-5xl xl:text-6xl font-semibold">
+          </div>
+          <div className="text-3xl md:text-5xl xl:text-6xl font-semibold">
             We&apos;ve got you covered.
-          </h2>
+          </div>
         </div>
         <p className="xl:text-lg font-light pb-2 max-w-[50rem]">
           We deliver modern, elegant web solutions to elevate your

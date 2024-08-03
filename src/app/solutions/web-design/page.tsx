@@ -13,6 +13,18 @@ import {
   react,
   typeScript,
 } from "../components/TechStack";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Web Design Services",
+  description:
+    "Want a beautiful, responsive web site? Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  openGraph: {
+    title: "Web Design Services",
+    description:
+      "Want a beautiful, responsive web site? Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  },
+};
 
 const WebDesign = () => {
   return (
@@ -68,7 +80,7 @@ const WebDesign = () => {
               Every detail, animation, and component is meticulously designed to
               ensure excellence in every website we create.
             </Principle>
-            <Principle img={seo} heading="SEO Optimisation">
+            <Principle img={seo} heading="SEO Optimization">
               Let&apos;s get your company to the top of the search results! We
               know all the tricks to give your website the boost it needs.
             </Principle>

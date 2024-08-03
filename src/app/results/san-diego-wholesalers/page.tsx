@@ -93,7 +93,7 @@ const SanDiegoWholesalersPage = () => {
                   ></Image>
                   <p>
                     <span className="font-semibold">Increased sales:</span>{" "}
-                    Drive more sales by offering a personalised experience
+                    Drive more sales by offering a personalized experience
                     empowered by better customer data management.
                   </p>
                 </div>

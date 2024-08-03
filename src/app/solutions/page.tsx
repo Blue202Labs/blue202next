@@ -1,7 +1,20 @@
-import { Ultra } from "next/font/google";
 import { PageHero } from "./components/PageHero";
-import Link from "next/link";
 import { Anchor } from "../components/Anchor";
+import { Metadata } from "next";
+import opengraphImage from "/public/images/opengraph-image.jpg";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.blue202labs.com"),
+  title: "Our Web Solutions",
+  description:
+    "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  openGraph: {
+    title: "Our Web Solutions",
+    description:
+      "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+    images: opengraphImage.src,
+  },
+};
 
 const SolutionsPage = () => {
   return (

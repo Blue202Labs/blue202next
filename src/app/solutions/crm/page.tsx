@@ -18,6 +18,18 @@ import checkMark from "/public/icons/checkMark.svg";
 import { SoftwarePrinciples } from "../components/Principles";
 import Image from "next/image";
 import { ReviewCard } from "../../components/ReviewCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Custom CRM Development Services",
+  description:
+    "Transform Your Business with Cutting-Edge CRM Solutions. Optimize customer interactions, improve efficiency, and drive better decision making",
+  openGraph: {
+    title: "Custom CRM Development Services",
+    description:
+      "Transform Your Business with Cutting-Edge CRM Solutions. Optimize customer interactions, improve efficiency, and drive better decision making",
+  },
+};
 
 const CRM = () => {
   return (
@@ -88,7 +100,7 @@ const CRM = () => {
                       ></Image>
                       <p>
                         <span className="font-semibold">Increased sales:</span>{" "}
-                        Drive more sales by offering a personalised experience
+                        Drive more sales by offering a personalized experience
                         empowered by better customer data management.
                       </p>
                     </div>
@@ -161,7 +173,7 @@ const CRM = () => {
               </Approach>
               <Approach index={3} heading="Development">
                 Our developers will bring the design to life through robust and
-                scalable code. We will also provide hosting and maintanance
+                scalable code. We will also provide hosting and maintenance
                 solutions at your request.
               </Approach>
             </div>

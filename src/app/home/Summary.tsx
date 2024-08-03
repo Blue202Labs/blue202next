@@ -1,6 +1,6 @@
 import { CSSProperties, ReactNode } from "react";
 import deal from "/public/images/deal-london.svg";
-import ideaBranstorm from "/public/images/idea-brainstorm-london.svg";
+import ideaBrainstorm from "/public/images/idea-brainstorm-london.svg";
 import prototyping from "/public/images/prototyping-london.svg";
 import webDevelopment from "/public/images/web-development-london-resized.svg";
 import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
@@ -10,9 +10,9 @@ export const Summary = () => {
   return (
     <section className="max-w-7xl mx-auto h-full md:h-[30rem] my-24 md:my-40">
       <div className="mx-auto text-center px-10 md:px-0">
-        <h3 className="font-body-sans font-semibold text-3xl md:text-4xl text-slate-700">
+        <h2 className="font-body-sans font-semibold text-3xl md:text-4xl text-slate-700">
           Web solutions for every business need.
-        </h3>
+        </h2>
         <div className="flex flex-col md:flex-row md:py-20 divide-y-2 md:divide-y-0 md:divide-x-2">
           <AboutCard image={deal} heading="Competitive Rates">
             Delivering high value at an affordable cost.
@@ -20,7 +20,7 @@ export const Summary = () => {
           <AboutCard image={prototyping} heading="MVP Prototyping">
             Taking your ideas out of the page and onto your screens.
           </AboutCard>
-          <AboutCard image={ideaBranstorm} heading="Enterprise Web Apps">
+          <AboutCard image={ideaBrainstorm} heading="Enterprise Web Apps">
             If it runs on a browser, we got it handled.
           </AboutCard>
           <AboutCard image={webDevelopment} heading="Website Development">

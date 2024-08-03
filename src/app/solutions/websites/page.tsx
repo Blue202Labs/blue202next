@@ -14,6 +14,19 @@ import {
 } from "../components/TechStack";
 import { PageHero } from "../components/PageHero";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.blue202labs.com"),
+  title: "Website Development",
+  description:
+    "Want a beautiful, responsive web site? Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  openGraph: {
+    title: "Website Development",
+    description:
+      "Want a beautiful, responsive web site? Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  },
+};
 
 const Websites = () => {
   return (
@@ -32,7 +45,7 @@ const Websites = () => {
                 className="font-body-sans font-semibold text-2xl md:text-3xl bg-center text-white min-w-80 
               h-full bg-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl bg-blue-abstract p-8 md:p-10 md:pt-20 min-h-40"
               >
-                Web design counts for 75% of credibility judgements for a
+                Web design counts for 75% of credibility judgments for a
                 company.
               </p>
               <div className="flex flex-col gap-8 text-lg text-slate-700 p-4 py-8 md:p-10 md:pt-20 px-8">
@@ -65,7 +78,7 @@ const Websites = () => {
                 efficient code, which enhances performance, security, and
                 scalability of your web applications.
               </Principle>
-              <Principle img={seo} heading="SEO Optimisation">
+              <Principle img={seo} heading="SEO Optimization">
                 Let&apos;s get your company to the top of the search results! We
                 know all the tricks to give your website the boost it needs.
               </Principle>

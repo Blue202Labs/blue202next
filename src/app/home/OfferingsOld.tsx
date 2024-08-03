@@ -4,7 +4,7 @@ import { Heading } from "../components/Heading";
 
 const serviceData = [
   {
-    heading: "Fully customisable, beautifully designed websites",
+    heading: "Fully customizable, beautifully designed websites",
     description: `Whatever vision you have, we will bring it to life- and if you aren’t
                 sure yet, our talented team of designers and marketing specialists will
                 guarantee that you receive a solution that aligns with your desired

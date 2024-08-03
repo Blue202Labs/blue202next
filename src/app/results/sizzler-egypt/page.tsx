@@ -23,14 +23,14 @@ const SizzlerPage = () => {
           </div>
           <div className="p-10 w-72 flex flex-col">
             <div className="text-3xl font-semibold text-slate-800">Top 10</div>
-            <div className="font-body-sans text-xl font-ulght">SEO Ranking</div>
+            <div className="font-body-sans text-xl font-light">SEO Ranking</div>
             <div className="font-thin text-sm">
               On related keywords in Egypt.
             </div>
           </div>
           <div className="p-10 w-72 flex flex-col">
             <div className="text-3xl font-semibold text-slate-800">1200%</div>
-            <div className="font-body-sans text-xl font-ulght">
+            <div className="font-body-sans text-xl font-light">
               Visitor Increase
             </div>
             <div className="font-thin text-sm">
@@ -46,22 +46,22 @@ const SizzlerPage = () => {
           <p className="pb-20">
             We created a user-friendly website, high-seo ranking website that
             reflected the Sizzler brand and developed an online ordering system
-            to maximise the business&apos;s reach.
+            to maximize the business&apos;s reach.
           </p>
           <div className="border rounded-lg p-10 pb-16">
             <h2 className="font-semibold text-xl pb-8 underline">The task:</h2>
             <ul className="pl-8 list-disc font-body-sans">
               <li>
-                Update the current website, optimising SEO and discoverabilty.
+                Update the current website, optimizing SEO and discoverability.
               </li>
               <li>
                 Create a food ordering storefront, with integrated payments
               </li>
               <li>
-                Develop a backend system to foward incoming orders and to the
+                Develop a backend system to forward incoming orders and to the
                 nearest branch
               </li>
-              <li>Optimise and map delivery routes</li>
+              <li>Optimize and map delivery routes</li>
               <li>
                 Provide a digital marketing strategy and social media campaign
               </li>
@@ -75,7 +75,7 @@ const SizzlerPage = () => {
             and boosted brand visibility within the Middle Eastern F&B industry,
             attracting 500 users just in the first hour. The eCommerce platform
             increased online ordering significantly, whilst providing a
-            centralised hub for all of Sizzler&apos;s business. Strategic
+            centralized hub for all of Sizzler&apos;s business. Strategic
             marketing along with an effective website positioned Sizzler
             Steakhouse as a leader in the regional F&B market.
           </p>

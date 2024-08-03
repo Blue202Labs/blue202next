@@ -21,7 +21,7 @@ const SanDiegoWholesalersPage = () => {
             infrastructure transformation.
           </p>
           <p>
-            We successfuly developed an eCommerce system that allowed the
+            We successfully developed an eCommerce system that allowed the
             company to standardize online ordering processes. We implemented and
             deployed a custom web interface which allowed for a live preview of
             prescription labels, which allows for customers to edit and preview

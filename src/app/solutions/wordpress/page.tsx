@@ -1,6 +1,21 @@
+import { Metadata } from "next";
 import { Heading } from "../../components/Heading";
 import { WebApproach } from "../components/OurApproach";
 import { PageHero } from "../components/PageHero";
+import opengraphImage from "/public/images/opengraph-image.jpg";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.blue202labs.com"),
+  title: "WordPress Development",
+  description:
+    "Need a WordPress developer? Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  openGraph: {
+    title: "Blue202 Labs | WordPress Development",
+    description:
+      "Need a WordPress developer? Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+    images: opengraphImage.src,
+  },
+};
 
 const Wordpress = () => {
   return (
@@ -32,7 +47,7 @@ const Wordpress = () => {
                 Why WordPress?
               </p>
               <div className="text-xl text-white">
-                We reccomend WordPress for content that will need to be
+                We recommend WordPress for content that will need to be
                 regularly updated, such as for a blog or a news site.
               </div>
             </div>
@@ -62,10 +77,10 @@ const Wordpress = () => {
             </div>
             <div className="pt-8 px-4 md:pl-10 flex flex-col gap-4 w-full">
               <h3 className="text-2xl text-slate-700 font-body-sans font-semibold">
-                Template Customisation
+                Template Customization
               </h3>
               <p>
-                Going for a specific look? We can customise the template to your
+                Going for a specific look? We can customize the template to your
                 vision.
               </p>
             </div>
@@ -74,7 +89,7 @@ const Wordpress = () => {
                 Hosting and Support
               </h3>
               <p>
-                Never have to worry about hosting and maintanance again. Here at
+                Never have to worry about hosting and maintenance again. Here at
                 Blue202 we will support you every step of the way.
               </p>
             </div>

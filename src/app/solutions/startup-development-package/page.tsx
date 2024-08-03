@@ -5,6 +5,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { Approach } from "../components/OurApproach";
 import fintechMockup from "/public/images/fintech-mockup.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Startup Development Services",
+  description:
+    "End-to-end startup development services. Prototype and get your MVP in as quick as a month.",
+  openGraph: {
+    title: "Startup Development Services",
+    description:
+      "End-to-end startup development services. Prototype and get your MVP in as quick as a month.",
+  },
+};
 
 const StartupDevelopment = () => {
   return (
@@ -52,7 +64,7 @@ const StartupDevelopment = () => {
               We know the struggle of finding a technical cofounder, and
               that&apos;s exactly why we decided to curated this package.
               <br></br>
-              <br></br>With the Blue202 Startup Development Package, you recieve{" "}
+              <br></br>With the Blue202 Startup Development Package, you receive{" "}
               <b>everything you need</b> to launch your business idea, from
               ideation to prototyping and deployment, and even support in
               developing your business plan and investor pitches.
@@ -70,7 +82,7 @@ const StartupDevelopment = () => {
               plan to refine your idea and product.
             </p>
             <ul className="list-disc pl-10">
-              <li>Recieve valuable insights from industry experts</li>
+              <li>Receive valuable insights from industry experts</li>
               <li>Get a detailed market analysis and strategy</li>
               <li>Define your financial projections and needs</li>
             </ul>
@@ -131,7 +143,7 @@ const StartupDevelopment = () => {
                 <Image width={24} src={checkMark} alt="Check mark icon"></Image>
                 <p>
                   <span className="font-semibold">Support:</span> Our
-                  experienced Startup Development Team is avaliable to give you
+                  experienced Startup Development Team is available to give you
                   advice on your product and MVP.
                 </p>
               </div>

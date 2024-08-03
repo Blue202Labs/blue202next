@@ -14,6 +14,18 @@ import {
   sql,
   typeScript,
 } from "../components/TechStack";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "API Development Services",
+  description:
+    "Seamlessly integrate applications with our tailor-made API services. Trusted by UPS, AspenDental, RxForms and more.",
+  openGraph: {
+    title: "API Development Services",
+    description:
+      "Seamlessly integrate applications with our tailor-made API services. Trusted by UPS, AspenDental, RxForms and more.",
+  },
+};
 
 const API = () => {
   return (
@@ -64,8 +76,8 @@ const API = () => {
             <div className="flex flex-col gap-4 md:flex-row justify-between">
               <h4 className="font-bold text-2xl md:w-2/5">Data Integration</h4>
               <p className="md:w-1/2 text-slate-600 font-body-sans text-xl">
-                Aggregate data from multiple sources into one straight-foward,
-                centralised interface for system-wide use.
+                Aggregate data from multiple sources into one straight-forward,
+                centralized interface for system-wide use.
               </p>
             </div>
             <div className="flex flex-col gap-4 md:flex-row justify-between">

@@ -15,6 +15,18 @@ import {
 import checkMark from "/public/icons/checkMark.svg";
 import { Heading } from "../../components/Heading";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "MVP Development Services",
+  description:
+    "Prototype and get your MVP in as quick as a month. Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  openGraph: {
+    title: "MVP Development Services",
+    description:
+      "Prototype and get your MVP in as quick as a month. Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+  },
+};
 
 const MvpDevelopment = () => {
   return (
@@ -76,7 +88,7 @@ const MvpDevelopment = () => {
                 <Image width={24} src={checkMark} alt="Check mark icon"></Image>
                 <p>
                   <span className="font-semibold">Support:</span> Our
-                  experienced Startup Development Team is avaliable to give you
+                  experienced Startup Development Team is available to give you
                   advice on your product and MVP.
                 </p>
               </div>

@@ -19,12 +19,12 @@ export const SoftwarePrinciples = () => {
         <Principle img={seo} heading="Scalability">
           Rest assured that all your solutions will be able to grow and adapt as
           your enterprise scales. Depending on your expected growth and use, we
-          will tailor and reccomend technology accordingly.
+          will tailor and recommend technology accordingly.
         </Principle>
         <Principle img={planning} heading="Clean Architecture">
           We are passionate about clean architecture and software design. We
           carefully craft our solutions to keep up with the latest standards and
-          best design practises
+          best design practices
         </Principle>
       </div>
     </section>

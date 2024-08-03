@@ -19,7 +19,7 @@ const serviceData = [
     description: `Our qualified team will work closely with you to ensure that the product aligns with your needs. We deliver code at the highest standard and keep you in the loop every step of the way.`,
   },
   {
-    heading: "Fully customisable, beautifully designed software.",
+    heading: "Fully customizable, beautifully designed software.",
     image: web,
     description: `Whatever vision you have, we will bring it to life- and if you aren’t
                 sure yet, our talented team of designers and developers will offer their

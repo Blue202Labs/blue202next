@@ -6,6 +6,18 @@ import { SoftwareApproach } from "../components/OurApproach";
 import mockup3d from "/public/images/mockup-3d.png";
 import { android, flutter, ios, react } from "../components/TechStack";
 import { SoftwarePrinciples } from "../components/Principles";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mobile App Development Services",
+  description:
+    "Leading mobile development services. Build seamless cross-platform IOS and Android apps. Talk to our experts today!",
+  openGraph: {
+    title: "Mobile App Development Services",
+    description:
+      "Leading mobile development services. Build seamless cross-platform IOS and Android apps. Talk to our experts today!",
+  },
+};
 
 const MobileAppDevelopment = () => {
   return (

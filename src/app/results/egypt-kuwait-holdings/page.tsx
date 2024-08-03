@@ -19,11 +19,11 @@ const EgyptKuwaitHoldingsPage = () => {
             their website and internal office systems. The objective was to
             identify and solve andy existing security risks and find points for
             optimization. Our approach involved a series of software tests and
-            assesments, producing a detailed technical report that provided
-            areas for improvement, potential vunerabilities and bottlenecks.
+            assessments, producing a detailed technical report that provided
+            areas for improvement, potential vulnerabilities and bottlenecks.
           </p>
           <p>
-            We assesed their data management protocols, system integrations,
+            We assessed their data management protocols, system integrations,
             current cybersecurity measures and overall operational
             effectiveness.
           </p>

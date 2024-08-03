@@ -11,7 +11,7 @@ export const BigFeature = ({ post }: { post: PostData }) => {
         className="h-1/2 object-cover rounded-t-xl"
         width={post.hero.featuredImage.width}
         height={post.hero.featuredImage.height}
-        src={post.hero.featuredImage.url}
+        src={post.hero.featuredImage.fullUrl}
         alt={post.hero.featuredImage.altText}
       />
       <div className="flex flex-col p-10 gap-6">

@@ -11,6 +11,7 @@ export type FeaturedImage = {
   updatedAt: Date;
   altText: string;
   url: string;
+  fullUrl: string;
 };
 
 export type PostData = {

@@ -16,7 +16,7 @@ export const BigFeature = ({ post }: { post: PostData }) => {
       />
       <div className="flex flex-col p-10 gap-6">
         <h5 className="uppercase text-xl font-bold tracking-wider text-blue-accent">
-          {post.category}
+          {post.title}
         </h5>
         <h4 className="text-4xl font-bold font-body-sans text-slate-800">
           {post.category}

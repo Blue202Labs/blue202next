@@ -20,14 +20,14 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.blue202labs.com"),
-  title: "Blue202 Labs",
+  title: "Blue202 Labs | Leading Web Development Services",
   description:
-    "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+    "Leading web software and mobile app developers. Trusted by UPS, AspenDental, RxForms and more.",
   openGraph: {
     title:
       "Blue202 Labs - Transforming Businesses with Cutting-Edge Digital Solutions",
     description:
-      "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+      "Leading web software and mobile app developers. Trusted by UPS, AspenDental, RxForms and more.",
     images: opengraphImage.src,
   },
 };

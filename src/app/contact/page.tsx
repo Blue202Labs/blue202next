@@ -1,6 +1,16 @@
 import { Contact } from "../components/Contact";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Get in Contact With Our Web Development Team | Blue202Labs",
+  description:
+    "Leading web software and mobile app development services. Trusted by UPS, AspenDental, RxForms and more.",
+  openGraph: {
+    title: "Get in Contact With Our Web Development Team | Blue202Labs",
+    description:
+      "Leading web software and mobile app development services. Trusted by UPS, AspenDental, RxForms and more.",
+  },
+};
 
 const ContactPage = () => {
   return (

@@ -25,6 +25,11 @@ export type PostData = {
     tags: [];
   };
   content: any;
+  meta: {
+    title: string;
+    description: string;
+    image: string;
+  };
   createdAt: Date;
   updatedAt: Date;
   content_html: string;

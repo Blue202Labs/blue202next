@@ -2,6 +2,40 @@ import { PostData, PostsData } from "@/app/lib/cms.type";
 import parse from "html-react-parser";
 
 import styles from "./styles.module.css";
+import { Metadata, ResolvingMetadata } from "next";
+
+type Props = {
+  params: { id: string };
+};
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const id = params.id;
+
+  // fetch data
+  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+    headers: {
+      Authorisation: "users API-Key " + process.env.CMS_API_KEY,
+      Origin: "http://127.0.0.1",
+    },
+  });
+
+  const postData: PostData = await res.json();
+
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: postData.meta.title,
+    description: postData.meta.description,
+    openGraph: {
+      images: [postData.hero.featuredImage.fullUrl, ...previousImages],
+    },
+  };
+}
 
 export async function generateStaticParams() {
   const posts: PostsData = await fetch("http://localhost:3000/api/posts", {

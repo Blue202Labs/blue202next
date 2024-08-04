@@ -1,4 +1,4 @@
-import { PostData, PostsData } from "@/utils/cms.type";
+import { PostData, PostsData } from "@/app/lib/cms.type";
 import parse from "html-react-parser";
 
 import styles from "./styles.module.css";

@@ -1,6 +1,6 @@
 "use server";
 
-import { ContactFormType, FormState } from "@/utils/contactForm.type";
+import { ContactFormType, FormState } from "@/app/lib/contactForm.type";
 
 export async function sendContactForm(
   formState: FormState,

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FeaturesData, PostData, PostsData } from "@/utils/cms.type";
+import { FeaturesData, PostData, PostsData } from "@/app/lib/cms.type";
 import { BigFeature } from "./components/BigFeature";
 import { SmallFeature } from "./components/SmallFeature";
 import { PostThumbnail } from "./components/PostThubmnail";

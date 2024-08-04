@@ -1,4 +1,4 @@
-import { PostData } from "@/utils/cms.type";
+import { PostData } from "@/app/lib/cms.type";
 import Link from "next/link";
 
 export const PostThumbnail = ({ post }: { post: PostData }) => {

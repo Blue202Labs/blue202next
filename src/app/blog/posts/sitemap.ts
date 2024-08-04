@@ -1,4 +1,4 @@
-import { PostsData } from "@/utils/cms.type";
+import { PostsData } from "@/app/lib/cms.type";
 import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

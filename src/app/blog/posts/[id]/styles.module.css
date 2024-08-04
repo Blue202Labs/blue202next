@@ -56,3 +56,9 @@
 .blogpost p {
   color: #565656;
 }
+
+.blogpost a {
+  color:#0000EE;
+  text-decoration: underline;
+  font-weight: 400;
+}

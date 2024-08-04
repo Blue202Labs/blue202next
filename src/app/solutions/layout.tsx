@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import opengraphImage from "/public/images/opengraph-image.jpg";
+import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.blue202labs.com"),
@@ -17,3 +18,9 @@ export const metadata: Metadata = {
     images: opengraphImage.src,
   },
 };
+
+const RootLayout = ({ children }: { children: ReactNode }) => {
+  return <>{children}</>;
+};
+
+export default RootLayout;

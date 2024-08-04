@@ -29,6 +29,8 @@ export const metadata: Metadata = {
     description:
       "Leading web software and mobile app developers. Trusted by UPS, AspenDental, RxForms and more.",
     images: opengraphImage.src,
+    siteName: "Blue202 Labs",
+    type: "website",
   },
 };
 

@@ -33,6 +33,8 @@ export async function generateMetadata(
     description: postData.meta.description,
     openGraph: {
       images: [postData.hero.featuredImage.fullUrl, ...previousImages],
+      type: "article",
+      siteName: "Blue202 Labs",
     },
   };
 }

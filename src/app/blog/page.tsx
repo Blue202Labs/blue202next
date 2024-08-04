@@ -2,50 +2,24 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FeaturesData, PostData, PostsData } from "@/app/lib/cms.type";
+import { FeaturesData } from "@/app/lib/cms.type";
 import { BigFeature } from "./components/BigFeature";
 import { SmallFeature } from "./components/SmallFeature";
 import { PostThumbnail } from "./components/PostThubmnail";
-
-async function getPostData() {
-  const res = await fetch("http://127.0.0.1:3000/api/posts", {
-    headers: {
-      Authorisation: "users API-Key " + process.env.CMS_API_KEY,
-      Origin: "http://127.0.0.1",
-    },
-  });
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  const postData: PostsData = await res.json();
-  return postData;
-}
+import { fetchCmsData, fetchPosts } from "./actions";
 
 async function getFeaturesData() {
-  const res = await fetch("http://127.0.0.1:3000/api/globals/features", {
-    headers: {
-      Authorisation: "users API-Key " + process.env.CMS_API_KEY,
-      Origin: "http://127.0.0.1",
-    },
-  });
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  const featuresData: FeaturesData = await res.json();
+  const featuresData: FeaturesData = await fetchCmsData("globals/features");
 
   return featuresData;
 }
 
 const BlogPage = async () => {
   const featuredData = await getFeaturesData();
-  const postsData = await getPostData();
+  const postsData = await fetchPosts();
 
   return (
-    <div className="min-h-screen py-56 px-10 max-w-6xl mx-auto flex flex-col gap-28">
+    <div className="min-h-screen py-56 px-4 max-w-6xl mx-auto flex flex-col gap-28">
       <div>
         <h1 className="text-7xl font-medium">
           <span className="text-slate-500">/</span> Our Blog
@@ -75,9 +49,9 @@ const BlogPage = async () => {
             Featured
           </h3>
         </div>
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-col md:flex-row gap-10">
           <BigFeature post={featuredData.mainFeature} />
-          <div className="grid grid-cols-2 grid-rows-2 grid-flow-row h-[45rem] gap-8 w-1/2">
+          <div className="flex flex-row overflow-x-scroll md:grid grid-cols-2 grid-rows-2 grid-flow-row md:h-[45rem] gap-8 md:w-1/2 pb-8 md:pb-0 no-scrollbar">
             {featuredData.additionalFeatures.map((feature, idx) => (
               <SmallFeature key={`feature-${idx}`} post={feature} />
             ))}

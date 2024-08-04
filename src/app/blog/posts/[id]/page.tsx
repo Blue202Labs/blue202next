@@ -3,6 +3,7 @@ import parse from "html-react-parser";
 
 import styles from "./styles.module.css";
 import { Metadata, ResolvingMetadata } from "next";
+import { fetchPost, fetchPosts } from "../../actions";
 
 type Props = {
   params: { id: string };
@@ -14,16 +15,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   // read route params
   const id = params.id;
-
-  // fetch data
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
-    headers: {
-      Authorisation: "users API-Key " + process.env.CMS_API_KEY,
-      Origin: "http://127.0.0.1",
-    },
-  });
-
-  const postData: PostData = await res.json();
+  const postData: PostData = await fetchPost(id);
 
   // optionally access and extend (rather than replace) parent metadata
   const previousImages = (await parent).openGraph?.images || [];
@@ -40,13 +32,7 @@ export async function generateMetadata(
 }
 
 export async function generateStaticParams() {
-  const posts: PostsData = await fetch("http://localhost:3000/api/posts", {
-    next: { revalidate: 10000 },
-    headers: {
-      Authorisation: "users API-Key " + process.env.CMS_API_KEY,
-      Origin: "http://127.0.0.1",
-    },
-  }).then((res) => res.json());
+  const posts: PostsData = await fetchPosts();
 
   return posts.docs.map((post) => ({
     id: post.id,
@@ -61,15 +47,7 @@ const PostPage = async ({
   };
 }) => {
   const { id } = params;
-
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
-    headers: {
-      Authorisation: "users API-Key " + process.env.CMS_API_KEY,
-      Origin: "http://127.0.0.1",
-    },
-  });
-
-  const postData: PostData = await res.json();
+  const postData: PostData = await fetchPost(id);
 
   console.log(postData);
 

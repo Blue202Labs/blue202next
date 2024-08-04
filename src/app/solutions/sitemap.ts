@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { BASE_URL } from "../lib/constants";
 
 const SOLUTIONS_URL = BASE_URL + "/solutions";
 

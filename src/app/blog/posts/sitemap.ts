@@ -1,4 +1,5 @@
 import { PostsData } from "@/app/lib/cms.type";
+import { BASE_URL } from "@/app/lib/constants";
 import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

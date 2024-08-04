@@ -58,7 +58,15 @@
 }
 
 .blogpost a {
-  color:#0000EE;
+  color:#0d92ff;
   text-decoration: underline;
-  font-weight: 400;
+  font-weight: 700;
+}
+
+.blogpost a:hover {
+  color:#42aaff;
+}
+
+.blogpost a:visited {
+  color:#34244d;
 }

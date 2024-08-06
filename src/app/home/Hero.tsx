@@ -36,7 +36,7 @@ export const Hero: React.FC<{
             {
               <ReactTyped
                 strings={[
-                  "striking website?",
+                  "stunning website?",
                   "dynamic web app?",
                   "bespoke software?",
                   "product MVP?",

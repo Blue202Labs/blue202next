@@ -36,10 +36,11 @@ export const Hero: React.FC<{
             {
               <ReactTyped
                 strings={[
-                  "beautiful website?",
+                  "striking website?",
                   "dynamic web app?",
                   "bespoke software?",
                   "product MVP?",
+                  "custom CRM?",
                 ]}
                 typeSpeed={40}
                 backSpeed={50}

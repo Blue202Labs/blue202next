@@ -3,6 +3,7 @@
 import Link from "next/link";
 import rightArrow from "/public/icons/right-arrow.svg";
 import Image from "next/image";
+import NumberTicker from "../components/NumberTicker";
 
 export const ResultsSummary = () => {
   return (
@@ -16,7 +17,9 @@ export const ResultsSummary = () => {
         </h3>
         <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x-[1px] max-w-4xl mx-auto py-10 justify-center">
           <div className="p-10 w-80 flex flex-col">
-            <div className="text-3xl font-semibold text-slate-800">38,000+</div>
+            <div className="text-3xl font-semibold text-slate-800">
+              <NumberTicker value={38000} startFrom={35000} direction="up" />+
+            </div>
             <div className="font-body-sans text-xl font-light">
               Orders delivered
             </div>
@@ -30,7 +33,9 @@ export const ResultsSummary = () => {
             </div>
           </div>
           <div className="p-10 w-72 flex flex-col">
-            <div className="text-3xl font-semibold text-slate-800">1200%</div>
+            <div className="text-3xl font-semibold text-slate-800">
+              <NumberTicker value={1200} startFrom={1000} direction="up" />%
+            </div>
             <div className="font-body-sans text-xl font-light">
               Visitor Increase
             </div>

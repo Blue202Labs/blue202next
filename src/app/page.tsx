@@ -13,6 +13,7 @@ import { ResultsSummary } from "./home/Results";
 import { useState } from "react";
 import Loading from "./loading";
 import { MockUp } from "./home/MockUp";
+import { SteeyrMockup } from "./home/SteeyrMockup";
 
 function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -29,6 +30,7 @@ function Home() {
       <Hero setLoaded={setLoaded} />
       <ClientCarousel />
       <Summary />
+      <SteeyrMockup />
       <About />
       <MockUp />
       <ResultsSummary />

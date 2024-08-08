@@ -3,25 +3,32 @@
 import { useState } from "react";
 import { ResultsPost } from "./Post";
 import { ResultsTags } from "./data";
+import Globe from "../components/Globe";
 
 const ResultsPage = () => {
   return (
     <main className="bg-black">
-      <div className="px-4 w-full h-[30rem] text-slate-800 flex flex-col justify-center items-center text-center gap-4 pt-10 bg-slate-50">
-        <h1 className="mt-10 mx-auto text-8xl bg-left-bottom font-body-sans bg-blue-wave-mobile bg-[length:25rem_5rem] bg-clip-text text-transparent font-extrabold">
+      <div
+        className="relative z-30 px-4 w-full h-[50rem] text-slate-800 flex flex-col justify-center 
+      items-center text-center gap-4 pt-10 bg-slate-50"
+      >
+        <h1 className="z-30 mt-10 mx-auto text-8xl bg-left-bottom font-body-sans text-[#1a0faa] font-extrabold">
           Our Work
         </h1>
-        <p className="px-8 lg:px-0 lg:max-w-2xl text-lg lg:text-2xl font-light">
+        <p className="z-30 px-8 lg:px-0 lg:max-w-2xl text-lg lg:text-2xl font-light">
           We&apos;ll let it speak for itself.
         </p>
         <a
           href="/contact"
-          className="bg-cyan-400 text-slate-700 mt-8 py-3 px-8 rounded-full drop-shadow-lg hover:bg-cyan-500 font-semibold font-body-sans"
+          className="z-30 bg-cyan-400 text-slate-700 mt-8 py-3 px-8 rounded-full drop-shadow-lg hover:bg-cyan-500 font-semibold font-body-sans"
         >
           Contact Us
         </a>
+        <div className="z-20 relative w-full bottom-96">
+          <Globe />
+        </div>
       </div>
-      <div className="flex flex-col md:grid md:grid-cols-2">
+      <div className="relative z-40 flex flex-col md:grid md:grid-cols-2 bg-black">
         <ResultsPost
           heading="Aspen Dental"
           route="aspen-dental"

@@ -49,8 +49,6 @@ const PostPage = async ({
   const { id } = params;
   const postData: PostData = await fetchPost(id);
 
-  console.log(postData);
-
   return (
     <div className={"py-40 min-h-screen max-w-3xl mx-auto px-4 md:px-20"}>
       <div className={" flex flex-col gap-10"}>

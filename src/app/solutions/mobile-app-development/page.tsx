@@ -23,10 +23,10 @@ const MobileAppDevelopment = () => {
       <section className="pt-10 md:pt-20 px-4 md:px-0">
         <div className="relative flex flex-col md:flex-row max-w-7xl mx-auto">
           <div className="order-2 md:order-1 flex flex-col h-full gap-[60vh] text-5xl md:text-6xl text-slate-800 font-bold pb-[80vh] pt-[60vh] md:pt-96 px-12">
-            <h1 className="z-30 drop-shadow-md text-5xl font-bold md:text-6xl w-fit mx-auto font-body-sans">
+            <h1 className="z-30 text-5xl font-bold md:text-6xl w-fit mx-auto font-body-sans">
               Innovation at Your Fingertips 🌟
             </h1>
-            <div className="z-30 drop-shadow-md flex flex-col gap-4">
+            <div className="z-30 flex flex-col gap-4">
               <h2>
                 Seamlessly<br></br>Cross-Platform.
               </h2>
@@ -37,14 +37,15 @@ const MobileAppDevelopment = () => {
                 {react}
               </div>
             </div>
-            <h2 className="z-30 drop-shadow-md">Always responsive.</h2>
-            <h2 className="z-30 drop-shadow-md">Always beautiful.</h2>
+            <h2 className="z-30">Always responsive.</h2>
+            <h2 className="z-30">Always beautiful.</h2>
           </div>
           <div className="order-1 md:order-2 fixed md:relative opacity-80 w-full flex flex-col items-center pr-8">
             <Image
               loading="eager"
               priority
               unoptimized={true}
+              quality={100}
               className="z-10 md:sticky md:-webkit-sticky w-[200px] top-20 md:w-[500px] pt-8 md:pt-0 md:h-fit"
               width={500}
               src={mockup3d}

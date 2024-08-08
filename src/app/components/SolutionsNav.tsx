@@ -185,7 +185,7 @@ const Solution: React.FC<{
   return (
     <div
       className={
-        "flex w-full flex-row md:flex-col md:items-start py-2 md:h-full md:w-60 md:gap-0 md:py-4 items-center justify-between " +
+        "flex w-full flex-row md:flex-col md:items-start py-2 md:h-full md:w-60 md:gap-0 md:py-5 items-center justify-between " +
         className
       }
     >

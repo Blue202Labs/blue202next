@@ -16,8 +16,6 @@ export async function sendContactForm(
       message: formData.get("message"),
     };
 
-    console.log(request);
-
     const response = await fetch(process.env.NEXT_PUBLIC_CONTACT_ADDRESS!, {
       method: "post",
       headers: {
@@ -25,8 +23,6 @@ export async function sendContactForm(
       },
       body: JSON.stringify(request),
     });
-
-    console.log(response);
 
     if (response.ok) {
       return FormState.Sent;

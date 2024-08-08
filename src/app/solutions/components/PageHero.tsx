@@ -14,10 +14,10 @@ export const PageHero: React.FC<{
 
   return (
     <>
-      <div className="relative px-4 w-full h-[30rem] text-slate-100 bg-blue-wave-mobile bg-[length:100vw_30rem] lg:bg-blue-wave bg-no-repeat bg-fixed flex flex-col justify-center items-center text-center gap-4 pt-10">
+      <div className="relative px-4 w-full h-[30rem] text-slate-100 flex flex-col justify-center items-center text-center gap-4 pt-10">
         <Image
           priority
-          className="absolute z-20 h-full object-cover object-center"
+          className="absolute z-20 h-full w-full object-center"
           src={isMobile ? blueWaveMobile : blueWave}
           fetchPriority="high"
           alt="Abstract blue wave graphic."

@@ -12,7 +12,7 @@ export const PostThumbnail = ({ post }: { post: PostData }) => {
           className="rounded-xl object-cover w-[60px] h-[100px] md:w-[200px] md:h-[200px] place-self-center"
           width={post.hero.featuredImage.width}
           height={post.hero.featuredImage.height}
-          src={post.hero.featuredImage.fullUrl}
+          src={post.hero.featuredImage.url}
           alt={post.hero.featuredImage.altText}
         />
         <div className="flex flex-col p-4 gap-2">

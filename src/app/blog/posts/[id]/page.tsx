@@ -57,7 +57,7 @@ const PostPage = async ({
         </div>
         <img
           className="h-[20rem] object-cover"
-          src={postData.hero.featuredImage.fullUrl}
+          src={postData.hero.featuredImage.url}
           height={postData.hero.featuredImage.height}
           width={postData.hero.featuredImage.width}
           alt={postData.hero.featuredImage.altText}

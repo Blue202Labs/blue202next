@@ -33,10 +33,6 @@
   font-weight: 800;
 }
 
-.blogpost img {
-  padding: 4rem;
-}
-
 .blogpost blockquote {
   padding: 2rem;
   margin-left: 4rem;
@@ -69,4 +65,9 @@
 
 .blogpost a:visited {
   color:#6d4ca1;
+}
+
+
+.blogpost code {
+  font-size: 0.8em;
 }

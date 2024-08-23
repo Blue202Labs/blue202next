@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const ContactPage = () => {
   return (
-    <div className="py-36 h-full max-w-5xl mx-auto flex flex-col md:flex-row justify-between px-2">
+    <div className="py-36 h-full max-w-5xl mx-auto flex flex-col md:flex-row justify-between">
       <div className="flex flex-col gap-10 pb-32 px-6 md:px-0">
-        <div className="mr-14 flex flex-col gap-6 pl-4">
+        <div className="md:mr-14 flex flex-col gap-6 pl-4">
           <h3 className="text-2xl font-semibold text-slate-700">
             Set up a 30 minute <span className="text-blue-600">free</span>{" "}
             consultation and:
@@ -37,9 +37,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      <NeonGradientCard className="max-w-xl rounded-4xl">
-        <Contact />
-      </NeonGradientCard>
+      <Contact />
     </div>
   );
 };

@@ -20,7 +20,7 @@ function Home() {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <main
+    <div
       id="home"
       className={
         "h-full w-full overflow-x-hidden " + loaded ? "" : "max-h-screen"
@@ -39,7 +39,7 @@ function Home() {
       <Reviews />
       <CallToAction />
       <Contact />
-    </main>
+    </div>
   );
 }
 

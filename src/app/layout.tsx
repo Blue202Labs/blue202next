@@ -57,7 +57,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
   
       mt('send', 'pageview');`}</Script>
         <Header />
-        <main className="pb-32 font-body-sans">{children}</main>
+        <main className="font-body-sans">{children}</main>
         <Footer />
       </body>
     </html>

@@ -78,99 +78,101 @@ export const Contact = () => {
     formState === FormState.Sent || formState === FormState.Failed;
 
   return (
-    <NeonGradientCard className="max-w-xl rounded-4xl mx-auto">
-      {showPopUp && (
-        <PopUp
-          show={showPopUp}
-          id="popup-contact"
-          closeCallback={() => {
-            showPopUp = false;
-          }}
-          heading={
-            formState === FormState.Sent && showPopUp
-              ? "Inquiry Sent"
-              : "Something went wrong!"
-          }
-          message={
-            formState === FormState.Sent
-              ? "Thank you for contacting us! We aim to reply promptly."
-              : "Apologies, try emailing us at info@blue202labs.com if this issue persists."
-          }
-        />
-      )}
-      <form
-        id="contact"
-        action={submitAction}
-        className="flex flex-col bg-[#0077ff] rounded-3xl max-w-xl mx-auto py-8 p-4 md:p-8 gap-6 scroll-m-20 overflow-hidden transition duration-200"
-      >
-        <div className="flex flex-row gap-2 md:gap-8">
-          <Label htmlFor="yourName">Your Name</Label>
-          <input
-            type="text"
-            id="yourName"
-            name="yourName"
-            placeholder="Your Name"
-            onChange={handleChange}
-            className="w-1/2 px-3 py-2 outline-none text-lg text-slate-600 font-light text-start rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
+    <section className="pb-32 px-4 md:px-0 md:px-0">
+      <NeonGradientCard className="max-w-xl rounded-4xl mx-auto">
+        {showPopUp && (
+          <PopUp
+            show={showPopUp}
+            id="popup-contact"
+            closeCallback={() => {
+              showPopUp = false;
+            }}
+            heading={
+              formState === FormState.Sent && showPopUp
+                ? "Inquiry Sent"
+                : "Something went wrong!"
+            }
+            message={
+              formState === FormState.Sent
+                ? "Thank you for contacting us! We aim to reply promptly."
+                : "Apologies, try emailing us at info@blue202labs.com if this issue persists."
+            }
           />
-          <Label htmlFor="companyName">Company Name</Label>
-          <input
-            type="text"
-            id="companyName"
-            name="companyName"
-            placeholder="Company"
+        )}
+        <form
+          id="contact"
+          action={submitAction}
+          className="flex flex-col md:text-lg bg-[#0077ff] rounded-3xl max-w-xl mx-auto py-8 p-4 md:p-8 gap-6 scroll-m-20 overflow-hidden transition duration-200"
+        >
+          <div className="flex flex-row gap-2 md:gap-8">
+            <Label htmlFor="yourName">Your Name</Label>
+            <input
+              type="text"
+              id="yourName"
+              name="yourName"
+              placeholder="Your Name"
+              onChange={handleChange}
+              className="w-1/2 px-3 py-2 outline-nonetext-slate-600 font-light text-start rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
+            />
+            <Label htmlFor="companyName">Company Name</Label>
+            <input
+              type="text"
+              id="companyName"
+              name="companyName"
+              placeholder="Company"
+              onChange={handleChange}
+              className="w-1/2 px-3 py-2 outline-nonetext-slate-600 font-light text-start rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
+            />
+          </div>
+
+          <InputElement type="email" id="email" onChange={handleChange}>
+            Email
+          </InputElement>
+
+          <InputElement type="tel" id="phone" onChange={handleChange}>
+            Phone
+          </InputElement>
+          <Label className="pr-24 py-2" htmlFor="inquiryType">
+            Inquiry Type
+          </Label>
+          <select
+            id="inquiryType"
+            name="inquiryType"
             onChange={handleChange}
-            className="w-1/2 px-3 py-2 outline-none text-lg text-slate-600 font-light text-start rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
-          />
-        </div>
-
-        <InputElement type="email" id="email" onChange={handleChange}>
-          Email
-        </InputElement>
-
-        <InputElement type="tel" id="phone" onChange={handleChange}>
-          Phone
-        </InputElement>
-        <Label className="pr-24 py-2" htmlFor="inquiryType">
-          Inquiry Type
-        </Label>
-        <select
-          id="inquiryType"
-          name="inquiryType"
-          onChange={handleChange}
-          className="w-full bg-white text-lg px-3 font-light text-slate-600 py-3 rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
-          required
-        >
-          <option value="">Select Inquiry Type</option>
-          <option value={InquiryType.General}>General Inquiry</option>
-          <option value={InquiryType.Website}>Website</option>
-          <option value={InquiryType.WebApp}>Web App/Software</option>
-          <option value={InquiryType.Design}>Design/Marketing</option>
-          <option value={InquiryType.Support}>Support</option>
-        </select>
-        <Label htmlFor="message" className="pb-2">
-          Message
-        </Label>
-        <textarea
-          id="message"
-          name="message"
-          onChange={handleChange}
-          className="w-full px-3 py-2 outline-none text-lg  rounded-md font-light text-slate-600 border-2 border-[#0077ff] focus:border-yellow-400"
-          rows={6}
-          required
-        ></textarea>
-        <p
-          className={`text-lg text-yellow-200 font-light ${
-            !validated ? "visible" : "invisible"
-          }`}
-        >
-          Please fill out required fields.
-        </p>
-        <div className="place-self-end">
-          <SubmitButton />
-        </div>
-      </form>
-    </NeonGradientCard>
+            className="w-full bg-white px-3 font-light text-slate-600 py-3 rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
+            required
+          >
+            <option value="">Select Inquiry Type</option>
+            <option value={InquiryType.General}>General Inquiry</option>
+            <option value={InquiryType.Website}>Website</option>
+            <option value={InquiryType.WebApp}>Web App/Software</option>
+            <option value={InquiryType.Design}>Design/Marketing</option>
+            <option value={InquiryType.Support}>Support</option>
+          </select>
+          <Label htmlFor="message" className="pb-2">
+            Message
+          </Label>
+          <textarea
+            id="message"
+            name="message"
+            onChange={handleChange}
+            className="w-full px-3 py-2 outline-none rounded-md font-light text-slate-600 border-2 border-[#0077ff] focus:border-yellow-400"
+            rows={6}
+            required
+          ></textarea>
+          <p
+            className={`text-yellow-200 font-light ${
+              !validated ? "visible" : "invisible"
+            }`}
+          >
+            Please fill out required fields.
+          </p>
+          <div className="place-self-end">
+            <SubmitButton />
+          </div>
+        </form>
+      </NeonGradientCard>
+    </section>
   );
 };
 
@@ -222,7 +224,7 @@ const InputElement: React.FC<{
         name={id}
         placeholder={children?.toString()}
         onChange={onChange}
-        className="w-full px-3 py-2 rounded-md outline-none text-lg 3xl:text-2xl text-slate-600 font-light border-2 border-[#0077ff] focus:border-yellow-400"
+        className="w-full px-3 py-2 rounded-md outline-none3xl:text-2xl text-slate-600 font-light border-2 border-[#0077ff] focus:border-yellow-400"
         required
       />
     </>

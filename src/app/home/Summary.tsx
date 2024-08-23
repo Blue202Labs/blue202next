@@ -1,5 +1,6 @@
 import { CSSProperties, ReactNode } from "react";
 import crmMockup from "/public/images/crm-mockup.png";
+import ticketeerMockup from "/public/images/ticketeer-mockup.png";
 import ecommMockup from "/public/images/eCommerceMockup.png";
 import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
 import Image from "next/image";
@@ -144,7 +145,8 @@ const features = [
     href: "/contact",
     cta: "Get quoted",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+    className:
+      "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 hidden md:block",
   },
   {
     icon: (
@@ -168,7 +170,13 @@ const features = [
     description: "Make your business stand out with a custom website.",
     href: "/solutions/websites",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <Image
+        alt="Mockup of a CRM software"
+        src={ticketeerMockup}
+        className="blur-[1px] hover:blur-none transition duration-300"
+      />
+    ),
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
   {
@@ -228,8 +236,8 @@ const features = [
 export const Summary = () => {
   return (
     <section className="max-w-7xl mx-auto h-full my-24 md:my-40 px-8">
-      <div className="mx-auto px-10 md:px-0">
-        <h2 className="font-body-sans text-center font-semibold text-3xl md:text-4xl text-slate-700">
+      <div className="mx-auto">
+        <h2 className="font-body-sans pb-10 text-center font-semibold text-3xl md:text-4xl text-slate-700">
           Web solutions for every business need.
         </h2>
         <div className="flex flex-col md:flex-row md:py-20 gap-4">
@@ -249,29 +257,5 @@ export const Summary = () => {
         </a>
       </div>
     </section>
-  );
-};
-
-const AboutCard: React.FC<{
-  image: string;
-  heading: string;
-  children: ReactNode;
-}> = ({ image, heading, children }) => {
-  const height = useCheckMobileScreen() ? "100px" : "120px";
-
-  return (
-    <div className="h-96 border-slate-500 border rounded-xl">
-      <Image
-        src={image}
-        style={{ height: height, width: "fit" } as CSSProperties}
-        alt={`Graphic representing ${heading}`}
-      ></Image>
-      <div className="flex flex-col text-center gap-1">
-        <h4 className="text-xl font-medium text-blue-800 pt-3 font-mono">
-          {heading}
-        </h4>
-        <p className="font-light text-center text-slate-700">{children}</p>
-      </div>
-    </div>
   );
 };

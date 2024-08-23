@@ -247,14 +247,6 @@ export const Summary = () => {
             ))}
           </BentoGrid>
         </div>
-        <a
-          href="#services"
-          className="flex flex-col mx-auto w-fit items-center pt-8 md:pt-0"
-        >
-          <div className="w-fit md:text-xl bg-blue-700 rounded-xl px-6 py-2 text-white border-2 border-black hover:bg-blue-800 active:bg-blue-800">
-            Learn more
-          </div>
-        </a>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import TextRevealByWord from "../components/TextReveal";
 
 export const SteeyrMockup = () => {
   return (
-    <section className="relative md:h-[60rem] md:max-w-7xl mx-auto flex flex-col pt-48 pb-20 md:pb-0">
+    <section className="relative md:h-[60rem] md:max-w-7xl mx-auto flex flex-col py-20 md:pb-0">
       <div className="order-2 md:absolute bottom-32 z-30 md:max-w-7xl mx-auto -mt-28 md:mt-0">
         <Image
           alt="Device app mockups"

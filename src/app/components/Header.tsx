@@ -118,7 +118,7 @@ const NavDesktop: React.FC<{
           href="/contact"
           className="rounded-full border border-blue-600 p-2 px-7 hover:border-blue-900 hover:text-blue-400"
         >
-          Let's get on a call
+          Let&apos;s get on a call
         </Link>
       </AnimatedGradientBorder>
       <Link
@@ -208,7 +208,7 @@ const NavMobileDropDown: React.FC<{
           href="/contact"
           className="h-10 text-blue-800 active:text-blue-800"
         >
-          Let's get on a call
+          Let&apos;s get on a call
         </Link>
       </div>
       <div className="flex flex-col gap-4 items-center">

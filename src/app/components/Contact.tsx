@@ -78,7 +78,7 @@ export const Contact = () => {
     formState === FormState.Sent || formState === FormState.Failed;
 
   return (
-    <section className="pb-32 px-4 md:px-0 md:px-0">
+    <section className="pb-32 px-4 md:px-0">
       <NeonGradientCard className="max-w-xl rounded-4xl mx-auto">
         {showPopUp && (
           <PopUp
@@ -112,7 +112,7 @@ export const Contact = () => {
               name="yourName"
               placeholder="Your Name"
               onChange={handleChange}
-              className="w-1/2 px-3 py-2 outline-nonetext-slate-600 font-light text-start rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
+              className="w-1/2 px-3 py-2 shadow-inner shadow-slate-400 outline-none text-slate-600 font-light text-start rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
             />
             <Label htmlFor="companyName">Company Name</Label>
             <input
@@ -121,7 +121,7 @@ export const Contact = () => {
               name="companyName"
               placeholder="Company"
               onChange={handleChange}
-              className="w-1/2 px-3 py-2 outline-nonetext-slate-600 font-light text-start rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
+              className="w-1/2 px-3 py-2 shadow-inner shadow-slate-400 outline-none text-slate-600 font-light text-start rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
             />
           </div>
 
@@ -139,7 +139,7 @@ export const Contact = () => {
             id="inquiryType"
             name="inquiryType"
             onChange={handleChange}
-            className="w-full bg-white px-3 font-light text-slate-600 py-3 rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
+            className="w-full bg-white px-3 font-light shadow-inner shadow-slate-400 text-slate-600 py-3 rounded-md border-2 border-[#0077ff] focus:border-yellow-400"
             required
           >
             <option value="">Select Inquiry Type</option>
@@ -156,7 +156,7 @@ export const Contact = () => {
             id="message"
             name="message"
             onChange={handleChange}
-            className="w-full px-3 py-2 outline-none rounded-md font-light text-slate-600 border-2 border-[#0077ff] focus:border-yellow-400"
+            className="w-full px-3 py-2 outline-none rounded-md font-light shadow-inner shadow-slate-400 text-slate-600 border-2 border-[#0077ff] focus:border-yellow-400"
             rows={6}
             required
           ></textarea>
@@ -224,7 +224,7 @@ const InputElement: React.FC<{
         name={id}
         placeholder={children?.toString()}
         onChange={onChange}
-        className="w-full px-3 py-2 rounded-md outline-none3xl:text-2xl text-slate-600 font-light border-2 border-[#0077ff] focus:border-yellow-400"
+        className="w-full px-3 py-2 rounded-md outline-none3xl:text-2xl shadow-inner shadow-slate-400 text-slate-600 font-light border-2 border-[#0077ff] focus:border-yellow-400"
         required
       />
     </>

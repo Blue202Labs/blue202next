@@ -14,6 +14,7 @@ import { useState } from "react";
 import Loading from "./loading";
 import { MockUp } from "./home/MockUp";
 import { SteeyrMockup } from "./home/SteeyrMockup";
+import { NeonGradientCard } from "./components/NeonGradientCard";
 
 function Home() {
   const [loaded, setLoaded] = useState(false);

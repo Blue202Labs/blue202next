@@ -1,24 +1,45 @@
 import { Contact } from "../components/Contact";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Get in Contact With Our Web Development Team | Blue202Labs",
-  description:
-    "Leading web software and mobile app development services. Trusted by UPS, AspenDental, RxForms and more.",
-  openGraph: {
-    title: "Get in Contact With Our Web Development Team | Blue202Labs",
-    description:
-      "Leading web software and mobile app development services. Trusted by UPS, AspenDental, RxForms and more.",
-  },
-};
+import CalendlyEmbed from "../components/CalendlyEmbed";
+import { InlineWidget, PopupWidget } from "react-calendly";
+import { NeonGradientCard } from "../components/NeonGradientCard";
+import rightArrow from "/public/icons/right-arrow-grey.svg";
+import Image from "next/image";
 
 const ContactPage = () => {
   return (
-    <div className="pt-10 md:pt-32 h-full">
-      <h2 className="max-w-3xl mx-auto text-4xl text-blue-900 font-medium font-body-sans py-20 px-10">
-        &gt;&gt;{"  "}Ready to transform your business?
-      </h2>
-      <Contact />
+    <div className="py-36 h-full max-w-5xl mx-auto flex flex-col md:flex-row justify-between px-2">
+      <div className="flex flex-col gap-10 pb-32 px-6 md:px-0">
+        <div className="mr-14 flex flex-col gap-6 pl-4">
+          <h3 className="text-2xl font-semibold text-slate-700">
+            Set up a 30 minute <span className="text-blue-600">free</span>{" "}
+            consultation and:
+          </h3>
+          <ul className="pl-4 max-w-72">
+            <li className="flex flex-row gap-2">
+              <Image width={18} alt="" src={rightArrow} />
+              Discuss your needs
+            </li>
+            <li className="flex flex-row gap-2 items-start">
+              <Image className="pt-1.5" width={18} alt="" src={rightArrow} />
+              Receive relevant technical insights
+            </li>
+            <li className="flex flex-row gap-2 items-start">
+              <Image className="pt-1.5" width={18} alt="" src={rightArrow} />
+              Get a detailed proposal on how we can best help you
+            </li>
+          </ul>
+          <h2 className="max-w-3xl mx-auto text-4xl font-semibold font-body-sans pt-20 text-slate-900">
+            Ready to transform your business?
+          </h2>
+          <div className="flex flex-row gap-2">
+            <span className="text-4xl">👉</span>
+            <CalendlyEmbed />
+          </div>
+        </div>
+      </div>
+      <NeonGradientCard className="max-w-xl rounded-4xl">
+        <Contact />
+      </NeonGradientCard>
     </div>
   );
 };

@@ -1,6 +1,8 @@
+import CalendlyEmbed from "../components/CalendlyEmbed";
+
 export const CallToAction = () => {
   return (
-    <section className="px-8 md:px-0 my-48 font-body-sans max-w-2xl mx-auto">
+    <section className="px-8 md:px-0 my-48 font-body-sans max-w-2xl mx-auto flex flex-col items-center">
       <h3 className="text-3xl md:text-5xl font-medium text-center">
         Ready to take your business to the next level? 🚀
       </h3>
@@ -10,6 +12,7 @@ export const CallToAction = () => {
         startup that needs effective prototyping done -{" "}
         <b className="text-blue-800">you’ve found the right place.</b>
       </p>
+      <CalendlyEmbed />
     </section>
   );
 };

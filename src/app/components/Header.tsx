@@ -105,8 +105,6 @@ const NavDesktop: React.FC<{
   handleSolutionsEnter: React.MouseEventHandler<HTMLAnchorElement>;
   handleSolutionsLeave: React.MouseEventHandler<HTMLAnchorElement>;
 }> = ({ toggleSolutions, handleSolutionsEnter, handleSolutionsLeave }) => {
-  const finished = false;
-
   return (
     <nav className="flex h-full flex-row place-items-center font-extralight">
       <AnimatedGradientBorder
@@ -120,7 +118,7 @@ const NavDesktop: React.FC<{
           href="/contact"
           className="rounded-full border border-blue-600 p-2 px-7 hover:border-blue-900 hover:text-blue-400"
         >
-          Get a Quote
+          Let's get on a call
         </Link>
       </AnimatedGradientBorder>
       <Link
@@ -197,8 +195,6 @@ const NavMobileDropDown: React.FC<{
   setToggleSolutions: React.Dispatch<React.SetStateAction<boolean>>;
   setToggleMenu: React.Dispatch<React.SetStateAction<boolean>>;
 }> = ({ className, toggleSolutions, setToggleSolutions, setToggleMenu }) => {
-  const finished = false;
-
   return (
     <nav
       className={
@@ -212,7 +208,7 @@ const NavMobileDropDown: React.FC<{
           href="/contact"
           className="h-10 text-blue-800 active:text-blue-800"
         >
-          Get a Quote
+          Let's get on a call
         </Link>
       </div>
       <div className="flex flex-col gap-4 items-center">

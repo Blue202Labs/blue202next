@@ -2,12 +2,12 @@ import { ReactNode } from "react";
 
 export const GradientButton: React.FC<{
   children: ReactNode;
-  className: string;
-  colour1: string;
-  colour2: string;
-  colour3: string;
+  className?: string;
+  colour1?: string;
+  colour2?: string;
+  colour3?: string;
   href: string;
-}> = ({ children, className, colour1, colour2, colour3, href }) => {
+}> = ({ children, className, colour1, colour2 = "fff", colour3, href }) => {
   return (
     <a
       href={href}

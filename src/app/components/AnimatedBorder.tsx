@@ -9,12 +9,15 @@ export const AnimatedGradientBorder: React.FC<{
   bgColour?: string;
   colour1?: string;
   colour2?: string;
-}> = ({ children, rounded, className, bgColour, colour1, colour2 }) => {
+}> = ({
+  children,
+  rounded,
+  className,
+  bgColour = "#ffffff",
+  colour1 = "#00bcd1",
+  colour2 = "#be6eff",
+}) => {
   const boxRef = useRef<HTMLDivElement>(null);
-
-  bgColour = bgColour ? bgColour : "#131219";
-  colour1 = colour1 ? colour1 : "#00bcd1";
-  colour2 = colour2 ? colour2 : "#be6eff";
 
   useEffect(() => {
     const boxElement = boxRef.current;

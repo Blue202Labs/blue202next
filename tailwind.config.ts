@@ -24,14 +24,45 @@ const config: Config = {
         "people-group": "url('/images/people-group.jpg')",
         ekh: "url('/images/ekh.jpg')",
       },
-
+      animation: {
+        backgroundPositionSpin:
+          "background-position-spin 3000ms infinite alternate",
+        shimmer: "shimmer 8s infinite",
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+      },
+      keyframes: {
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
+        shimmer: {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shimmer-width)) 0",
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shimmer-width)) 0",
+          },
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
+      },
       colors: {
         "blue-accent": "#293FFF",
       },
     },
     fontFamily: {
       default: defaultTheme.fontFamily.sans,
-      "body-sans": ["var(--font-source-sans)", ...defaultTheme.fontFamily.sans],
+      "body-sans": [
+        "var(--font-plus-jakarta-sans)",
+        ...defaultTheme.fontFamily.sans,
+      ],
       mono: ["var(--font-roboto-mono)", ...defaultTheme.fontFamily.mono],
     },
     transitionProperty: {

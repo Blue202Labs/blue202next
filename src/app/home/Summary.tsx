@@ -1,6 +1,6 @@
 import { CSSProperties, ReactNode } from "react";
-import crmMockup from "/Users/noella/Documents/dev/blue202next/public/images/crm-mockup.png";
-import ecommMockup from "/Users/noella/Documents/dev/blue202next/public/images/eCommerceMockup.png";
+import crmMockup from "/public/images/crm-mockup.png";
+import ecommMockup from "/public/images/eCommerceMockup.png";
 import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
 import Image from "next/image";
 import { BentoCard, BentoGrid } from "../components/BentoGrid";

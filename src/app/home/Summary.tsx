@@ -14,6 +14,7 @@ import {
   react,
   typeScript,
 } from "../solutions/components/TechStack";
+import BlurFade from "../components/BlurFade";
 
 const tech = [
   {
@@ -144,7 +145,7 @@ const features = [
     description: "Found better rates? Let us know and we will match the price.",
     href: "/contact",
     cta: "Get quoted",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <div />,
     className:
       "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 hidden md:block",
   },
@@ -242,8 +243,8 @@ export const Summary = () => {
         </h2>
         <div className="flex flex-col md:flex-row md:py-20 gap-4">
           <BentoGrid className="lg:grid-rows-3">
-            {features.map((feature) => (
-              <BentoCard key={feature.name} {...feature} />
+            {features.map((feature, idx) => (
+              <BentoCard key={feature.name} {...feature} idx={idx} />
             ))}
           </BentoGrid>
         </div>

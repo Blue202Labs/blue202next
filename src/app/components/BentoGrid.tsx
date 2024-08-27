@@ -4,6 +4,7 @@ import rightArrow from "/public/icons/right-arrow.svg";
 import { cn } from "../lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import BlurFade from "./BlurFade";
 
 const BentoGrid = ({
   children,
@@ -32,6 +33,7 @@ const BentoCard = ({
   description,
   href,
   cta,
+  idx,
 }: {
   name: string;
   className: string;
@@ -40,11 +42,14 @@ const BentoCard = ({
   description: string;
   href: string;
   cta: string;
+  idx: number;
 }) => (
-  <div
+  <BlurFade
+    delay={0.25 + idx * 0.05}
+    inView
     key={name}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
+      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl h-full",
       // light styles
       "bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
       className
@@ -74,7 +79,7 @@ const BentoCard = ({
       </div>
       <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03]" />
     </div>
-  </div>
+  </BlurFade>
 );
 
 export { BentoCard, BentoGrid };

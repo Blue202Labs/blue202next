@@ -151,9 +151,9 @@ export const About = () => {
                   }`}
                 >
                   Whatever vision you have, we will bring it to life- and if you
-                  aren't sure yet, our talented team of designers and developers
-                  will offer their expertise to build software aligned with your
-                  company goals.
+                  aren&apos;t sure yet, our talented team of designers and
+                  developers will offer their expertise to build software
+                  aligned with your company goals.
                 </p>
               </FadeIn>
             </FadeIn>

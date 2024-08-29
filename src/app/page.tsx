@@ -26,7 +26,6 @@ function Home() {
         "h-full w-full overflow-x-hidden " + loaded ? "" : "max-h-screen"
       }
     >
-      <Header />
       <Loading className={loaded ? "fade-out" : ""} />
       <Hero setLoaded={setLoaded} />
       <ClientCarousel />

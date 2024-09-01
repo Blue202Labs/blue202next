@@ -38,7 +38,7 @@ const CalendlyEmbed = () => {
       </AnimatedGradientBorder>
       {rootElement && (
         <PopupModal
-          url="https://calendly.com/seif-z-blue202labs"
+          url="https://calendly.com/blue202labs/30min"
           onModalClose={() => setShowModal(false)}
           rootElement={rootElement!}
           open={showModal}

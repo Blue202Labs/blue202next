@@ -59,8 +59,8 @@ export const Reviews = () => {
   return (
     <section className="relative md:my-48 bg-blue-swirl bg-cover min-h-[45rem] overflow-hidden">
       <div className="z-30 absolute bg-gradient-to-l from-[#f0f6fc] bg-cover h-[45rem] w-2/3 right-0 bottom-0 pointer-events-none xl:block hidden"></div>
-      <div className="overflow-x-clip flex flex-col md:flex-row gap-10 py-20">
-        <div className="flex flex-col gap-14 md:w-2/3 px-4 md:pr-0 pl-10 xl:pl-48">
+      <div className="overflow-x-clip flex flex-col md:flex-row gap-10 py-20 max-w-screen-2xl mx-auto">
+        <div className="flex flex-col gap-14 px-4 md:pr-0 pl-10 xl:pl-48">
           <div className="order-2 md:order-1 flex flex-row gap-6 pr-6">
             <button
               name="Previous Item"
@@ -110,7 +110,7 @@ export const Reviews = () => {
               </svg>
             </button>
           </div>
-          <h2 className="order-1 md:order-2 text-5xl md:text-6xl font-semibold md:min-w-96 text-slate-800">
+          <h2 className="order-1 md:order-2 text-5xl md:text-6xl font-semibold md:min-w-72 md:max-w-96 text-slate-800">
             Hear what our clients have to say{" "}
             <span className="hidden md:inline">👉</span>
           </h2>

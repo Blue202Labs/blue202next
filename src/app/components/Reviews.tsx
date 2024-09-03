@@ -60,7 +60,7 @@ export const Reviews = () => {
     <section className="relative md:my-48 bg-blue-swirl bg-cover min-h-[45rem] overflow-hidden">
       <div className="z-30 absolute bg-gradient-to-l from-[#f0f6fc] bg-cover h-[45rem] w-2/3 right-0 bottom-0 pointer-events-none xl:block hidden"></div>
       <div className="overflow-x-clip flex flex-col md:flex-row gap-10 py-20">
-        <div className="flex flex-col gap-14 md:w-2/3 pl-10 xl:pl-48 px-4 md:px-0">
+        <div className="flex flex-col gap-14 md:w-2/3 px-4 md:pr-0 pl-10 xl:pl-48">
           <div className="order-2 md:order-1 flex flex-row gap-6 pr-6">
             <button
               name="Previous Item"
@@ -168,7 +168,9 @@ const ReviewCard = ({
         >
           <div
             className={`min-h-[35rem] p-8 md:p-12 rounded-xl bg-white text-slate-600 gap-8 flex flex-col justify-between opacity-100 transition duration-200 ${
-              focused ? " group-hover:opacity-30 group-hover:bg-slate-300" : ""
+              focused
+                ? " group-hover:opacity-30 group-hover:bg-slate-300 group-active:opacity-30 group-active:bg-slate-300"
+                : ""
             }`}
           >
             {text}
@@ -180,7 +182,9 @@ const ReviewCard = ({
           <Link
             href={href}
             className={`absolute place-self-center top-[40%] opacity-0 transition duration-200 flex flex-row items-center bg-white drop-shadow-sm px-4 py-2 rounded-md ${
-              focused ? "group-hover:opacity-80 hover:underline" : "hidden"
+              focused
+                ? "group-hover:opacity-80 group-active:opacity-80 active:underline hover:underline"
+                : "hidden"
             }`}
           >
             Read More

@@ -117,7 +117,12 @@ export const Reviews = () => {
         </div>
         <div className="flex flex-row gap-4 md:gap-10 overflow-hidden pl-4 md:pl-12">
           {ReviewData.map((review, index) => (
-            <ReviewCard inFocus={inFocus} index={index} {...review} />
+            <ReviewCard
+              key={`review-${index}`}
+              inFocus={inFocus}
+              index={index}
+              {...review}
+            />
           ))}
         </div>
       </div>
@@ -145,7 +150,6 @@ const ReviewCard = ({
 
   return (
     <div
-      key={`review-${index}`}
       className={`flex-none w-[90%] md:w-[25rem] ${
         focused ? "z-40 opacity-100" : "z-20 opacity-80"
       }`}

@@ -9,6 +9,9 @@ type FadeInProps = {
   toggle?: boolean;
   direction?: "up" | "down" | "left" | "right";
   duration?: number;
+  offset?: number;
+  once?: boolean;
+  disableAnimation?: boolean;
 };
 
 export function FadeIn({
@@ -17,10 +20,13 @@ export function FadeIn({
   toggle = true,
   direction = "up",
   duration = 1.5,
+  offset = 8,
+  once = false,
+  disableAnimation = false,
 }: FadeInProps) {
   const controls = useAnimation();
   const ref = useRef(null);
-  const inViewResult = useInView(ref, { once: false });
+  const inViewResult = useInView(ref, { once: once });
   const isInView = toggle && inViewResult;
 
   useEffect(() => {
@@ -35,7 +41,7 @@ export function FadeIn({
     switch (direction) {
       case "up":
         return {
-          hidden: { opacity: 0, y: 8 },
+          hidden: { opacity: 0, y: offset },
           show: {
             opacity: 1,
             y: 0,
@@ -44,7 +50,7 @@ export function FadeIn({
         };
       case "down":
         return {
-          hidden: { opacity: 0, y: -8 },
+          hidden: { opacity: 0, y: -offset },
           show: {
             opacity: 1,
             y: 0,
@@ -53,7 +59,7 @@ export function FadeIn({
         };
       case "left":
         return {
-          hidden: { opacity: 0, x: 8 },
+          hidden: { opacity: 0, x: offset },
           show: {
             opacity: 1,
             x: 0,
@@ -62,7 +68,7 @@ export function FadeIn({
         };
       case "right":
         return {
-          hidden: { opacity: 0, x: -8 },
+          hidden: { opacity: 0, x: -offset },
           show: {
             opacity: 1,
             x: 0,
@@ -71,7 +77,7 @@ export function FadeIn({
         };
       default:
         return {
-          hidden: { opacity: 0, y: 8 },
+          hidden: { opacity: 0, y: offset },
           show: {
             opacity: 1,
             y: 0,
@@ -82,6 +88,14 @@ export function FadeIn({
   };
 
   const containerVariants = getVariants(direction);
+
+  if (disableAnimation) {
+    return (
+      <div ref={ref} className={className}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div

@@ -41,7 +41,7 @@ export const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="h-[70rem] pt-10 pb-40 overflow-hidden bg-cover"
+      className="h-[60rem] pt-10 overflow-hidden bg-cover"
     >
       <div className="xl:max-w-7xl mx-auto">
         <ExpandingTitle>About us:</ExpandingTitle>

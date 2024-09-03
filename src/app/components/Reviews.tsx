@@ -72,7 +72,6 @@ export const Reviews = () => {
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                transform="rotate(90)"
               >
                 <path
                   className={
@@ -80,7 +79,7 @@ export const Reviews = () => {
                       ? "fill-[#6e96c4]"
                       : "fill-[#0077ff] group-hover:fill-[#004cff]"
                   }
-                  d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+                  d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
                 />
               </svg>
             </button>
@@ -97,7 +96,6 @@ export const Reviews = () => {
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                transform="rotate(-90)"
               >
                 <path
                   className={
@@ -105,7 +103,7 @@ export const Reviews = () => {
                       ? "fill-[#6e96c4]"
                       : "fill-[#0077ff] group-hover:fill-[#004cff]"
                   }
-                  d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+                  d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"
                 />
               </svg>
             </button>

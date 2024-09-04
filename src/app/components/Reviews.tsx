@@ -18,7 +18,7 @@ const ReviewData = [
       <p className="md:text-lg font-normal font-body-sans">
         Blue202 revolutionized our operations at San Diego Wholesalers! Their
         bespoke CRM solution and Inventory Management System streamlined our
-        processes impeccably. <br></br> <br></br>
+        processes. <br></br> <br></br>
         Exceptional team, innovative solutions, and a{" "}
         <span className="font-semibold text-blue-900">game-changer</span> for
         our business. Highly recommend their expertise!

@@ -15,8 +15,6 @@ export const SmallFeature = ({ post }: { post: PostData }) => {
         layout="fill"
         objectFit="cover"
         sizes="(max-width: 768px) 100vw, 768px"
-        placeholder="blur"
-        blurDataURL="/path-to-placeholder-image-or-blur-data"
       />
       <div className="flex flex-col p-8 md:p-4 gap-2">
         <h5 className="uppercase md:text-lg md:font-bold tracking-wider text-blue-accent">

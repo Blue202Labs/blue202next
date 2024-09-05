@@ -19,7 +19,9 @@ export const SmallFeature = ({ post }: { post: PostData }) => {
           {post.category}
         </h5>
         <h4 className="text-xl font-bold font-body-sans text-slate-800">
-          {post.title.slice(0, 68) + "..."}
+          {post.title.length > 68
+            ? post.title
+            : post.title.slice(0, 68) + "..."}
         </h4>
       </div>
     </Link>

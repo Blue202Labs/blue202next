@@ -9,12 +9,11 @@ export const SmallFeature = ({ post }: { post: PostData }) => {
       href={`/blog/posts/${post.id}`}
     >
       <Image
-        className="object-cover"
+        className="rounded-t-xl h-36 object-cover"
+        width={post.hero.featuredImage.width}
+        height={post.hero.featuredImage.height}
         src={post.hero.featuredImage.url}
         alt={post.hero.featuredImage.altText}
-        layout="fill"
-        objectFit="cover"
-        sizes="(max-width: 768px) 100vw, 768px"
       />
       <div className="flex flex-col p-8 md:p-4 gap-2">
         <h5 className="uppercase md:text-lg md:font-bold tracking-wider text-blue-accent">

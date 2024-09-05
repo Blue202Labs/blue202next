@@ -1,4 +1,5 @@
 import { PostData } from "@/app/lib/cms.type";
+import Image from "next/image";
 import Link from "next/link";
 
 export const BigFeature = ({ post }: { post: PostData }) => {
@@ -7,7 +8,7 @@ export const BigFeature = ({ post }: { post: PostData }) => {
       href={`/blog/posts/${post.id}`}
       className="h-[45rem] drop-shadow-sm bg-white border rounded-2xl md:w-1/2 flex flex-col"
     >
-      <img
+      <Image
         className="h-1/2 object-cover rounded-t-xl"
         width={post.hero.featuredImage.width}
         height={post.hero.featuredImage.height}

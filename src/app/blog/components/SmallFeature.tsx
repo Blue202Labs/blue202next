@@ -18,8 +18,8 @@ export const SmallFeature = ({ post }: { post: PostData }) => {
         <h5 className="uppercase md:text-lg md:font-bold tracking-wider text-blue-accent">
           {post.category}
         </h5>
-        <h4 className="text-2xl font-bold font-body-sans text-slate-800">
-          {post.title}
+        <h4 className="text-xl font-bold font-body-sans text-slate-800">
+          {post.title.slice(0, 68) + "..."}
         </h4>
       </div>
     </Link>

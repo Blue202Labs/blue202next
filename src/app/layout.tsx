@@ -56,6 +56,10 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
       })(window,document,'script','https://crm.blue202labs.com/mtc.js','mt');
   
       mt('send', 'pageview');`}</Script>
+        <Script
+          id="leadfeeder-tracking"
+          strategy="afterInteractive"
+        >{`(function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('JMvZ8gzXoZ1a2pOd');`}</Script>
         <Header />
         <main className="font-body-sans">{children}</main>
         <Footer />

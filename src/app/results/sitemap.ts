@@ -14,10 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: RESULTS_URL + "/crm",
-      lastModified: new Date(),
-    },
-    {
       url: RESULTS_URL + "/rx-forms",
       lastModified: new Date(),
     },

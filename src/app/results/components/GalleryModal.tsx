@@ -47,21 +47,12 @@ export const GalleryModal = ({
           </svg>
         </button>
         <section className="overflow-hidden flex flex-col gap-4">
-          <div className="relative z-30">
-            <div className="flex flex-row md:max-w-7xl">
-              {imageData.map((image, i) => (
-                <Image
-                  key={`image-gallery-${i}`}
-                  style={{
-                    transform: `translateX(-${inFocus * 100}%)`,
-                    transition: "transform 0.3s ease", // Add a smooth transition
-                  }}
-                  className="object-contain"
-                  alt={image.alt}
-                  src={image.src}
-                />
-              ))}
-            </div>
+          <div className="flex flex-row md:max-w-7xl">
+            <Image
+              className="object-contain max-h-[40rem]"
+              alt={imageData[inFocus].alt}
+              src={imageData[inFocus].src}
+            />
           </div>
           <div className="flex flex-row gap-2 justify-between items-center">
             <button

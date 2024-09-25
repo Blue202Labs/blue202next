@@ -42,7 +42,7 @@ export const Gallery = ({
             />
           </svg>
         </button>
-        <div className="flex flex-row w-fit border-b border-stone-100">
+        <div className="flex flex-row w-fit border-b border-stone-100 max-h-[30rem]">
           {imageData.map((image, i) => (
             <Image
               key={`image-gallery-${i}`}
@@ -50,7 +50,7 @@ export const Gallery = ({
                 transform: `translateX(-${inFocus * 100}%)`,
                 transition: "transform 0.3s ease", // Add a smooth transition
               }}
-              className="object-contain h-auto"
+              className="object-cover h-auto"
               width={1000}
               alt={image.alt}
               src={image.src}

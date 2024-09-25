@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ResultsHeader } from "../Header";
+import { ResultsHeader } from "../components/Header";
 import { ResultsTags } from "../data";
 import Link from "next/link";
 import rightArrow from "/public/icons/right-arrow.svg";

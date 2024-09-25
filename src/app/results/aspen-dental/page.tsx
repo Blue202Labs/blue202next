@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { ResultsHeader } from "../Header";
+import { ResultsHeader } from "../components/Header";
 import { ResultsTags } from "../data";
 import rightArrow from "/public/icons/right-arrow.svg";
 import aspenGroup from "/public/clients/tag-color.png";
 import Link from "next/link";
+import { BespokeSoftwareLink } from "../components/SolutionsLink";
 
 const AspenPage = () => {
   return (
@@ -13,7 +14,7 @@ const AspenPage = () => {
         bg="bg-people-computer"
         tags={ResultsTags.aspen}
       />
-      <div className="max-w-3xl mx-auto pt-20 pb-40 px-6 text-lg text-slate-600 flex flex-col gap-14">
+      <div className="max-w-3xl mx-auto pt-20 pb-40 px-6 text-slate-600 flex flex-col gap-14">
         <h2 className="text-2xl font-semibold text-slate-800">
           Developing Secure Healthcare Applications
         </h2>
@@ -35,11 +36,11 @@ const AspenPage = () => {
             have this process managed through a user-friendly employee portal.
           </p>
         </div>
-        <p className="text-xl font-medium">
-          The primary objective was to develop a platform that allowed
-          healthcare professionals to transmit prescription data to printing
-          companies, addressing the issues of data integrity and security
-          encountered with traditional communication methods.
+        <p className="md:text-xl font-medium">
+          We were asked to develop a platform that allowed healthcare
+          professionals to transmit prescription data to printing companies,
+          addressing the issues of data integrity and security encountered with
+          traditional communication methods.
         </p>
         <p>
           We developed a secure, authenticated API to manage the communications
@@ -57,15 +58,7 @@ const AspenPage = () => {
           communication workflows, reducing the possibility for error, all while
           following strict industry regulations.
         </p>
-        <div className="w-full flex flex-col items-end hover:underline text-base">
-          <Link
-            className="flex flex-row gap-2 w-fit"
-            href="/solutions/bespoke-software"
-          >
-            <div>Read more about our bespoke software offerings</div>
-            <Image src={rightArrow} alt="Right arrow icon" />
-          </Link>
-        </div>
+        <BespokeSoftwareLink />
       </div>
     </article>
   );

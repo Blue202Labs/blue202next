@@ -2,8 +2,10 @@ export const ResultsTags = {
   sizzler: ["SEO", "eCommerce", "Digital Marketing"],
   aspen: ["Healthcare", "Secure API", "Employee Portal"],
   ups: ["Web App", "LMS", "Company Dashboard"],
-  zyntex: ["Digital Marketing", "Market Analysis", "Business Development"],
+  zyntex: ["Marketing", "Market Analysis", "Business Development"],
   sanDiego: ["CRM", "Inventory Management", "Finance System"],
-  rxForms: ["Web App", "eCommerce"],
-  ekh: ["Infrastructure Audit", "Cybersecurity", "Technical Consulting"],
+  rxForms: ["WordPress", "eCommerce"],
+  ekh: ["Infrastructure Audit", "Technical Consulting"],
+  sahily: ["Landing Page", "Web Design"],
+  ticketeer: ["Web App", "SaaS", "eCommerce"],
 };

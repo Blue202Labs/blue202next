@@ -1,9 +1,16 @@
 import Link from "next/link";
-import { ResultsHeader } from "../Header";
+import { ResultsHeader } from "../components/Header";
 import { ResultsTags } from "../data";
 import rightArrow from "/public/icons/right-arrow.svg";
 import Image from "next/image";
 import NumberTicker from "@/app/components/NumberTicker";
+import { Gallery } from "../components/Gallery";
+import { sizzlerData } from "../../../../public/images/sizzlers";
+import {
+  BespokeSoftwareLink,
+  DigitalMarketingLink,
+  WebDesignLink,
+} from "../components/SolutionsLink";
 
 const SizzlerPage = () => {
   return (
@@ -44,7 +51,7 @@ const SizzlerPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 text-lg max-w-3xl mx-auto px-4">
+        <div className="flex flex-col gap-8 max-w-3xl mx-auto px-4">
           <p className="text-xl font-semibold text-slate-800">
             We partnered with Sizzler Steakhouse in the Middle East to build a
             successful eCommerce, food-ordering website.
@@ -55,8 +62,10 @@ const SizzlerPage = () => {
             to maximize the business&apos;s reach.
           </p>
           <div className="border rounded-lg p-10 pb-16">
-            <h2 className="font-semibold text-xl pb-8 underline">The task:</h2>
-            <ul className="pl-8 list-disc font-body-sans">
+            <h2 className="font-semibold md:text-xl pb-8 underline">
+              The task:
+            </h2>
+            <ul className="md:pl-8 list-disc font-body-sans">
               <li>
                 Update the current website, optimizing SEO and discoverability.
               </li>
@@ -85,33 +94,10 @@ const SizzlerPage = () => {
             marketing along with an effective website positioned Sizzler
             Steakhouse as a leader in the regional F&B market.
           </p>
-          <div className="w-full flex flex-col items-end hover:underline text-base text-right">
-            <Link
-              className="flex flex-row gap-2 w-fit"
-              href="/solutions/bespoke-software"
-            >
-              <div>Read more about our bespoke software offerings</div>
-              <Image src={rightArrow} alt="Right arrow icon" />
-            </Link>
-          </div>
-          <div className="w-full flex flex-col items-end hover:underline text-base text-right">
-            <Link
-              className="flex flex-row gap-2 w-fit"
-              href="/solutions/digital-marketing"
-            >
-              <div>Read more about our digital marketing services</div>
-              <Image src={rightArrow} alt="Right arrow icon" />
-            </Link>
-          </div>
-          <div className="w-full flex flex-col items-end hover:underline text-base text-right">
-            <Link
-              className="flex flex-row gap-2 w-fit"
-              href="/solutions/websites"
-            >
-              <div>Read more about our web design solutions</div>
-              <Image src={rightArrow} alt="Right arrow icon" />
-            </Link>
-          </div>
+          <Gallery imageData={sizzlerData} />
+          <BespokeSoftwareLink />
+          <DigitalMarketingLink />
+          <WebDesignLink />
         </div>
       </div>
     </article>

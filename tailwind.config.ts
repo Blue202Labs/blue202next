@@ -19,6 +19,8 @@ const config: Config = {
         "ups-truck": "url('/images/ups-truck.jpg')",
         "mockup-3d": "url('/images/mobile-mockup.png')",
         "people-table": "url('/images/people-table.jpg')",
+        sahily: "url('/images/sahily-mockup-table.png')",
+        ticketeer: "url('/images/ticketeer/ticketeer-hero-image.png')",
         steak: "url('/images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg')",
         logistics: "url('/images/logistics.jpg')",
         "people-group": "url('/images/people-group.jpg')",
@@ -30,11 +32,20 @@ const config: Config = {
         shimmer: "shimmer 8s infinite",
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+      },
+      boxShadow: {
+        blurred: "0px 5px 20px 0px rgba(0, 0, 0, 0.05)",
       },
       keyframes: {
         "background-position-spin": {
           "0%": { backgroundPosition: "top center" },
           "100%": { backgroundPosition: "bottom center" },
+        },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
         },
         shimmer: {
           "0%, 90%, 100%": {

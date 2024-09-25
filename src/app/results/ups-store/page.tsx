@@ -1,8 +1,11 @@
 import Image from "next/image";
-import { ResultsHeader } from "../Header";
+import { ResultsHeader } from "../components/Header";
 import { ResultsTags } from "../data";
 import rightArrow from "/public/icons/right-arrow.svg";
 import Link from "next/link";
+import { Gallery } from "../components/Gallery";
+import { upsData } from "../../../../public/images/ups-store";
+import { BespokeSoftwareLink } from "../components/SolutionsLink";
 
 const UPSStorePage = () => {
   return (
@@ -20,6 +23,7 @@ const UPSStorePage = () => {
             each store is set up for success.
           </span>
         </h2>
+        <Gallery imageData={upsData} />
         <section className="flex flex-col gap-8">
           <p>
             Trusted by UPS to develop an employee management system designed to
@@ -31,35 +35,37 @@ const UPSStorePage = () => {
             We successfully implemented the following features in the
             employee-facing dashboard:
           </h3>
-          <div className="flex flex-col justify-between max-w-4xl mx-auto h-full pt-20 pb-24 px-10 gap-14 md:gap-20">
+          <div className="flex flex-col justify-between max-w-4xl mx-auto h-full md:pt-20 md:pb-24 md:px-10 gap-14 md:gap-20">
             <div className="flex flex-col gap-4 md:flex-row justify-between">
-              <h4 className="font-bold text-2xl md:w-2/5">Knowledge Base</h4>
-              <p className="md:w-1/2 text-slate-600 font-body-sans text-xl">
+              <h4 className="font-bold md:text-2xl md:w-2/5">Knowledge Base</h4>
+              <p className="md:w-1/2 text-slate-600 font-body-sans md:text-xl">
                 Developed an information reservoir for employees, with
                 role-based data access.
               </p>
             </div>
             <div className="flex flex-col gap-4 md:flex-row justify-between">
-              <h4 className="font-bold text-2xl md:w-2/5">
+              <h4 className="font-bold md:text-2xl md:w-2/5">
                 Learning Management System
               </h4>
-              <p className="md:w-1/2 text-slate-600 font-body-sans text-xl">
+              <p className="md:w-1/2 text-slate-600 font-body-sans md:text-xl">
                 Facilitated the training and onboarding of employees, tracking
                 their progress and course completion.
               </p>
             </div>
             <div className="flex flex-col gap-4 md:flex-row justify-between">
-              <h4 className="font-bold text-2xl md:w-2/5">Ticketing Portal</h4>
-              <p className="md:w-1/2 text-slate-600 font-body-sans text-xl">
+              <h4 className="font-bold md:text-2xl md:w-2/5">
+                Ticketing Portal
+              </h4>
+              <p className="md:w-1/2 text-slate-600 font-body-sans md:text-xl">
                 Provided a consistent avenue for employees to submit requests
                 for inventory restocks or maintenance.
               </p>
             </div>
             <div className="flex flex-col gap-4 md:flex-row justify-between">
-              <h4 className="font-bold text-2xl md:w-2/5">
+              <h4 className="font-bold md:text-2xl md:w-2/5">
                 Anonymous Feedback Submission
               </h4>
-              <p className="md:w-1/2 text-slate-600 font-body-sans text-xl">
+              <p className="md:w-1/2 text-slate-600 font-body-sans md:text-xl">
                 Implemented a portal for employees to anonymously submit
                 complaints or praises.
               </p>
@@ -72,7 +78,7 @@ const UPSStorePage = () => {
         </p>
         <section className="flex flex-col md:flex-row gap-8 md:divide-x-[1px]">
           <div className="md:pr-8 md:w-1/2">
-            <h3 className="text-xl font-semibold pb-2">Activity Page</h3>
+            <h3 className="md:text-xl font-semibold pb-2">Activity Page</h3>
             <p>
               Designed to track and augment user engagement while also serving
               as an effective channel for company-wide updates, acting as a
@@ -81,7 +87,9 @@ const UPSStorePage = () => {
             </p>
           </div>
           <div className="md:pl-8 md:w-1/2">
-            <h3 className="text-xl font-semibold pb-2">End of Day Reporting</h3>
+            <h3 className="md:text-xl font-semibold pb-2">
+              End of Day Reporting
+            </h3>
             <p>
               A system that generates automated daily reports which are sent to
               the relevant management team, offering a comprehensive overview of
@@ -89,15 +97,7 @@ const UPSStorePage = () => {
             </p>
           </div>
         </section>
-        <div className="w-full flex flex-col items-end hover:underline text-base pt-8">
-          <Link
-            className="flex flex-row gap-2 w-fit"
-            href="/solutions/bespoke-software"
-          >
-            <div>Read more about our bespoke software offerings</div>
-            <Image src={rightArrow} alt="Right arrow icon" />
-          </Link>
-        </div>
+        <BespokeSoftwareLink />
       </div>
     </article>
   );

@@ -64,7 +64,7 @@ export const About = () => {
               <div className="flex flex-row gap-4">
                 <button
                   onClick={() => {
-                    setShowTeam((prev) => !prev);
+                    setShowTeam(prev => !prev);
                   }}
                 >
                   <svg
@@ -81,9 +81,9 @@ export const About = () => {
                     <path
                       d="M9 18L15 12L9 6"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
@@ -112,7 +112,7 @@ export const About = () => {
               <div className="flex flex-row gap-4">
                 <button
                   onClick={() => {
-                    setShowScalable((prev) => !prev);
+                    setShowScalable(prev => !prev);
                   }}
                 >
                   <svg
@@ -129,9 +129,9 @@ export const About = () => {
                     <path
                       d="M9 18L15 12L9 6"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>

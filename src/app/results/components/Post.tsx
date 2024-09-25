@@ -24,7 +24,7 @@ export const ResultsPost = ({
       href={`/results/${route}`}
       className={
         `relative md:h-full md:min-h-[30rem] w-full group border-2 border-slate-50 
-      shadow-blurred rounded-2xl bg-white p-4 md:p-10 flex flex-col items-center text-slate-800 ` +
+      shadow-blurred rounded-2xl bg-white p-4 md:p-10 flex flex-col items-center text-slate-800 overflow-hidden ` +
         className
       }
       passHref
@@ -36,6 +36,7 @@ export const ResultsPost = ({
             big ? "" : "max-h-[18rem] group-hover:h-[80%]"
           }`}
           src={bg}
+          width={big ? 1000 : 500}
         ></Image>
       </div>
       <div
@@ -43,7 +44,7 @@ export const ResultsPost = ({
       group-hover:-translate-y-10 w-full h-full bottom-3"
       ></div>
       <div
-        className="z-30 flex flex-col gap-2 py-10 w-full md:items-center group-hover:-translate-y-16
+        className="z-30 flex flex-col gap-2 py-10 w-full md:items-center group-hover:-translate-y-12
     transition duration-300 px-4 md:p-0"
       >
         <h3 className="text-2xl font-semibold">{heading}</h3>

@@ -5,7 +5,7 @@ import ticketeerEmailVerif from "./ticketeer-email-verif.png";
 import ticketeerDomain from "./ticketeer-domain.png";
 import ticketeerSupport from "./ticketeer-support.png";
 import ticketeerAdminPlans from "./ticketeer-admin-plans.png";
-import ticketeerAdminAdmins from "./Ticketeer-admin-admins.png";
+import ticketeerAdminAdmins from "./ticketeer-admin-admins.png";
 import { ImageDataType } from "@/app/lib/image.type";
 
 export const ticketeerData: ImageDataType = [

@@ -33,5 +33,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: RESULTS_URL + "/zyntex-group",
       lastModified: new Date(),
     },
+    {
+      url: RESULTS_URL + "/sahily-app",
+      lastModified: new Date(),
+    },
+    {
+      url: RESULTS_URL + "/ticketeer",
+      lastModified: new Date(),
+    },
   ];
 }

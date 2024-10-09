@@ -71,7 +71,7 @@ const StartupDevelopment = () => {
             </p>
           </div>
         </section>
-        <section className="flex flex-col md:flex-row md:h-[40rem] gap-8 py-20">
+        <section className="flex flex-col md:flex-row gap-8 py-20 ">
           <div className="border w-full rounded-2xl drop-shadow-sm bg-white flex flex-col py-10 px-6">
             <h2 className="font-medium text-2xl pb-2 place-self-center">
               Product Development
@@ -182,7 +182,7 @@ const StartupDevelopment = () => {
               review the plan and request any changes. Once you give the
               &apos;OK&apos;, our developers will bring the design to life.
             </Approach>
-            <Approach heading="Pitch Support" index={3}>
+            <Approach heading="Pitch Support" index={4}>
               We will design a strategic pitch deck, aligned with your brand
               story and cause.
             </Approach>

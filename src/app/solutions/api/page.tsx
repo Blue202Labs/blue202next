@@ -15,6 +15,8 @@ import {
   typeScript,
 } from "../components/TechStack";
 import { Metadata } from "next";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   title: "API Development Services",
@@ -30,6 +32,26 @@ export const metadata: Metadata = {
 const API = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("api")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "API Development Services | Expert Team",
+                "Custom API development services. Work with a leading web development team with experience in building fullstack web applications.",
+                "/solutions/api"
+              )
+            ),
+          }}
+        />
+      </head>
       <PageHero
         heading="Seamlessly integrate applications with our tailor-made API services."
         description="Reform your backend, integrate third-party applications, or build a new solution from the ground-up."

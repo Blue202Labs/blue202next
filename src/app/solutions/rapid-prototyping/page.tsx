@@ -11,6 +11,8 @@ import checkMark from "/public/icons/checkMark.svg";
 import { Heading } from "../../components/Heading";
 import Image from "next/image";
 import { Metadata } from "next";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   title: "Rapid Prototyping Development Services",
@@ -26,6 +28,26 @@ export const metadata: Metadata = {
 const RapidPrototyping = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("rapid-prototyping")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "Rapid Prototyping Services | Fast and Efficient Team",
+                "Rapidly develop and deploy your prototype with a professional development team. Offering Web Apps and Mobile Apps.",
+                "/solutions/rapid-prototyping"
+              )
+            ),
+          }}
+        />
+      </head>
       <PageHero
         heading="Rapid and Reliable Prototyping."
         description="For when you just need to get it done, now."

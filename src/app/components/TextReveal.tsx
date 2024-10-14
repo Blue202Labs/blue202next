@@ -1,7 +1,7 @@
 "use client";
 
 import { FC, ReactNode, useRef } from "react";
-import { motion, motionValue, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 import { cn } from "@/app/lib/utils";
 
@@ -33,7 +33,11 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
             const start = i / words.length;
             const end = start + 1 / words.length;
             return (
-              <Word key={i} progress={scrollYProgress} range={[end, start]}>
+              <Word
+                key={`rev-${word}-${i}`}
+                progress={scrollYProgress}
+                range={[end, start]}
+              >
                 {word}
               </Word>
             );

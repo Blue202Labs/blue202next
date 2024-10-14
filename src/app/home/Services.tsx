@@ -306,7 +306,7 @@ const ServicesMobile: React.FC<{
         {serviceTabs.map((serviceTab, index) => (
           <div
             key={serviceTab.key}
-            ref={(el) => {
+            ref={el => {
               tabRefs.current[index] = el as HTMLDivElement;
             }}
             className="border rounded-3xl drop-shadow-md bg-white py-2 snap-center snap-always"
@@ -333,7 +333,7 @@ const ServicesDesktop: React.FC<{
       <div className="flex flex-row md:gap-8 justify-center">
         {services.map((service, index) => (
           <ServiceButton
-            key={index}
+            key={`${service}-${index}`}
             isSelected={selectedIndex === index}
             clickCallback={() => handleButtonClick(index)}
           >

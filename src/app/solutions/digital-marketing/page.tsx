@@ -1,6 +1,8 @@
 import { Heading } from "../../components/Heading";
 import { PageHero } from "../components/PageHero";
 import { Metadata } from "next";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Services",
@@ -16,6 +18,26 @@ export const metadata: Metadata = {
 const DigitalMarketing = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("digital-marketing")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "Social Media Post Creation Packages",
+                "We will design posts for your social media platforms on a weekly basis to boost sales and engagement.",
+                "/solutions/digital-marketing"
+              )
+            ),
+          }}
+        />
+      </head>
       <PageHero
         heading="Boost traffic, leads and revenue."
         description="Upgrade your digital marketing strategy today."

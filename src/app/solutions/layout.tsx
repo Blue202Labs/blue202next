@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: "Blue202 Labs Web Development Services",
   },
   description:
-    "Leading web development services. Trusted by UPS, AspenDental, RxForms and more.",
+    "Leading web development and mobile app development team ready to build your next big idea.",
   openGraph: {
     title: {
       template: "%s | Blue202 Labs",

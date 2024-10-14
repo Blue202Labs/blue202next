@@ -16,6 +16,8 @@ import checkMark from "/public/icons/checkMark.svg";
 import { Heading } from "../../components/Heading";
 import Image from "next/image";
 import { Metadata } from "next";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   title: "MVP Development Services",
@@ -31,6 +33,26 @@ export const metadata: Metadata = {
 const MvpDevelopment = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("mvp-development")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "MVP Development Services | Web and Mobile Apps",
+                "Rapidly develop and deploy your MVP with a professional development team in as quick as a month. Offering Web Apps and Mobile Apps.",
+                "/solutions/mvp-development"
+              )
+            ),
+          }}
+        />
+      </head>
       <PageHero
         heading="Got an idea? Let's build it together."
         description=""

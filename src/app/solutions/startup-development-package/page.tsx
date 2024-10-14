@@ -6,21 +6,45 @@ import Link from "next/link";
 import { Approach } from "../components/OurApproach";
 import fintechMockup from "/public/images/fintech-mockup.png";
 import { Metadata } from "next";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   title: "Startup Development Services",
   description:
-    "End-to-end startup development services. Prototype and get your MVP in as quick as a month.",
+    "End-to-end startup MVP development services. Prototype and get your MVP in as quick as a month.",
   openGraph: {
     title: "Startup Development Services",
     description:
-      "End-to-end startup development services. Prototype and get your MVP in as quick as a month.",
+      "End-to-end startup MVP development services. Prototype and get your MVP in as quick as a month.",
   },
 };
 
 const StartupDevelopment = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              breadCrumbList("startup-development-package")
+            ),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "Full MVP Development Package",
+                "We will build you a professional, modern landing page and quickly develop your MVP.",
+                "/solutions/startup-development-package"
+              )
+            ),
+          }}
+        />
+      </head>
       <section className="relative h-screen md:h-[50rem] pt-10 md:pt-20">
         <Image
           alt="Device app mockups"

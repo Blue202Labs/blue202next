@@ -14,6 +14,8 @@ import {
   typeScript,
 } from "../components/TechStack";
 import { Metadata } from "next";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   title: "Web Design Services",
@@ -29,6 +31,26 @@ export const metadata: Metadata = {
 const WebDesign = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("web-design")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "Modern Website Design Services",
+                "Striking, modern website design services. Build an engaging, user-friendly site with Blue202 Labs.",
+                "/solutions/web-design"
+              )
+            ),
+          }}
+        />
+      </head>
       <PageHero
         heading="Elevate your brand with captivating web design."
         description="Visually stunning and user-friendly websites that make your brand stand out."

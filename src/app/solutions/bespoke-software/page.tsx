@@ -16,6 +16,8 @@ import {
 } from "../components/TechStack";
 import { SoftwarePrinciples } from "../components/Principles";
 import { Metadata } from "next";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   title: "Software Development Services",
@@ -49,6 +51,26 @@ const BespokeSoftware = () => {
 
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("bespoke-software")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "Web App Development Services | Professional Team",
+                "Web development services in React, Next.js, Express. Develop your web software with an experienced team.",
+                "/solutions/bespoke-software"
+              )
+            ),
+          }}
+        />
+      </head>
       <PageHero
         heading="Powered by the web, we can make anything and everything."
         description="Trust our skilled and experienced team to craft whatever enterprise software you need."

@@ -5,6 +5,8 @@ import mockup3d from "/public/images/mockup-3d.png";
 import { android, flutter, ios, react } from "../components/TechStack";
 import { SoftwarePrinciples } from "../components/Principles";
 import { Metadata } from "next";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   title: "Mobile App Development Services",
@@ -20,6 +22,26 @@ export const metadata: Metadata = {
 const MobileAppDevelopment = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("mobile-app-development")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "Mobile App Development Services | Professional Team",
+                "Develop your Mobile App today. Offering Cross-Platform IOS and Android App Development services.",
+                "/solutions/mobile-app-development"
+              )
+            ),
+          }}
+        />
+      </head>
       <section className="pt-10 md:pt-20 px-4 md:px-0">
         <div className="relative flex flex-col md:flex-row max-w-7xl mx-auto">
           <div className="order-2 md:order-1 flex flex-col h-full gap-[60vh] text-5xl md:text-6xl text-slate-800 font-bold pb-[80vh] pt-[60vh] md:pt-96 px-12">

@@ -22,7 +22,7 @@ export type PostData = {
     subheading: string;
     featuredImage: FeaturedImage;
     description: string;
-    tags: [];
+    tags: { tag: string; id: string }[];
   };
   content: any;
   meta: {

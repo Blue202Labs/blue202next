@@ -3,6 +3,8 @@ import { Heading } from "../../components/Heading";
 import { WebApproach } from "../components/OurApproach";
 import { PageHero } from "../components/PageHero";
 import opengraphImage from "/public/images/opengraph-image.jpg";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.blue202labs.com"),
@@ -20,6 +22,26 @@ export const metadata: Metadata = {
 const Wordpress = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("WordPress")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "WordPress Development Services | Professional Team",
+                "Need a WordPress Developer or WooCommerce Developer? Work with an industry-leading team.",
+                "/solutions/wordpress"
+              )
+            ),
+          }}
+        />
+      </head>
       <PageHero
         heading="Seamless Content Management with WordPress."
         description="Do you need to be able to adapt your content to growing business needs? A Wordpress site might be the best choice for you."

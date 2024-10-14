@@ -15,6 +15,9 @@ import {
 import { PageHero } from "../components/PageHero";
 import Image from "next/image";
 import { Metadata } from "next";
+import { DomainChecker } from "../components/DomainChecker/DomainChecker";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.blue202labs.com"),
@@ -31,6 +34,26 @@ export const metadata: Metadata = {
 const Websites = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("websites")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "Expert Website Development Services",
+                "Looking to upgrade your website? Work with a leading web development team to build a stunning, user-friendly website.",
+                "/solutions/websites"
+              )
+            ),
+          }}
+        />
+      </head>
       <PageHero
         heading="We love making beautiful, responsive websites."
         description="Ready to upgrade your digital brand?"
@@ -39,11 +62,11 @@ const Websites = () => {
         <TechStack tech={[javaScript, typeScript, react, wordpress, node]} />
         <div className="flex flex-col p-4 md:p-10 max-w-5xl mx-auto md:gap-10 h-full">
           <Heading>Custom Websites:</Heading>
-          <section className="drop-shadow-md bg-white border border-gray-200 w-full md:h-[25rem] rounded-xl flex flex-col gap-10 my-10">
+          <section className="drop-shadow-md bg-white border border-gray-200 w-full rounded-xl flex flex-col gap-10 my-10">
             <div className="flex-col md:flex-row flex md:gap-10 justify-between h-full">
               <p
                 className="font-body-sans font-semibold text-2xl md:text-3xl bg-center text-white min-w-80 
-              h-full bg-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl bg-blue-abstract p-8 md:p-10 md:pt-20 min-h-40"
+              h-full bg-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl bg-blue-abstract p-8 md:p-20 min-h-40"
               >
                 Web design counts for 75% of credibility judgments for a
                 company.
@@ -61,6 +84,9 @@ const Websites = () => {
                 </p>
               </div>
             </div>
+          </section>
+          <section>
+            <DomainChecker />
           </section>
           <WebApproach />
           <section className="my-20">

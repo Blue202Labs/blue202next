@@ -11,6 +11,7 @@ import { Header } from "./components/Header";
 import "./globals.css";
 import opengraphImage from "/public/images/opengraph-image.jpg";
 import { Footer } from "./components/Footer";
+import { Organization, WebSite, WithContext } from "schema-dts";
 
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.blue202labs.com"),
-  title: "Blue202 Labs | Leading Web Development Services",
+  title: "Web Development Agency | Website Development Services",
   description:
     "Leading web software and mobile app development services. Trusted by UPS, AspenDental, RxForms and more.",
   openGraph: {
@@ -43,12 +44,81 @@ export const metadata: Metadata = {
   },
 };
 
+const schemaWebsite: WithContext<WebSite> = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Blue202 Labs. Leading Web Development Company",
+  url: "https://blue202labs.com",
+  description:
+    "Leading web software and mobile app development services. Trusted by UPS, AspenDental, RxForms and more.",
+  publisher: {
+    "@type": "Organization",
+    name: "Blue202 Labs",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://blue202labs.com/_next/static/media/wordmark-colour.e1f78a33.svg",
+    },
+  },
+  datePublished: "2024-7-28T17:40:42+00:00",
+  dateModified: "2024-10-13T16:09:52+00:00",
+  sameAs: [
+    "https://www.linkedin.com/company/blue202labs",
+    "https://www.instagram.com/blue202labs/",
+    "https://www.designrush.com/agency/profile/blue202labs-llc",
+    "https://clutch.co/profile/blue202-labs",
+  ],
+};
+
+const schemaOrganization: WithContext<Organization> = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://blue202labs.com",
+  name: "Blue202 Labs",
+  sameAs: [
+    "https://www.linkedin.com/company/blue202labs",
+    "https://www.instagram.com/blue202labs/",
+    "https://www.designrush.com/agency/profile/blue202labs-llc",
+    "https://clutch.co/profile/blue202-labs",
+  ],
+  logo: {
+    "@type": "ImageObject",
+    url: "https://blue202labs.com/_next/static/media/wordmark-colour.e1f78a33.svg",
+    caption: "Blue202 Labs",
+  },
+  numberOfEmployees: {
+    "@type": "QuantitativeValue",
+    value: 11,
+  },
+  knowsAbout: {
+    "@type": "DefinedTerm",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+1-213-833-8210",
+    contactType: "Sales & Support",
+    availableLanguage: "English",
+    email: "info@blue202labs.com",
+  },
+};
+
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html
       lang="en"
       className={`${sourceSans.variable} ${robotoMono.variable} ${plusJakartaSans.variable}`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaOrganization),
+          }}
+        />
+      </head>
       <body id="root" className="min-h-screen flex flex-col justify-between">
         <Script id="mautic">{`(function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
           w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),

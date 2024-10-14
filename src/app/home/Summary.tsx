@@ -96,7 +96,7 @@ const features = [
         <div className="flex flex-row absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] ">
           {tech.map((f, idx) => (
             <div
-              key={idx}
+              key={`tech-mvp-${idx}`}
               className={cn(
                 "opacity-60 relative w-32 cursor-pointer overflow-hidden rounded-xl p-4",
                 "bg-gray-950/[.01]"
@@ -109,7 +109,7 @@ const features = [
         <div className="flex flex-row absolute top-32 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] ">
           {tech.toReversed().map((f, idx) => (
             <div
-              key={idx}
+              key={`tech-mvp-rev-${idx}`}
               className={cn(
                 "opacity-60 relative w-32 cursor-pointer overflow-hidden rounded-xl p-4",
                 "bg-gray-950/[.01]"

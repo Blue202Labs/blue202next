@@ -29,7 +29,7 @@ export const ClientCarousel = () => {
           >
             {duplicatedClients.map((client, index) => (
               <div
-                key={`to_left_${index}`}
+                key={`to_left_${client}_${index}`}
                 className="carousel-item min-w-40 md:min-w-48 h-48 saturate-0 opacity-60 md:bg-white rounded-xl p-8 flex flex-col justify-center md:drop-shadow-lg"
               >
                 <Image src={client} alt="Our client's logo." />

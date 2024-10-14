@@ -19,6 +19,8 @@ import { SoftwarePrinciples } from "../components/Principles";
 import Image from "next/image";
 import { ReviewCard } from "../../components/ReviewCard";
 import { Metadata } from "next";
+import { breadCrumbList } from "../schemaOrg";
+import { schemaWebpage } from "@/app/schemaOrg";
 
 export const metadata: Metadata = {
   title: "Custom CRM Development Services",
@@ -34,6 +36,26 @@ export const metadata: Metadata = {
 const CRM = () => {
   return (
     <>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadCrumbList("crm")),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              schemaWebpage(
+                "Custom CRM Development Services | Expert Team",
+                "Transform Your Business with Cutting-Edge CRM Development Services. Boost sales and reach your target audience.",
+                "/solutions/crm"
+              )
+            ),
+          }}
+        />
+      </head>
       <PageHero
         heading="Transform Your Business with Cutting-Edge CRM Solutions"
         description="Boost Engagement, Drive Sales, and Elevate Customer Satisfaction!"

@@ -8,7 +8,7 @@ export const schemaArticle = (
 ): WithContext<Article> => ({
   "@context": "https://schema.org",
   "@type": "Article",
-  url: "https://blue202labs.com" + route,
+  url: "https://blue202labs.com/blog/posts/" + route,
   author: {
     "@type": "Person",
     name: "Noella Spitz",

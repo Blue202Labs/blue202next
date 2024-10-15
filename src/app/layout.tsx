@@ -94,7 +94,7 @@ const schemaOrganization: WithContext<Organization> = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+1-213-833-8210",
+    telephone: "+1-833-833-2029",
     contactType: "Sales & Support",
     availableLanguage: "English",
     email: "info@blue202labs.com",

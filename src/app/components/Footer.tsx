@@ -70,7 +70,7 @@ export const Footer = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            +1 213-833-8210
+            +1 833-833-2029
           </div>
           <a
             className="text-blue-800 hover:underline"

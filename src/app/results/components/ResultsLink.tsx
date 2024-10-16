@@ -12,7 +12,7 @@ export const ResultsLink = ({
 }) => {
   return (
     <Link
-      href={`solutions/${route}`}
+      href={route}
       className={
         "relative md:h-full md:min-h-[30rem] w-full group border-2 border-slate-50 shadow-blurred rounded-2xl bg-white p-10 flex flex-col items-center text-slate-800"
       }

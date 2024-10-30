@@ -118,18 +118,27 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
             __html: JSON.stringify(schemaOrganization),
           }}
         />
-        <script id="apollo">{`function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+        <script
+          id="apollo"
+          dangerouslySetInnerHTML={{
+            __html: `function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
 o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
 o.onload=function(){window.trackingFunctions.onLoad({appId:"671f154821d56a0198de02b6"})},
-document.head.appendChild(o)}initApollo();`}</script>
+document.head.appendChild(o)}initApollo();`,
+          }}
+        ></script>
       </head>
       <body id="root" className="min-h-screen flex flex-col justify-between">
-        <Script id="mautic">{`(function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+        <Script
+          id="mautic"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
           w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
           m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://crm.blue202labs.com/mtc.js','mt');
-  
-      mt('send', 'pageview');`}</Script>
+      mt('send', 'pageview');`,
+          }}
+        ></Script>
         <Script
           id="leadfeeder-tracking"
           strategy="afterInteractive"

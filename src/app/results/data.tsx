@@ -8,4 +8,5 @@ export const ResultsTags = {
   ekh: ["Infrastructure Audit", "Technical Consulting"],
   sahily: ["Landing Page", "Web Design"],
   ticketeer: ["Web App", "SaaS", "eCommerce"],
+  swift: ["Web Development", "Web Design"],
 };

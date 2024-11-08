@@ -40,10 +40,6 @@ export const ResultsPost = ({
         ></Image>
       </div>
       <div
-        className="absolute z-20 bg-gradient-to-b from-transparent to-white
-      group-hover:-translate-y-10 w-full h-full bottom-3"
-      ></div>
-      <div
         className="z-30 flex flex-col gap-2 py-10 w-full md:items-center group-hover:-translate-y-12
     transition duration-300 px-4 md:p-0"
       >
